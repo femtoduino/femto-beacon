@@ -1,6 +1,45 @@
 # femto-beacon
 FemtoBeacon - Atmel SAM R21 (ARM Cortex M0+, SAM D21 with built in AT86RF233)
 
+To contribute work, please do the following:
+
+ - Fork https://github.com/femtoio/femto-beacon
+ - Checkout your fork of femto-beacon to your machine. You should now have something like `https://github.com/<your_username>/femto-beacon`
+ - Add the femtoio/femto-beacon repository as the 'upstream' remote repository of your fork.
+
+```
+# Inside the checkout of your fork, add us as the remote repository named 'upstream'
+git remote add upstream https://github.com/femtoio/femto-beacon.git
+
+# Remember to fetch from upstream to get all branch information
+git fetch upstream
+```
+
+Now, you can pull the latest changes from 'upstream' into your fork, and push all work to your own fork
+```
+# To list branches.
+git branch -a
+
+# To pull changes from upstream 'master' branch into your 'master' branch (assuming you're in the master branch already)
+git pull upstream master
+
+# To switch into an existing branch named 'develop'
+git checkout develop
+
+# To create a new branch based on the develop branch
+git checkout develop
+# ...then, make sure you get the latest from upstream
+git pull upstream develop
+# ...now, create your new branch.
+git checkout -b my-new-branch
+
+# To push your new branch to your github fork
+git push origin my-new-branch
+```
+
+...Once you push your changes to your fork, you may submit a Merge Request via github.
+We will review and assess the changes before accepting or rejecting your changes.
+
 ## Requirements
 On Ubuntu machines, you will need Terry Guo's arm-none-eabi-* toolchain, along with the build-essentials package, openocd 0.9.x with cmsis-dap and hidapi-libusb enabled, and our fork of BOSSA.
 

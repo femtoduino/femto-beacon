@@ -79,7 +79,8 @@ CSRCS = sam_r21_imu.c \
        sam0/utils/cmsis/samr21/source/system_samr21.c     \
        sam0/utils/stdio/read.c                            \
        sam0/utils/stdio/write.c                           \
-       sam0/utils/syscalls/gcc/syscalls.c
+       sam0/utils/syscalls/gcc/syscalls.c                 \
+       thirdparty/MPU9250/MPU9250.c
 
 # List of assembler source files.
 ASSRCS = 
@@ -98,6 +99,8 @@ INC_PATH = \
        sam0/drivers/port                                  \
        sam0/drivers/sercom                                \
        sam0/drivers/sercom/usart                          \
+       sam0/drivers/sercom/i2c                            \
+       sam0/drivers/sercom/spi                            \
        sam0/drivers/system                                \
        sam0/drivers/system/clock                          \
        sam0/drivers/system/clock/clock_samd21_r21         \
@@ -117,7 +120,8 @@ INC_PATH = \
        sam0/utils/preprocessor                            \
        sam0/utils/stdio/stdio_serial                      \
        thirdparty/CMSIS/Include                           \
-       thirdparty/CMSIS/Lib/GCC                           
+       thirdparty/CMSIS/Lib/GCC                           \
+       thirdparty/MPU9250
 
 # Additional search paths for libraries.
 LIB_PATH =  \
