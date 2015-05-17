@@ -1,0 +1,136 @@
+APP_NAME = Bootloader
+CONFIG_NAME = Bootloader_At91sam3s4c_Gcc
+LIST_PATH = $(CONFIG_NAME)/List
+EXE_PATH = $(CONFIG_NAME)/Exe
+OBJ_PATH = $(CONFIG_NAME)/Obj
+
+DEFINES = \
+  -DAT91SAM3S4C 
+
+PREINCLUDE = configuration.h
+
+BUILD_CONFIGURATION = RELEASE
+#BUILD_CONFIGURATION = DEBUG
+
+#-------------------------------------------------------------------------------
+# CPU selection:
+#-------------------------------------------------------------------------------
+CPU = cortex-m3
+
+#-------------------------------------------------------------------------------
+# Tools definitions:
+#-------------------------------------------------------------------------------
+AS      = arm-none-eabi-as
+LD      = arm-none-eabi-ld
+CC      = arm-none-eabi-gcc
+CPP     = arm-none-eabi-g++
+AR      = arm-none-eabi-ar
+NM      = arm-none-eabi-nm
+STRIP   = arm-none-eabi-strip
+OBJCOPY = arm-none-eabi-objcopy
+OBJDUMP = arm-none-eabi-objdump
+SIZE    = arm-none-eabi-size
+AR_KEYS = cr
+
+#-------------------------------------------------------------------------------
+# Compiler flags:
+#-------------------------------------------------------------------------------
+CFLAGS  = -Os
+CFLAGS += -c
+CFLAGS += -std=gnu99 -pipe
+ifeq ($(BUILD_CONFIGURATION), DEBUG)
+  CFLAGS += -g
+endif # DEBUG
+CFLAGS += -Wall -W
+CFLAGS += -ffunction-sections
+CFLAGS += -mcpu=$(CPU)
+CFLAGS += -fno-builtin-memcpy
+CFLAGS += -fomit-frame-pointer
+CFLAGS += -mthumb -mfix-cortex-m3-ldrd -mno-thumb-interwork -mapcs-frame
+
+
+CFLAGS += -include $(PREINCLUDE)
+
+CFLAGS += $(DEFINES)
+#==============================================================================
+# Include paths flags
+#==============================================================================
+INCLUDEDIRS  =  -I./../../application/cortexm3/include
+PPATHDIRS    =  ./../../application/cortexm3/src
+INCLUDEDIRS += -I./../../application/common/include
+INCLUDEDIRS += -I./../../
+CPATHDIRS    =  ./../../application/common/src
+#==============================================================================
+# Linking
+#==============================================================================
+# It's easier to use indirect ld call via gcc instead of direct ld call.
+EXECUTABLE_FORMAT = elf
+LD = $(CC)
+LINKER_FLAGS = -Wl,-Map=$(LIST_PATH)/$(APP_NAME).map -Wl,--gc-sections
+LINKER_FLAGS += -Wl,-T./../../linkerScr/at91sam3s4c.ld
+LINKER_FLAGS += -mthumb -nostartfiles
+LINKER_FLAGS += $(filter -mcpu%,$(CFLAGS))
+
+  pc_file  =  eepromLoader
+  pc_file +=  flashLoader
+  pc_file +=  hardwareInit
+  pc_file +=  descriptors
+  pc_file +=  dfuClass
+  pc_file +=  enumeration
+  pc_file +=  preparser
+  pc_file +=  startup
+  pc_file +=  usbSerializer
+  pc_file +=  vectorTable
+
+  cc_file  =  bootloader
+  cc_file +=  srecParser
+  cc_file +=  abstractSerializer
+
+cc_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(cc_file)))
+cc_sources = $(addsuffix .c,$(addprefix $(CPATHDIRS)/,$(cc_file)))
+pc_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(pc_file)))
+pc_sources = $(addsuffix .c,$(addprefix $(PPATHDIRS)/,$(pc_file)))
+
+OBJS  =  $(cc_objects)
+OBJS +=  $(pc_objects)
+
+################ common c part ##############################
+$(OBJ_PATH)/%.o: $(CPATHDIRS)/%.c
+	$(CC) $(CFLAGS) $(INCLUDEDIRS) $^ -o $@
+################ c part ##############################
+
+################ personal c part ##############################
+$(OBJ_PATH)/%.o: $(PPATHDIRS)/%.c
+	$(CC) $(CFLAGS) $(INCLUDEDIRS) $^ -o $@
+################ c part ##############################
+
+#-------------------------------------------------------------------------------
+# Target definitions:
+#-------------------------------------------------------------------------------
+all: directories $(EXE_PATH)/$(APP_NAME).elf $(EXE_PATH)/$(APP_NAME).bin root_files size
+
+$(EXE_PATH)/$(APP_NAME).elf: $(OBJS)
+	@echo
+	@echo -----------------Linking---------------------------
+	$(LD) $(LINKER_FLAGS) $(OBJS) -o $@
+
+%.bin: $(EXE_PATH)/$(APP_NAME).elf
+	$(OBJCOPY) -O binary --strip-debug --strip-unneeded -R .eeprom $^ $@
+
+size: $(EXE_PATH)/$(APP_NAME).elf
+	@echo
+	@$(SIZE) -td $(EXE_PATH)/$(APP_NAME).elf
+
+
+root_files:
+	cp -f $(EXE_PATH)/*.* ./../../
+
+directories:
+	@mkdir -p $(OBJ_PATH)
+	@mkdir -p $(LIST_PATH)
+	@mkdir -p $(EXE_PATH)
+
+clean:
+	@echo
+	@echo -------Application cleaning------------------------
+	-rm -rf $(CONFIG_NAME) ./../../$(APP_NAME).elf ./../../$(APP_NAME).bin

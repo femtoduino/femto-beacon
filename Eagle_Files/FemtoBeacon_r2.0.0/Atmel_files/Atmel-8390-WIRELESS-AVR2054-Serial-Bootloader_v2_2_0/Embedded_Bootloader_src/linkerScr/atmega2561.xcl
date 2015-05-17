@@ -1,0 +1,88 @@
+/*                      - lnkm2561.xcl -
+ *
+ *   XLINK command file for the ICCAVR C-compiler using the --cpu=m2561, -ms
+ *   options. Segments are defined for an ATmega2561 whithout external
+ *   memory. It is also possible to "add" external SRAM, EPROM and EEPROM.
+ *
+ *   Usage: xlink your_file(s) -f lnkm2561
+ *
+ *   File version: $Revision: 1.6 $
+ */
+
+/*====================================================*/
+/* 
+ * Constants used down below, 
+ * Do not change these lines, 
+ * if it is not stated otherwise 
+ */
+
+/* Code (flash) segments */
+-D_..X_INTVEC_SIZE=0      /* 4 bytes * 1 vector */
+-D_..X_FLASH_START=3F800  /* Start of flash memory */
+-D_..X_FLASH_END=3FFFF    /* End of flash memory */
+
+/* Internal data memory */
+-D_..X_SRAM_BASE=200    /* Start of ram memory */
+-D_..X_SRAM_END=21FF    /* End of ram memory */
+/*====================================================*/
+
+
+/*
+ * Modify the lines below to alter the size of the RSTACK, CSTACK and HEAP
+ * segments. These need to be fine tuned to suit your specific application.
+ * The '_..X_' prefix is used by C-SPY as an indication that the label should
+ * not be displayed in the dissassembly window.
+ */
+-D_..X_CSTACK_SIZE=200  /* 512 bytes for auto variables and saved registers. */
+-D_..X_RSTACK_SIZE=40   /* 64 bytes for return addresses, equivalent to 32 */
+                        /* levels of calls, including interrupts. */
+
+/*
+ * The following segments are located in the internal memory of
+ * the ATmega2561. Do not change these lines.
+ */
+
+/* Define CPU */
+-ca90
+
+/* Code memory */
+-Z(CODE)INTVEC=_..X_FLASH_START-_..X_FLASH_END
+-Z(CODE)NEAR_F,NEAR_ID,SWITCH,DIFUNCT=_..X_FLASH_START-_..X_FLASH_END
+-Z(CODE)CODE,FARCODE=_..X_FLASH_START-_..X_FLASH_END
+-Z(CODE)HUGE_F,INITTAB=_..X_FLASH_START-_..X_FLASH_END
+
+/* Internal data memory */
+-Z(DATA)NEAR_I,NEAR_Z=_..X_SRAM_BASE-_..X_SRAM_END
+-Z(DATA)RSTACK+_..X_RSTACK_SIZE=(_..X_SRAM_END-_..X_RSTACK_SIZE-_..X_CSTACK_SIZE)-_..X_SRAM_END
+-Z(DATA)CSTACK+_..X_CSTACK_SIZE=(_..X_SRAM_END-_..X_RSTACK_SIZE-_..X_CSTACK_SIZE)-_..X_SRAM_END
+
+/* Select reduced "printf" support to reduce library size.
+   See configuration section in manual concerning printf/sprintf. */
+
+/*Dlib*/
+-e_PrintfSmall=_Printf
+
+/*Clib*/
+-e_small_write=_formatted_write
+
+/*Dlib and Clib*/
+-e_small_write_P=_formatted_write_P
+
+/* Disable floating-point support in "scanf" to reduce library size.
+   See configuration section in manual concerning scanf/sscanf */
+
+/*Dlib*/
+-e_ScanfSmall=_Scanf
+
+/*Clib*/
+-e_medium_read=_formatted_read
+
+/*Dlib and Clib*/
+-e_medium_read_P=_formatted_read_P
+
+/* Suppress one warning which is not relevant for this processor */
+-w29
+
+/* Code will now reside in file aout.a90 or aout.d90, unless -o is specified */
+/* .d90 is the default if debug system is linked (option -r) */
+/* .a90 is the default without debugging. Default format is -Fmotorola */

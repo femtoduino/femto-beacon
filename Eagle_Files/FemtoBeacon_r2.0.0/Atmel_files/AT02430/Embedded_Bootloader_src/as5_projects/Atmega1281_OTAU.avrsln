@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "Atmega1281_OTAU", "Atmega1281_OTAU.avrgccproj", "{0888BB8C-5747-4110-932A-0CAF708EF62C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Bootloader_Atmega1281_Gcc|AVR = Bootloader_Atmega1281_Gcc|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0888BB8C-5747-4110-932A-0CAF708EF62C}.Bootloader_Atmega1281_Gcc|AVR.ActiveCfg = Bootloader_Atmega1281_Gcc|AVR
+		{0888BB8C-5747-4110-932A-0CAF708EF62C}.Bootloader_Atmega1281_Gcc|AVR.Build.0 = Bootloader_Atmega1281_Gcc|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1558314646</fileChecksum>
+  <configuration>
+    <name>Bootloader_Atxmega128A1</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\application\common\include\abstractSerializer.h</file>
+      <file>$PROJ_DIR$\..\application\common\include\types.h</file>
+      <file>$PROJ_DIR$\..\application\common\include\bootStructure.h</file>
+      <file>$PROJ_DIR$\..\application\common\include\srecParser.h</file>
+      <file>$PROJ_DIR$\..\application\common\src\abstractSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\common\src\bootloader.c</file>
+      <file>$PROJ_DIR$\..\application\common\src\srecParser.c</file>
+      <file>$PROJ_DIR$\..\configuration.h</file>
+      <file>$PROJ_DIR$\..\application\xmega\include\eepromLoader.h</file>
+      <file>$PROJ_DIR$\..\application\xmega\include\hardwareInit.h</file>
+      <file>$PROJ_DIR$\..\application\xmega\include\sp_driver.h</file>
+      <file>$PROJ_DIR$\..\application\xmega\include\timerInterval.h</file>
+      <file>$PROJ_DIR$\..\application\xmega\include\twiSerializer.h</file>
+      <file>$PROJ_DIR$\..\application\xmega\include\uartSerializer.h</file>
+      <file>$PROJ_DIR$\..\application\xmega\src\eepromLoader.c</file>
+      <file>$PROJ_DIR$\..\application\xmega\src\flashLoader.c</file>
+      <file>$PROJ_DIR$\..\application\xmega\src\hardwareInit.c</file>
+      <file>$PROJ_DIR$\..\application\xmega\src\sp_driver.s90</file>
+      <file>$PROJ_DIR$\..\application\xmega\src\spiSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\xmega\src\twiSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\xmega\src\uartSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\common\include\AVR1624twiParser.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\eepromLoader.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\hardwareInit.lst</file>
+      <file>$TOOLKIT_DIR$\inc\Atmel\iomacro_xmega.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\twiSerializer.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\AVR1624twiParser.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\bootloader.lst</file>
+      <file>$TOOLKIT_DIR$\inc\Atmel\ATxmega128A1.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\spiSerializer.r90</file>
+      <file>$PROJ_DIR$\..\application\xmega\include\twiInterface.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\AVR1624twiParser.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\abstractSerializer.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\srecParser.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\uartSerializer.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\twiInterface.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\pgmspace.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\eepromLoader.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\srecParser.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\abstractSerializer.r90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\abstractSerializer.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\flashLoader.r90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\AVR1624twiParser.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\twiParser.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\srecParser.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\application\common\src\AVR1624twiParser.c</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\spiSerializer.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\sp_driver.r90</file>
+      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\hardwareInit.r90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdint.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\hardwareInit.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-6s-xmega-n.r90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-6s-xmega-n.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\flashLoader.lst</file>
+      <file>$PROJ_DIR$\..\application\common\src\twiParser.c</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\flashLoader.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\twiParser.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\Bootloader.map</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\twiSerializer.r90</file>
+      <file>$PROJ_DIR$\..\application\common\include\twiParser.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\bootloader.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\twiSerializer.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\twiInterface.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\spiSerializer.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\eepromLoader.lst</file>
+      <file>$PROJ_DIR$\..\application\xmega\src\twiInterface.c</file>
+      <file>$TOOLKIT_DIR$\inc\ioxm128a1.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Exe\Bootloader.hex</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\List\uartSerializer.lst</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdarg.h</file>
+      <file>$PROJ_DIR$\..\linkerScr\avrxmega128a1.xcl</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\uartSerializer.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\twiInterface.r90</file>
+      <file>$PROJ_DIR$\..\application\xmega\include\flashLoader.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\bootloader.r90</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atxmega128A1\Obj\twiParser.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\abstractSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 33 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 0 9 13 11 3</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 0 9 13 11 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\bootloader.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 27 86</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 2 3 0 9 13</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 2 3 0 9 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\srecParser.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 39 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 0 9 13 2 3 85 8</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 0 9 13 2 3 85 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\xmega\src\eepromLoader.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 73 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 2 3</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 2 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\xmega\src\flashLoader.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 61 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 2 3 10</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 2 3 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\xmega\src\hardwareInit.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 23 54</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 9</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\xmega\src\sp_driver.s90</name>
+      <outputs>
+        <tool>
+          <name>AAVR</name>
+          <file> 51</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\xmega\src\spiSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 50 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\xmega\src\twiSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 25 66</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\xmega\src\uartSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 80 35</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 13</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\AVR1624twiParser.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 26 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 0 9 13 12 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\twiParser.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 64 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 0 9 13 12 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\xmega\src\twiInterface.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 71 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 7 30 1 55 48 76 44 60 70 78 32 88 58 41 87 89 52 75 59 28 24 37 77 53 81 21 10 85</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Bootloader_Atxmega128A1\Exe\Bootloader.hex</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 82 40 86 38 43 54 51 29 34 66 35 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 65 79</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+</project>
+
+

@@ -1,0 +1,234 @@
+/*                      - lnk6s.xcl -
+ *
+ *   XLINK command file for the ICCAVR C-compiler using the -v6, -ms options.
+ *   Segments are defined for a generic ATmega with a maximum of 16 Mbytes
+ *   data address space and 8 Mbytes program address space.
+ *
+ *   Usage: xlink your_file(s) -f lnk6s
+ *
+ *   File version: $Revision: 1.11 $
+ */
+
+/*
+ * Modify the lines below to alter the size of the RSTACK, CSTACK and HEAP
+ * segments. These need to be fine-tuned to suit your specific application.
+ */
+-D_..X_CSTACK_SIZE=300
+-D_..X_RSTACK_SIZE=100
+                     
+/* Define CPU */
+-ca90
+
+/*************************************************************/
+/* Segments in program address space (internal Flash memory) */
+/*************************************************************/
+-D_..X_INTVEC_SIZE=1C8   // 4 bytes * 114 vectors
+-D_..X_APPLICATION_SECTION_START=40000
+-D_..X_APPLICATION_SECTION_SIZE=2000
+-D_..X_APPLICATION_START=(_..X_APPLICATION_SECTION_START+_..X_INTVEC_SIZE)
+-D_..X_APPLICATION_END=(_..X_APPLICATION_SECTION_START+_..X_APPLICATION_SECTION_SIZE-1)
+
+
+/*
+ * Reset and interrupt vectors.
+ *
+ * The reset vector and interrupt vectors must be placed at address 0
+ * and forwards. This definition allows for up to 23 interrupt vectors
+ * and the reset vector.
+ */
+-Z(CODE)INTVEC=_..X_APPLICATION_SECTION_START-(_..X_APPLICATION_START-1)
+
+/*
+ * Compiler generated segments
+ *
+ * There are currently three compiler generated segments. These are used
+ * for storing information that is vital for the operation of the program.
+ *
+ * The first segment is the SWITCH segment which contains data statements
+ * used in the switch library routines. These tables are encoded in such a
+ * way as to use as little space as possible.
+ *
+ * The second segment, INITTAB, contains the segment initialization
+ * description blocks that are used by the __segment_init function which is
+ * called by cstartup. This table consists of a number of SegmentInitBlock_Type
+ * objects. This type is declared in the segment_init.h file located in the
+ * AVR\SRC\LIB directory.
+ *
+ * Tha last segment is only used when a source file has been compiled
+ * in EC++ mode and the file contained global objects (class instances).
+ * The segment will then contain a number of function pointers that
+ * point to constructor methods that should be executed for each object.
+ */
+-Z(CODE)SWITCH,DIFUNCT=_..X_APPLICATION_START-_..X_APPLICATION_END
+
+/*
+ * Program code, __nearfunc declared functions
+ *
+ * Code that comes from __nearfunc declared functions is placed in the CODE
+ * segment. This segment must be placed in the first 128 Kbytes of flash
+ * memory. The reason for this is that function pointers to __nearfunc
+ * functions are 2 bytes large. All function pointers are word pointers.
+ */
+-Z(CODE)CODE=_..X_APPLICATION_START-_..X_APPLICATION_END
+
+/*
+ * Program code, __farfunc declared functions
+ *
+ * Code that comes from __farfunc declared functions is placed in the FARCODE
+ * segment. This segment can be placed anywhere in the flash memory. Function
+ * pointers to __farfunc functions are 3 bytes large. All function pointers
+ * are word pointers.
+ */
+-Z(CODE)FARCODE=_..X_APPLICATION_START-_..X_APPLICATION_END
+
+/*
+ * Initialization data for the FAR_I segments
+ *
+ * If any non-zero initialized variables exist in the application the
+ * corresponding _ID segment will contain the initial values of those 
+ * variables. The cstartup module will initialize the _I segments at
+ * system start up by calling the __segment_init function.
+ *
+ * FAR_ID must have the same offset
+ * from a 64 Kbyte boundary as FAR_I 
+ *
+ */
+-Z(FARCODE)FAR_ID=_..X_APPLICATION_SECTION_START-_..X_APPLICATION_END
+
+/*
+ * __farflash declared objects.
+ *
+ * Constant objects that have been declared with the __farflash keyword will
+ * be placed in this segment. The objects are limited to 32 Kbytes in size
+ * and by using the FARCODE segment type XLINK guarantees that no object in
+ * the segment spans over a 64K boundary.
+ */
+-Z(FARCODE)FAR_F=_..X_APPLICATION_START-_..X_APPLICATION_END
+
+/*
+ * __hugeflash declared objects.
+ *
+ * Constant objects that have been declared with the __hugeflash keyword will
+ * be placed in this segment.
+ */
+-Z(CODE)HUGE_F,INITTAB=_..X_APPLICATION_START-_..X_APPLICATION_END
+
+/*
+ * Initialization data for the TINY_I, NEAR_I and HUGE_I segments
+ *
+ * If any non-zero initialized variables exist in the application the
+ * corresponding _ID segment will contain the initial values of those 
+ * variables. The cstartup module will initialize the _I segments at
+ * system start up by calling the __segment_init function.
+ */
+-Z(CODE)TINY_ID,NEAR_ID,HUGE_ID=_..X_APPLICATION_START-_..X_APPLICATION_END
+-Z(CODE)CHECKSUM#_..X_APPLICATION_END
+
+/***************************************************************************/
+/* Segments in data address space (internal or external SRAM/EPROM/EEPROM) */
+/***************************************************************************/
+//////////////////////////////////////////////////////////////////////////////
+// Data (SRAM, external ROM or external NV RAM) memory
+-D_..X_SRAM_BASE=2000    // Start of ram memory
+-D_..X_SRAM_TBASE=0      // Start of tiny ram memory
+-D_..X_SRAM_TSIZE=0      // Size of the tiny ram memory
+-D_..X_SRAM_END=6000     // End of ram memory
+
+//////////////////////////////////////////////////////////////////////////////
+/*
+ * __tiny declared objects
+ *
+ * These three segments contain objects that haven been declared with the
+ * __tiny keyword. After cstartup has run, the _I segment has been initialized
+ * with the values in the _ID segment and the _Z segment has been cleared so
+ * that it contains all zeros.
+ */
+-Z(DATA)TINY_I,TINY_Z,TINY_N=_..X_SRAM_TBASE:+_..X_SRAM_TSIZE
+
+/*
+ * Data stack
+ *
+ * The data stack is used for auto variables, function parameters, and
+ * temporary storage. It is therefore important that the size of the data 
+ * stack is large enough. However, a too large stack will waste valuable
+ * RAM space. To determine approximately how much data stack that is needed
+ * for an application, perform a trial link with the list file option 'o'
+ * present, e.g. -xmos. This will tell XLINK to generate a stack usage tree
+ * in the map file. The values in the map file could then be used as an
+ * approximation. Please note that the given value does not include stack
+ * used by interrupts and assembler functions written by the end user. It is
+ * therefore neccesary to add a small safety margin to the value given by
+ * XLINK.
+ */
+-Z(DATA)CSTACK+_..X_CSTACK_SIZE=(_..X_SRAM_END-_..X_RSTACK_SIZE-_..X_CSTACK_SIZE)-_..X_SRAM_END
+
+/*
+ * Return address stack
+ *
+ * The return address stack is used to store the return address when a CALL,
+ * RCALL, ICALL, or EICALL instruction is executed. Each call will use three
+ * bytes of return address stack. An interrupt will also place a return
+ * address on this stack. Use the same technique as for the data stack to
+ * determine the size of the return address stack. Note however that if the
+ * cross-call optimization has been used (-z9 and not --no_cross_call) the
+ * value given by XLINK can be off by as much as a factor of five depending on
+ * how many times the cross-call optimizer has been run (--cross_call_passes).
+ */
+-Z(DATA)RSTACK+_..X_RSTACK_SIZE=(_..X_SRAM_END-_..X_RSTACK_SIZE-_..X_CSTACK_SIZE)-_..X_SRAM_END
+
+/*
+ * __near declared objects
+ *
+ * These three segments contain objects that haven been declared with the
+ * __near keyword. After cstartup has run the, _I segment has been initialized
+ * with the values in the _ID segment and the _Z segment has been cleared so
+ * that it contains all zeros.
+ */
+-Z(DATA)NEAR_I,NEAR_Z,NEAR_N=_..X_SRAM_BASE-_..X_SRAM_END
+-Z(DATA)IOSTREAM_N#_..X_SRAM_BASE-_..X_SRAM_END
+
+/*
+ * __far declared objects
+ *
+ * These three segments contain objects that haven been declared with the
+ * __far keyword. After cstartup has run the _I segment has been initialized
+ * with the values in the _ID segment and the _Z segment has been cleared so
+ * that it contains all zeros.
+ *
+ * FAR_I must have the same offset
+ * from a 64 Kbyte boundary as FAR_ID 
+ *
+ */
+-Z(FARDATA)FAR_I,FAR_Z,FAR_N=_..X_SRAM_BASE-_..X_SRAM_END
+
+/*
+ * __huge declared objects
+ *
+ * These three segments contain objects that haven been declared with the
+ * __huge keyword. After cstartup has run the _I segment has been initialized
+ * with the values in the _ID segment and the _Z segment has been cleared so
+ * that it contains all zeros.
+ */
+-Z(DATA)HUGE_I,HUGE_Z,HUGE_N=_..X_SRAM_BASE-_..X_SRAM_END
+
+/*
+ * Select reduced "printf" support to reduce library size.
+ * See configuration section in manual concerning printf/sprintf.
+ */
+
+/*Dlib*/
+-e_PrintfSmall=_Printf
+
+/*
+ * Disable floating-point support in "scanf" to reduce library size.
+ * See configuration section in manual concerning scanf/sscanf */
+
+/*Dlib*/
+-e_ScanfSmall=_Scanf
+
+/* Suppress one warning which is not relevant for this processor */
+-w29
+
+/* Code will now reside in file aout.a90 or aout.d90, unless -o is specified */
+/* .d90 is the default if debug system is linked (option -r) */
+/* .a90 is the default without debugging. Default format is -Fmotorola */

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>5.0</ProjectVersion>
+    <ProjectGuid>{7f9e55ff-1869-4d36-a204-784fbb8ed67f}</ProjectGuid>
+    <avrdevice>Atxmega128A1</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFile>Bootloader.elf</OutputFile>
+    <UseGlobalToolchain>False</UseGlobalToolchain>
+    <avrtoolinterface />
+  </PropertyGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\AvrGCC.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Bootloader_Atxmega128A1_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>..\makefiles\Atxmega128A1\Bootloader_Atxmega128A1_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\Atxmega128A1\Makefile_Bootloader_Atxmega128A1_Gcc</ExternalMakeFilePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include=".\..\application\xmega\src\flashLoader.c">
+      <SubType>compile</SubType>
+      <Link>src\flashLoader.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\src\sp_driver.s">
+      <SubType>compile</SubType>
+      <Link>src\sp_driver.s</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\src\uartSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\uartSerializer.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\src\twiSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\twiSerializer.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\src\hardwareInit.c">
+      <SubType>compile</SubType>
+      <Link>src\hardwareInit.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\src\eepromLoader.c">
+      <SubType>compile</SubType>
+      <Link>src\eepromLoader.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\src\spiSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\spiSerializer.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\include\spiSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\spiSerializer.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\include\timerInterval.h">
+      <SubType>compile</SubType>
+      <Link>include\timerInterval.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\include\eepromLoader.h">
+      <SubType>compile</SubType>
+      <Link>include\eepromLoader.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\include\uartSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\uartSerializer.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\include\twiSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\twiSerializer.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\include\hardwareInit.h">
+      <SubType>compile</SubType>
+      <Link>include\hardwareInit.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\xmega\include\sp_driver.h">
+      <SubType>compile</SubType>
+      <Link>include\sp_driver.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\src\abstractSerializer.c">
+      <SubType>compile</SubType>
+      <Link>common\src\abstractSerializer.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\src\twiParser.c">
+      <SubType>compile</SubType>
+      <Link>common\src\twiParser.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\src\bootloader.c">
+      <SubType>compile</SubType>
+      <Link>common\src\bootloader.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\src\srecParser.c">
+      <SubType>compile</SubType>
+      <Link>common\src\srecParser.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\abstractSerializer.h">
+      <SubType>compile</SubType>
+      <Link>common\include\abstractSerializer.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\twiParser.h">
+      <SubType>compile</SubType>
+      <Link>common\include\twiParser.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\srecParser.h">
+      <SubType>compile</SubType>
+      <Link>common\include\srecParser.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\bootStructure.h">
+      <SubType>compile</SubType>
+      <Link>common\include\bootStructure.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\types.h">
+      <SubType>compile</SubType>
+      <Link>common\include\types.h</Link>
+    </Compile>
+    <Compile Include=".\..\configuration.h">
+      <SubType>compile</SubType>
+      <Link>configuration\configuration.h</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="common\" />
+    <Folder Include="src" />
+    <Folder Include="include" />
+    <Folder Include="configuration" />
+    <Folder Include="common\include" />
+    <Folder Include="common\src" />
+  </ItemGroup>
+</Project>

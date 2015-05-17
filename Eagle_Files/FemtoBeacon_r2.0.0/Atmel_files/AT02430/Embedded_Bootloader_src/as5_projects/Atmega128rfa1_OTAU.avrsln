@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "Atmega128rfa1_OTAU", "Atmega128rfa1_OTAU.avrgccproj", "{13B0505B-3ED3-4E83-9991-C4BEE228A95E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Bootloader_Atmega128rfa1_Gcc|AVR = Bootloader_Atmega128rfa1_Gcc|AVR
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13B0505B-3ED3-4E83-9991-C4BEE228A95E}.Bootloader_Atmega128rfa1_Gcc|AVR.ActiveCfg = Bootloader_Atmega128rfa1_Gcc|AVR
+		{13B0505B-3ED3-4E83-9991-C4BEE228A95E}.Bootloader_Atmega128rfa1_Gcc|AVR.Build.0 = Bootloader_Atmega128rfa1_Gcc|AVR
+		{13B0505B-3ED3-4E83-9991-C4BEE228A95E}.Debug|AVR.ActiveCfg = Bootloader_Atmega128rfa1_Gcc|AVR
+		{13B0505B-3ED3-4E83-9991-C4BEE228A95E}.Debug|AVR.Build.0 = Bootloader_Atmega128rfa1_Gcc|AVR
+		{13B0505B-3ED3-4E83-9991-C4BEE228A95E}.Release|AVR.ActiveCfg = Bootloader_Atmega128rfa1_Gcc|AVR
+		{13B0505B-3ED3-4E83-9991-C4BEE228A95E}.Release|AVR.Build.0 = Bootloader_Atmega128rfa1_Gcc|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

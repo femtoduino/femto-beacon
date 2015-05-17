@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<workspace>
+  <batchBuild/>
+  <project>
+    <path>$WS_DIR$\Atmega128rfa1_OTAU.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atxmega256A3.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atxmega256A3_OTAU.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atxmega128A1.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atmega2561.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atmega1281_OTAU.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atxmega256D3.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atxmega256D3_OTAU.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atmega128rfa1.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\Atmega1281.ewp</path>
+  </project>
+</workspace>

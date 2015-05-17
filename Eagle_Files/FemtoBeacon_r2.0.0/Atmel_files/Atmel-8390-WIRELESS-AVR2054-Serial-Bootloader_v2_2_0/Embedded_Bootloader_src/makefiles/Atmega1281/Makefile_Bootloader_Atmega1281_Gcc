@@ -1,0 +1,149 @@
+APP_NAME = Bootloader
+CONFIG_NAME = Bootloader_Atmega1281_Gcc
+LIST_PATH = $(CONFIG_NAME)/List
+EXE_PATH = $(CONFIG_NAME)/Exe
+OBJ_PATH = $(CONFIG_NAME)/Obj
+
+DEFINES = \
+  -DATMEGA1281 
+
+PREINCLUDE = configuration.h
+
+BUILD_CONFIGURATION = RELEASE
+#BUILD_CONFIGURATION = DEBUG
+
+#-------------------------------------------------------------------------------
+# CPU selection:
+#-------------------------------------------------------------------------------
+CPU = atmega1281
+
+#-------------------------------------------------------------------------------
+# Tools definitions:
+#-------------------------------------------------------------------------------
+AS      = avr-as
+LD      = avr-ld
+CC      = avr-gcc
+CPP     = avr-g++
+AR      = avr-ar
+NM      = avr-nm
+STRIP   = avr-strip
+OBJCOPY = avr-objcopy
+OBJDUMP = avr-objdump
+SIZE    = avr-size
+AR_KEYS = cr
+
+#-------------------------------------------------------------------------------
+# Compiler flags:
+#-------------------------------------------------------------------------------
+CFLAGS  = -O1
+CFLAGS += -c
+CFLAGS += -std=gnu99
+ifeq ($(BUILD_CONFIGURATION), DEBUG)
+  CFLAGS += -g2
+endif # DEBUG
+CFLAGS += -Wall -W
+CFLAGS += -ffunction-sections
+CFLAGS += -fpack-struct
+CFLAGS += -mmcu=$(CPU)
+CFLAGS += -fshort-enums
+ASMFLAGS = -mmcu=$(CPU)
+ASM_EXT = s
+
+
+CFLAGS += -include $(PREINCLUDE)
+
+CFLAGS += $(DEFINES)
+#==============================================================================
+# Include paths flags
+#==============================================================================
+INCLUDEDIRS  =  -I./../../application/avr/include
+PPATHDIRS    =  ./../../application/avr/src
+INCLUDEDIRS += -I./../../application/common/include
+INCLUDEDIRS += -I./../../
+CPATHDIRS    =  ./../../application/common/src
+#==============================================================================
+# Linking
+#==============================================================================
+# It's easier to use indirect ld call via gcc instead of direct ld call.
+EXECUTABLE_FORMAT = elf
+LD = $(CC)
+LINKER_FLAGS = -Xlinker -Map=$(LIST_PATH)/$(APP_NAME).map -Wl,--gc-sections
+
+LINKER_FLAGS += $(filter -mmcu%,$(CFLAGS))
+LINKER_FLAGS += -Wl,--script=./../../linkerScr/atmega1281.ld
+
+  pc_file  =  eepromLoader
+  pc_file +=  flashLoader
+  pc_file +=  hardwareInit
+
+  pc_file +=  twiSerializer
+  pc_file +=  uartSerializer
+
+
+  pc_file +=  usbFifoSerializer
+
+
+  cc_file  =  bootloader
+  cc_file +=  srecParser
+  cc_file +=  abstractSerializer   
+
+  asm_file  = sp_driver
+  asm_file += calibMeasurement
+
+cc_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(cc_file)))
+cc_sources = $(addsuffix .c,$(addprefix $(CPATHDIRS)/,$(cc_file)))
+pc_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(pc_file)))
+pc_sources = $(addsuffix .c,$(addprefix $(PPATHDIRS)/,$(pc_file)))
+asm_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(asm_file)))
+asm_sources = $(addsuffix .$(ASM_EXT),$(addprefix $(PPATHDIRS)/,$(asm_file)))
+
+OBJS  =  $(cc_objects)
+OBJS +=  $(pc_objects)
+OBJS +=  $(asm_objects)
+
+################ common c part ##############################
+$(OBJ_PATH)/%.o: $(CPATHDIRS)/%.c
+	$(CC) $(CFLAGS) $(INCLUDEDIRS) $^ -o $@
+################ c part ##############################
+
+################ personal c part ##############################
+$(OBJ_PATH)/%.o: $(PPATHDIRS)/%.c
+	$(CC) $(CFLAGS) $(INCLUDEDIRS) $^ -o $@
+################ c part ##############################
+
+################ assembler part ######################
+$(OBJ_PATH)/%.o: $(PPATHDIRS)/%.$(ASM_EXT)
+	$(AS) $(ASMFLAGS) $(INCLUDEDIRS) -o $@ $^
+################ assembler part ######################
+
+#-------------------------------------------------------------------------------
+# Target definitions:
+#-------------------------------------------------------------------------------
+all: directories $(EXE_PATH)/$(APP_NAME).elf $(EXE_PATH)/$(APP_NAME).hex $(EXE_PATH) root_files size
+
+$(EXE_PATH)/$(APP_NAME).elf: $(OBJS)
+	@echo
+	@echo -----------------Linking---------------------------
+	$(LD) $(LINKER_FLAGS) $(OBJS) -o $@
+	$(OBJCOPY) -I elf32-avr -O elf32-avr -R .vectors $(EXE_PATH)/$(APP_NAME).elf	
+
+%.hex:  $(EXE_PATH)/$(APP_NAME).elf
+	$(OBJCOPY) -O ihex -R .eeprom $^ $@
+
+size: $(EXE_PATH)/$(APP_NAME).elf
+	@echo
+	@$(SIZE) -td $(EXE_PATH)/$(APP_NAME).elf
+
+
+root_files:
+	cp -f $(EXE_PATH)/*.* ./../../
+
+directories:
+	@mkdir -p $(OBJ_PATH)
+	@mkdir -p $(LIST_PATH)
+	@mkdir -p $(EXE_PATH)
+
+clean:
+	@echo
+	@echo -------Application cleaning------------------------
+	-rm -rf $(CONFIG_NAME) ./../../$(APP_NAME).elf ./../../$(APP_NAME).hex

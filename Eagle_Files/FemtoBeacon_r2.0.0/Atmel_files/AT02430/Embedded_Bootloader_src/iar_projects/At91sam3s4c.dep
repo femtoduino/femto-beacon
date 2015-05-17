@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1947521976</fileChecksum>
+  <configuration>
+    <name>Bootloader_At91sam3s4c</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\application\common\src\abstractSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\common\include\bootStructure.h</file>
+      <file>$PROJ_DIR$\..\application\common\include\types.h</file>
+      <file>$PROJ_DIR$\..\application\common\src\bootloader.c</file>
+      <file>$PROJ_DIR$\..\application\common\src\srecParser.c</file>
+      <file>$PROJ_DIR$\..\configuration.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\AT91SAM3S4.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\core_cm3.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\descriptors.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\dfuClass.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\eepromLoader.h</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\dfuClass.o</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\startup.o</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\flashLoader.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\freqSelector.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\hardwareInit.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\preparser.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\timerInterval.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\usbSerializer.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\include\usbShared.h</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\descriptors.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\eepromLoader.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\dfuClass.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\enumeration.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\flashLoader.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\hardwareInit.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\usbSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\preparser.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\startup.c</file>
+      <file>$PROJ_DIR$\..\application\cortexm3\src\vectorTable.c</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Exe\Bootloader.out</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\srecParser.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\descriptors.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\dfuClass.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\eepromLoader.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\descriptors.o</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\abstractSerializer.o</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\bootloader.o</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\abstractSerializer.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\bootloader.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\eepromLoader.o</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\hardwareInit.o</file>
+      <file>$PROJ_DIR$\..\application\common\include\srecParser.h</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\flashLoader.o</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\startup.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\usbSerializer.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\vectorTable.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\At91sam3s4c.pbd</file>
+      <file>$PROJ_DIR$\..\linkerScr\at91SAM3S4C_FLASH.icf</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\srecParser.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\hardwareInit.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\bootloader.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\usbSerializer.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\usbSerializer.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\Bootloader.map</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\enumeration.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\flashLoader.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\hardwareInit.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\preparser.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\flashLoader.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\abstractSerializer.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\descriptors.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\enumeration.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\startup.lst</file>
+      <file>$PROJ_DIR$\..\application\common\include\abstractSerializer.h</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\vectorTable.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\preparser.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\dfuClass.lst</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\List\eepromLoader.lst</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\vectorTable.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\preparser.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\srecParser.o</file>
+      <file>$PROJ_DIR$\Bootloader_At91sam3s4c\Obj\enumeration.o</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\abstractSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 88 55 56 81 79 82 83 84 85 86 76 74 77 69 15 18 17 6 7 78 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\bootloader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 2 88 55 56 81 79 82 83 84 85 86 76 74 77 1 42 69 15 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 88 55 56 81 79 82 83 84 85 86 76 74 77 1 42 69 15 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\srecParser.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51 89</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 2 88 55 56 81 79 82 83 84 85 86 76 74 77 69 15 18 1 42 13 10</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 88 55 56 81 79 82 83 84 85 86 76 74 77 69 15 18 1 42 13 10</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\descriptors.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 8 2 88 55 56 81 79 82 83 84 85 86 76 74 77 19 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\eepromLoader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73 40</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 2 88 55 56 81 79 82 83 84 85 86 76 74 77 1 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 88 55 56 81 79 82 83 84 85 86 76 74 77 1 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\dfuClass.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 72 11</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 2 88 55 56 81 79 82 83 84 85 86 76 74 77 19 9 8 16 13 10 69 15 18 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 88 55 56 81 79 82 83 84 85 86 76 74 77 19 9 8 16 13 10 69 15 18 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\enumeration.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67 90</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 2 88 55 56 81 79 82 83 84 85 86 76 74 77 19 9 8</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 88 55 56 81 79 82 83 84 85 86 76 74 77 19 9 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\flashLoader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 2 88 55 56 81 79 82 83 84 85 86 76 74 77 1 42 6 7 78</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 88 55 56 81 79 82 83 84 85 86 76 74 77 1 42 6 7 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\hardwareInit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52 41</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 6 88 55 56 81 79 82 83 84 7 77 78 2 85 86 76 74 15 42 14</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 88 55 56 81 79 82 83 84 7 77 78 2 85 86 76 74 15 42 14</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\usbSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57 54</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 6 88 55 56 81 79 82 83 84 7 77 78 2 85 86 76 74 15 19 9 42 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 88 55 56 81 79 82 83 84 7 77 78 2 85 86 76 74 15 19 9 42 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\preparser.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 71 80</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 2 88 55 56 81 79 82 83 84 85 86 76 74 77 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 88 55 56 81 79 82 83 84 85 86 76 74 77 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\startup.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 6 88 55 56 81 79 82 83 84 7 77 78</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 88 55 56 81 79 82 83 84 7 77 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\cortexm3\src\vectorTable.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70 75</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 6 88 55 56 81 79 82 83 84</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 88 55 56 81 79 82 83 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Bootloader_At91sam3s4c\Exe\Bootloader.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 48 36 37 35 11 40 90 43 41 80 89 12 54 75 50 49 59 87</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 58 30</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+</project>
+
+

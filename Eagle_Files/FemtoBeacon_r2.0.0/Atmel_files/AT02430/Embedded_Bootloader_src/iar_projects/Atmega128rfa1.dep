@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1118583141</fileChecksum>
+  <configuration>
+    <name>Bootloader_Atmega128rfa1</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Exe\Atmega128rfa1.a90</file>
+      <file>$PROJ_DIR$\..\application\common\include\abstractSerializer.h</file>
+      <file>$TOOLKIT_DIR$\inc\ioavr.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\eepromLoader.pbi</file>
+      <file>$PROJ_DIR$\..\application\avr\include\flashLoader.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\uartSerializer.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\bitdefinitions\iom128rfa1.inc</file>
+      <file>$PROJ_DIR$\..\application\avr\src\twiSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\avr\src\uartSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\avr\src\usbFifoSerializer.c</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\srecParser.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\abstractSerializer.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\twiSerializer.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\eepromLoader.r90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdarg.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\inavr.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\iomacro.h</file>
+      <file>$TOOLKIT_DIR$\inc\iom128rfa1.h</file>
+      <file>$PROJ_DIR$\..\application\common\include\srecParser.h</file>
+      <file>$PROJ_DIR$\..\application\common\src\abstractSerializer.c</file>
+      <file>$PROJ_DIR$\..\application\common\include\types.h</file>
+      <file>$PROJ_DIR$\..\application\common\src\bootloader.c</file>
+      <file>$PROJ_DIR$\..\application\common\src\srecParser.c</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\hardwareInit.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\flashLoader.pbi</file>
+      <file>$PROJ_DIR$\..\application\avr\include\sp_driver.h</file>
+      <file>$PROJ_DIR$\..\application\avr\include\timerInterval.h</file>
+      <file>$PROJ_DIR$\..\application\avr\include\twiSerializer.h</file>
+      <file>$PROJ_DIR$\..\application\avr\include\uartSerializer.h</file>
+      <file>$PROJ_DIR$\..\application\avr\src\calibMeasurement.s90</file>
+      <file>$PROJ_DIR$\..\application\avr\src\eepromLoader.c</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\bootloader.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\bootloader.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\sp_driver.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\twiParser.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\twiParser.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\Atmega128rfa1.pbd</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\uartSerializer.r90</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\pgmspace.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\flashLoader.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Exe\Bootloader.hex</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\srecParser.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\usbFifoSerializer.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\hardwareInit.pbi</file>
+      <file>$PROJ_DIR$\..\application\common\include\bootStructure.h</file>
+      <file>$PROJ_DIR$\..\application\common\include\twiParser.h</file>
+      <file>$PROJ_DIR$\..\application\common\src\twiParser.c</file>
+      <file>$PROJ_DIR$\..\configuration.h</file>
+      <file>$PROJ_DIR$\..\application\avr\include\eepromLoader.h</file>
+      <file>$PROJ_DIR$\..\application\avr\include\hardwareInit.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\usbFifoSerializer.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\calibMeasurement.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\abstractSerializer.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\twiSerializer.pbi</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\eepromLoader.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\flashLoader.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\abstractSerializer.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\twiSerializer.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\Bootloader.map</file>
+      <file>$PROJ_DIR$\..\linkerScr\atmega128rfa1.xcl</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\hardwareInit.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\srecParser.lst</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-n.h</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\bootloader.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\uartSerializer.lst</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dlAVR-3s-ec_mul-n.r90</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\usbFifoSerializer.lst</file>
+      <file>$PROJ_DIR$\Bootloader_Atmega128rfa1\List\twiParser.lst</file>
+      <file>$PROJ_DIR$\..\application\avr\src\flashLoader.c</file>
+      <file>$PROJ_DIR$\..\application\avr\src\hardwareInit.c</file>
+      <file>$PROJ_DIR$\..\application\avr\src\sp_driver.s90</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdbool.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 52 70 1</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\avr\src\twiSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 69 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 36 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 57 34 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\avr\src\uartSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 76 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 37</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 20 21 14 18 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 37</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\avr\src\usbFifoSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 78 54</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\abstractSerializer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 68 64</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 2 61 37 36 57 35 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 20 21 14 18 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 2 61 35 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\bootloader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 75 41</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 56 27 2 61 37 36 57</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 20 21 14 18 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 56 27 2 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\srecParser.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 73 53</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 2 61 37 36 57 56 27 5 60</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 20 21 14 18 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 2 61 56 27 5 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\avr\src\calibMeasurement.s90</name>
+      <outputs>
+        <tool>
+          <name>AAVR</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\avr\src\eepromLoader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 66 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 56 27 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 20 21 14 18 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 56 27 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Bootloader_Atmega128rfa1\Obj\Atmega128rfa1.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 15 40 4 33 55 11 44 65 6 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Bootloader_Atmega128rfa1\Exe\Bootloader.hex</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 70 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 71 64 41 63 17 51 32 42 53 43 16 46 54 77</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\common\src\twiParser.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 79 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 2 61 37 36 57</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\avr\src\flashLoader.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 67 51</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 56 27 34 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 20 21 14 18 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 56 27 34 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\avr\src\hardwareInit.c</name>
+      <outputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 72 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCAVR</name>
+          <file> 59 29 20 21 14 18 74 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 61</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 20 21 14 18 13 12 0 48 50 83 22 47 3 26 25 7 49 23 24 19 61</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\application\avr\src\sp_driver.s90</name>
+      <outputs>
+        <tool>
+          <name>AAVR</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+</project>
+
+
