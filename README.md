@@ -61,17 +61,20 @@ See https://github.com/femtoio/BOSSA
 
 
 ## Setup
-You can symlink the femto-beacon examples to your Eclipse workspace folder. For example, if you want to make the 'samr21-blinky' project availabe in Eclipse:
+Download the Atmel Software Framework into the libraries/ folder before compiling examples.
+If you have the Atmel Software framework files in a directory named `asf-3.21.0`, then you would need it as `femto-io/libraries/asf-3.21.0`
+
+Symlink the boards/femtobeacon folder into your copy of the ASF framework (libraries/asf-x.xx.x/sam0/boards/femtobeacon).
+Symlink the femtoIO MPU9250 library folder into your copy of the ASF framework (libraries/asf-x.xx.x/thirdparty/MPU9250).
+
+You can symlink the femto-beacon examples to your Eclipse workspace folder. For example, if you want to make the 'sam-r21-blink' project availabe in Eclipse:
 
 ```
 # Use ~ or full path! Do not use ./
-ln -s /path/to/femto-beacon/examples/samr21-blinky /path/to/eclipse/workspace/samr21-blinky
+ln -s /path/to/femto-beacon/examples/sam-r21-blink /path/to/eclipse/workspace/sam-r21-blink
 ```
 
 ...Refresh the Project Explorer panel to view it as a project.
-
-Download the Atmel Software Framework into the libraries/ folder before compiling examples.
-For example, if you have the Atmel Software framework files in a directory named `asf-3.21.0`, then you would need it as `libraries/asf-3.21.0`
 
 Update the example's config.mk file accordingly
 ```
@@ -80,3 +83,11 @@ PRJ_PATH = ../../libraries/asf-3.21.0
 ```
 
 Then, open up the example in Eclipse, and build. This should generate a BIN file you can then upload to your board using the BOSSA shell.
+
+## How to create a new project
+Create a new C project in Eclipse, symlink the libraries/ folder from femto-beacon/libraries into your project's directory.
+```
+cd MyNewProject/
+ln -s /path/to/femto-beacon/libraries libraries
+```
+You can then copy/modify the asf.h, config.mk, and Makefile into your new project. Remember to modify config.mk to include the paths of the ASF modules you wish to use.
