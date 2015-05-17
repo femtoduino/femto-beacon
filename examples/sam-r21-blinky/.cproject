@@ -37,7 +37,7 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="samr21-blinky.null.771507582" name="samr21-blinky"/>
+		<project id="sam-r21-blin.null.771507582" name="sam-r21-blink"/>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>

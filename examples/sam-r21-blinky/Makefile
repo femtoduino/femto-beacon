@@ -48,5 +48,5 @@
 
 # Include the common Makefile, which will also include the project specific
 # config.mk file.
-MAKEFILE_PATH = sam0/utils/make/Makefile.sam.in
+MAKEFILE_PATH = libraries/asf-3.21.0/sam0/utils/make/Makefile.sam.in
 include $(MAKEFILE_PATH)

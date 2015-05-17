@@ -1,5 +1,6 @@
 #
 # Copyright (c) 2011 Atmel Corporation. All rights reserved.
+# This file modified by A. Albino of Femto.io
 #
 # \asf_license_start
 #
@@ -37,7 +38,12 @@
 #
 
 # Path to top level ASF directory relative to this project directory.
-PRJ_PATH = ../../libraries/asf-3.21.0
+# NOTE, you must download or checkout the Atmel Software Framework into
+# the libraries directory!
+#
+# You can sym link the libraries folder into your project. That way, you don't 
+# need to repeatedly copy/paste the same files all over the place.
+PRJ_PATH = libraries/asf-3.21.0
 
 # Target CPU architecture: cortex-m3, cortex-m4
 ARCH = cortex-m0plus
@@ -47,37 +53,52 @@ PART = samr21e18a
 
 # Application target name. Given with suffix .a for library and .elf for a
 # standalone application.
-TARGET_FLASH = led_toggle_flash.elf
-TARGET_SRAM = led_toggle_sram.elf
+TARGET_FLASH = sam_r21_blink_flash.elf
+TARGET_SRAM = sam_r21_blink_sram.elf
 
 # List of C source files.
-CSRCS = led_toggle.c                                      \
+CSRCS = sam_r21_blink.c \
        common/utils/interrupt/interrupt_sam_nvic.c        \
        common2/services/delay/sam0/systick_counter.c      \
-       sam0/boards/femtobeacon/board_init.c                  \
+       sam0/boards/femtobeacon/board_init.c               \
+       sam0/drivers/extint/extint_callback.c              \
+       sam0/drivers/extint/extint_sam_d_r/extint.c        \
        sam0/drivers/port/port.c                           \
+       sam0/drivers/sercom/sercom.c                       \
+       sam0/drivers/sercom/sercom_interrupt.c             \
+       sam0/drivers/sercom/usart/usart.c                  \
+       sam0/drivers/sercom/usart/usart_interrupt.c        \
        sam0/drivers/system/clock/clock_samd21_r21/clock.c \
        sam0/drivers/system/clock/clock_samd21_r21/gclk.c  \
        sam0/drivers/system/interrupt/system_interrupt.c   \
+       sam0/drivers/system/pinmux/pinmux.c                \
        sam0/drivers/system/system.c                       \
+       sam0/drivers/tc/tc_interrupt.c                     \
+       sam0/drivers/tc/tc_sam_d_r/tc.c                    \
        sam0/utils/cmsis/samr21/source/gcc/startup_samr21.c \
        sam0/utils/cmsis/samr21/source/system_samr21.c     \
-       sam0/utils/syscalls/gcc/syscalls.c
+       sam0/utils/stdio/read.c                            \
+       sam0/utils/stdio/write.c                           \
+       sam0/utils/syscalls/gcc/syscalls.c                 
 
 # List of assembler source files.
 ASSRCS = 
 
 INC_PATH = \
        common/boards                                      \
+       common/services/serial                             \
        common/utils                                       \
-       common/services/ioport                             \
-       common/services/ioport/sam0                        \
        common2/services/delay                             \
        common2/services/delay/sam0                        \
        sam0/boards                                        \
        sam0/boards/femtobeacon                            \
+       sam0/boards/femtobeacon/board_config               \
+       sam0/drivers/extint                                \
+       sam0/drivers/extint/extint_sam_d_r                 \
        sam0/drivers/port                                  \
        sam0/drivers/sercom                                \
+       sam0/drivers/sercom/usart                          \
+       sam0/drivers/sercom/i2c                            \
        sam0/drivers/sercom/spi                            \
        sam0/drivers/system                                \
        sam0/drivers/system/clock                          \
@@ -89,14 +110,16 @@ INC_PATH = \
        sam0/drivers/system/power/power_sam_d_r            \
        sam0/drivers/system/reset                          \
        sam0/drivers/system/reset/reset_sam_d_r            \
+       sam0/drivers/tc                                    \
+       sam0/drivers/tc/tc_sam_d_r                         \
        sam0/utils                                         \
        sam0/utils/cmsis/samr21/include                    \
        sam0/utils/cmsis/samr21/source                     \
        sam0/utils/header_files                            \
        sam0/utils/preprocessor                            \
+       sam0/utils/stdio/stdio_serial                      \
        thirdparty/CMSIS/Include                           \
-       thirdparty/CMSIS/Lib/GCC                           #\
-#       sam0/applications/led_toggle/femtousb/gcc
+       thirdparty/CMSIS/Lib/GCC                           
 
 # Additional search paths for libraries.
 LIB_PATH =  \
@@ -111,8 +134,8 @@ LINKER_SCRIPT_FLASH = sam0/utils/linker_scripts/samr21/gcc/samr21e18a_flash.ld
 LINKER_SCRIPT_SRAM  = sam0/utils/linker_scripts/samr21/gcc/samr21e18a_sram.ld
 
 # Path relative to top level directory pointing to a linker script.
-DEBUG_SCRIPT_FLASH = sam0/boards/femtobeacon/debug_scripts/gcc/femtousb_flash.gdb
-DEBUG_SCRIPT_SRAM  = sam0/boards/femtobeacon/debug_scripts/gcc/femtousb_sram.gdb
+DEBUG_SCRIPT_FLASH = sam0/boards/femtobeacon/debug_scripts/gcc/femtobeacon_flash.gdb
+DEBUG_SCRIPT_SRAM  = sam0/boards/femtobeacon/debug_scripts/gcc/femtobeacon_sram.gdb
 
 # Project type parameter: all, sram or flash
 PROJECT_TYPE        = flash
@@ -144,13 +167,16 @@ CFLAGS =
 #   BOARD      Target board in use, see boards/board.h for a list.
 #   EXT_BOARD  Optional extension board in use, see boards/board.h for a list.
 CPPFLAGS = \
-       -D SYSTICK_MODE                                    \
        -D ARM_MATH_CM0=true                               \
        -D BOARD=FEMTOBEACON                               \
+       -D EXTINT_CALLBACK_MODE=true                       \
+       -D SYSTICK_MODE                                    \
+       -D TC_ASYNC=true                                   \
+       -D USART_CALLBACK_MODE=true                        \
        -D __SAMR21E18A__
 
-# Extra flags to use when linking
-LDFLAGS =-Wl,--section-start=.text=0x2000 \
+# Extra flags to use when linking. SAM-BA Bootloader, (USB only) is 4k.
+LDFLAGS =-Wl,--section-start=.text=0x1000 \
 
 # Pre- and post-build commands
 PREBUILD_CMD = 
