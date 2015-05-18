@@ -4,7 +4,13 @@
 *.obj
 *.elf
 
+# Other compile time junk
 *.d
+*.bin
+*.lss
+*.map
+*.sym
+
 
 # Precompiled Headers
 *.gch
