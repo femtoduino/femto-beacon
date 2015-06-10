@@ -1,11 +1,11 @@
 $HEADER
 GENCAD 1.4
 CADID "CADSOFTWARE=EAGLE 6.5"
-DRAWING "/home/aalbino/Projects/femto-usb/FemtoBeacon_r2.0.0/femtoBeacon_r2.0.0.brd"
+DRAWING "/home/aalbino/Projects/femto-beacon/Eagle_Files/FemtoBeacon_r2.0.0/femtoBeacon_r2.0.0.brd"
 UNITS MM
 ORIGIN 0 0
 USER "Created by GENCAD.ULP, Version 1.30 (C) 8/2001 GenRad Europe Ltd."
-USER "Created on 01.03.2015 02:12:19
+USER "Created on 27.04.2015 18:23:30
 $ENDHEADER
 
 $BOARD
