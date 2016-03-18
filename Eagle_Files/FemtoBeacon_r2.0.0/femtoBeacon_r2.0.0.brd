@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="yes" active="yes"/>
@@ -252,43 +252,43 @@
 </package>
 <package name="USB_MICROB_PACKAGE">
 <description>This is the hirose ZX62-B-5PA(11) MICRO-USB B Type female connection.</description>
-<smd name="1" x="-1.3" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="2" x="-0.64" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="3" x="0" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="4" x="0.66" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="5" x="1.3" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="6" x="-3.1" y="-0.8" dx="2.1" dy="1.6" layer="1"/>
-<smd name="11" x="3.1" y="-0.8" dx="2.1" dy="1.6" layer="1"/>
-<smd name="7" x="-4" y="-2.95" dx="1.6" dy="1" layer="1"/>
-<smd name="10" x="4" y="-2.95" dx="1.6" dy="1" layer="1"/>
-<smd name="8" x="-1.2" y="-3.35" dx="1.9" dy="1.9" layer="1"/>
-<smd name="9" x="1.2" y="-3.35" dx="1.9" dy="1.9" layer="1"/>
+<smd name="1" x="-1.3" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="2" x="-0.64" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="3" x="0" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="4" x="0.66" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="5" x="1.3" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="6" x="-3.1" y="1.35" dx="2.1" dy="1.6" layer="1"/>
+<smd name="11" x="3.1" y="1.35" dx="2.1" dy="1.6" layer="1"/>
+<smd name="7" x="-4" y="-0.8" dx="1.6" dy="1" layer="1"/>
+<smd name="10" x="4" y="-0.8" dx="1.6" dy="1" layer="1"/>
+<smd name="8" x="-1.2" y="-1.2" dx="1.9" dy="1.9" layer="1"/>
+<smd name="9" x="1.2" y="-1.2" dx="1.9" dy="1.9" layer="1"/>
 <polygon width="0.127" layer="1">
-<vertex x="-4.8" y="-2"/>
-<vertex x="-4.8" y="-3.4"/>
-<vertex x="-3.1" y="-3.8"/>
-<vertex x="-3.1" y="-2"/>
+<vertex x="-4.8" y="0.15"/>
+<vertex x="-4.8" y="-1.25"/>
+<vertex x="-3.1" y="-1.65"/>
+<vertex x="-3.1" y="0.15"/>
 </polygon>
 <polygon width="0.127" layer="1">
-<vertex x="4.8" y="-2"/>
-<vertex x="4.8" y="-3.4"/>
-<vertex x="3.1" y="-3.8"/>
-<vertex x="3.1" y="-2"/>
+<vertex x="4.8" y="0.15"/>
+<vertex x="4.8" y="-1.25"/>
+<vertex x="3.1" y="-1.65"/>
+<vertex x="3.1" y="0.15"/>
 </polygon>
-<rectangle x1="-4.9022" y1="-2.3622" x2="-3.0988" y2="-1.905" layer="29"/>
+<rectangle x1="-4.9022" y1="-0.2122" x2="-3.0988" y2="0.245" layer="29"/>
 <polygon width="0.0254" layer="29">
-<vertex x="-3.0988" y="-3.5306"/>
-<vertex x="-3.0988" y="-3.8608"/>
-<vertex x="-4.9022" y="-3.556"/>
+<vertex x="-3.0988" y="-1.3806"/>
+<vertex x="-3.0988" y="-1.7108"/>
+<vertex x="-4.9022" y="-1.406"/>
 </polygon>
 <polygon width="0.0254" layer="29">
-<vertex x="3.0988" y="-3.5306"/>
-<vertex x="3.0988" y="-3.8608"/>
-<vertex x="4.9022" y="-3.556"/>
+<vertex x="3.0988" y="-1.3806"/>
+<vertex x="3.0988" y="-1.7108"/>
+<vertex x="4.9022" y="-1.406"/>
 </polygon>
-<rectangle x1="3.0988" y1="-2.3622" x2="4.9022" y2="-1.905" layer="29"/>
-<rectangle x1="-3.1242" y1="-3.8862" x2="-2.9972" y2="-1.905" layer="29"/>
-<rectangle x1="2.9972" y1="-3.8862" x2="3.1242" y2="-1.905" layer="29"/>
+<rectangle x1="3.0988" y1="-0.2122" x2="4.9022" y2="0.245" layer="29"/>
+<rectangle x1="-3.1242" y1="-1.7362" x2="-2.9972" y2="0.245" layer="29"/>
+<rectangle x1="2.9972" y1="-1.7362" x2="3.1242" y2="0.245" layer="29"/>
 </package>
 </packages>
 </library>
@@ -338,13 +338,13 @@
 <library name="MCP1700T-3302E_TT">
 <packages>
 <package name="MCP1700T-3302E/TT">
-<wire x1="0" y1="0" x2="2.9" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="1.3" width="0.127" layer="21"/>
-<wire x1="0" y1="1.3" x2="2.9" y2="1.3" width="0.127" layer="21"/>
-<wire x1="2.9" y1="0" x2="2.9" y2="1.3" width="0.127" layer="21"/>
-<smd name="GND" x="0.5" y="-0.6" dx="1" dy="0.5" layer="1" rot="R90"/>
-<smd name="VOUT" x="2.4" y="-0.6" dx="1" dy="0.5" layer="1" rot="R90"/>
-<smd name="VIN" x="1.45" y="1.9" dx="1" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-1.45" y1="-0.65" x2="1.45" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="0.65" x2="1.45" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.127" layer="21"/>
+<smd name="GND" x="-0.95" y="-1.25" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="VOUT" x="0.95" y="-1.25" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="VIN" x="0" y="1.25" dx="1" dy="0.5" layer="1" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -409,15 +409,15 @@
 <library name="crystals">
 <packages>
 <package name="TSX-3225">
-<smd name="4" x="0" y="0" dx="1.4" dy="1.15" layer="1"/>
-<smd name="3" x="2.2" y="0" dx="1.4" dy="1.15" layer="1"/>
-<smd name="2" x="2.2" y="-1.6" dx="1.4" dy="1.15" layer="1"/>
-<smd name="1" x="0" y="-1.6" dx="1.4" dy="1.15" layer="1"/>
-<text x="1" y="-2.8" size="0.4064" layer="27" font="vector" ratio="16" align="top-center">&gt;Value</text>
-<text x="1.1" y="1" size="0.6096" layer="25" font="vector" ratio="16" align="bottom-center">&gt;Name</text>
-<circle x="-0.8" y="-2.25" radius="0.05" width="0.1" layer="21"/>
-<wire x1="-0.8" y1="-2.3" x2="-0.7" y2="-2.3" width="0.1" layer="21"/>
-<wire x1="-0.85" y1="-2.25" x2="-0.85" y2="-2.15" width="0.1" layer="21"/>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<text x="-0.1" y="-2" size="0.4064" layer="27" font="vector" ratio="16" align="top-center">&gt;Value</text>
+<text x="0" y="1.8" size="0.6096" layer="25" font="vector" ratio="16" align="bottom-center">&gt;Name</text>
+<circle x="-1.9" y="-1.45" radius="0.05" width="0.1" layer="21"/>
+<wire x1="-1.9" y1="-1.5" x2="-1.8" y2="-1.5" width="0.1" layer="21"/>
+<wire x1="-1.95" y1="-1.45" x2="-1.95" y2="-1.35" width="0.1" layer="21"/>
 </package>
 </packages>
 </library>
@@ -624,6 +624,9 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -728,7 +731,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DIGIKEY_PART" x="11.5062" y="15.6464" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="BTN" library="femtoduino" package="SPST_SMD" value="DNP" x="14.2502" y="3.6584" rot="R270"/>
-<element name="LDO_VREG" library="MCP1700T-3302E_TT" package="MCP1700T-3302E/TT" value="MCP1700T-3302E/TT" x="10.2862" y="1.6248" rot="R90"/>
+<element name="LDO_VREG" library="MCP1700T-3302E_TT" package="MCP1700T-3302E/TT" value="MCP1700T-3302E/TT" x="9.6362" y="3.0748" rot="R90"/>
 <element name="C5" library="parts_0201" package="PART" value="2.2uF" x="11.1252" y="3.048" smashed="yes" rot="R180"/>
 <element name="C6" library="parts_0201" package="PART" value="2.2uF" x="8.2796" y="3.8346" smashed="yes" rot="R180"/>
 <element name="C7" library="parts_0201" package="PART" value="0.47uF" x="8.2796" y="2.3106" smashed="yes" rot="R180"/>
@@ -776,11 +779,11 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C10" library="parts_0201" package="PART" value="0.1uF" x="6.7564" y="3.4036" smashed="yes" rot="R180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="6.7564" y="2.7178" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="TSX-3225" library="crystals" package="TSX-3225" value="26MHz" x="3.7846" y="4.6228" smashed="yes" rot="R45"/>
-<element name="C3" library="parts_0201" package="PART" value="9pF" x="3.3274" y="5.7912" smashed="yes" rot="R45">
+<element name="TSX-3225_CRYSTAL" library="crystals" package="TSX-3225" value="12MHz" x="5.1562" y="4.8514" smashed="yes" rot="R45"/>
+<element name="C3" library="parts_0201" package="PART" value="10pF" x="3.3274" y="5.7912" smashed="yes" rot="R45">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="3.3274" y="5.7912" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
-<element name="C4" library="parts_0201" package="PART" value="9pF" x="4.4196" y="6.8072" smashed="yes" rot="R225">
+<element name="C4" library="parts_0201" package="PART" value="10pF" x="4.4196" y="6.8072" smashed="yes" rot="R225">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="4.4196" y="6.8072" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="ANT1" library="bar_antenna" package="ANT_BAR" value="PULSE_ANT_2.4GHZ" x="1.143" y="8.9662" rot="R90"/>
@@ -794,7 +797,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C13" library="parts_0201" package="PART" value="DNP" x="3.0734" y="7.3914" smashed="yes" rot="R90">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="3.0734" y="7.3914" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="SER3628CT-ND" library="crystals" package="TSX-3225" value="16MHz" x="7.6708" y="15.5956" smashed="yes"/>
+<element name="SER3628CT-ND" library="crystals" package="TSX-3225" value="16MHz" x="8.7708" y="14.7956" smashed="yes"/>
 <element name="C14" library="parts_0201" package="PART" value="9pF" x="6.3246" y="15.0368" smashed="yes" rot="R270">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="6.3246" y="15.0368" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -811,7 +814,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C32" library="parts_0201" package="PART" value="0.1uF" x="16.3322" y="5.9182" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="16.3322" y="5.9182" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="U$8" library="femtoduino" package="USB_MICROB_PACKAGE" value="USB_MICROB" x="13.0302" y="9.017" rot="R90"/>
+<element name="USB" library="femtoduino" package="USB_MICROB_PACKAGE" value="USB_MICROB" x="15.1802" y="9.017" rot="R90"/>
 <element name="FB1" library="microbuilder" package="_0603MP" value="" x="11.5824" y="5.0038" smashed="yes" rot="R180">
 <attribute name="VALUE" x="12.5349" y="5.9563" size="0.4064" layer="27" ratio="10" rot="R180"/>
 </element>
@@ -948,12 +951,12 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA14/XIN_MC">
 <contactref element="U$76" pad="15"/>
-<contactref element="TSX-3225" pad="1"/>
+<contactref element="TSX-3225_CRYSTAL" pad="1"/>
 <contactref element="C3" pad="2"/>
 <wire x1="3.968915625" y1="6.038684375" x2="5.4864" y2="4.5212" width="0.1524" layer="1"/>
 <wire x1="5.4864" y1="4.5212" x2="5.4864" y2="4.2164" width="0.1524" layer="1"/>
 <wire x1="5.4864" y1="4.2164" x2="4.91596875" y2="3.64596875" width="0.1524" layer="1"/>
-<wire x1="4.91596875" y1="3.64596875" x2="4.91596875" y2="3.491428125" width="0.1524" layer="1"/>
+<wire x1="4.91596875" y1="3.64596875" x2="4.944065625" y2="3.507896875" width="0.1524" layer="1"/>
 <wire x1="5.1562" y1="8.673" x2="4.5074" y2="8.673" width="0.1524" layer="1"/>
 <wire x1="4.5074" y1="8.673" x2="4.318" y2="8.4836" width="0.1524" layer="1"/>
 <wire x1="4.318" y1="8.4836" x2="4.318" y2="7.9248" width="0.1524" layer="1"/>
@@ -970,11 +973,11 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="PA15/XOUT_MC">
 <contactref element="U$76" pad="16"/>
 <contactref element="U$39" pad="P$1"/>
-<contactref element="TSX-3225" pad="3"/>
+<contactref element="TSX-3225_CRYSTAL" pad="3"/>
 <contactref element="C4" pad="1"/>
 <wire x1="5.1562" y1="8.173" x2="5.1562" y2="7.5438" width="0.1397" layer="1"/>
 <wire x1="5.1562" y1="7.5438" x2="4.667084375" y2="7.054684375" width="0.1397" layer="1"/>
-<wire x1="5.340234375" y1="6.178434375" x2="5.3086" y2="6.1468" width="0.1397" layer="1"/>
+<wire x1="5.36833125" y1="6.1949" x2="5.3086" y2="6.1468" width="0.1397" layer="1"/>
 <wire x1="5.3086" y1="6.1468" x2="5.2832" y2="6.1468" width="0.1397" layer="1"/>
 <via x="5.2832" y="6.1468" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="5.2832" y1="6.1468" x2="5.2832" y2="6.43856875" width="0.1397" layer="1"/>
@@ -1041,7 +1044,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="PA24/USBDM">
 <contactref element="U$9" pad="P$1"/>
 <contactref element="U$76" pad="22"/>
-<contactref element="U$8" pad="2"/>
+<contactref element="USB" pad="2"/>
 <wire x1="8.5562" y1="7.273" x2="8.5562" y2="7.7506" width="0.1397" layer="1"/>
 <wire x1="8.5562" y1="7.7506" x2="7.7724" y2="8.4328" width="0.1397" layer="1"/>
 <via x="7.7724" y="8.4328" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -1071,7 +1074,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="PA25/USBDP">
 <contactref element="U$10" pad="P$1"/>
 <contactref element="U$76" pad="23"/>
-<contactref element="U$8" pad="3"/>
+<contactref element="USB" pad="3"/>
 <wire x1="13.7102" y1="9.017" x2="12.4714" y2="9.017" width="0.2032" layer="1"/>
 <wire x1="12.4714" y1="9.017" x2="10.922" y2="7.4676" width="0.2032" layer="1"/>
 <wire x1="10.922" y1="7.4676" x2="10.2616" y2="7.4676" width="0.2032" layer="1"/>
@@ -1235,8 +1238,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$76" pad="11"/>
 <contactref element="U$76" pad="14"/>
 <contactref element="C10" pad="2"/>
-<contactref element="TSX-3225" pad="2"/>
-<contactref element="TSX-3225" pad="4"/>
+<contactref element="TSX-3225_CRYSTAL" pad="2"/>
+<contactref element="TSX-3225_CRYSTAL" pad="4"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="2"/>
 <contactref element="U$12" pad="5"/>
@@ -1264,8 +1267,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.048" y1="7.7668" x2="3.0734" y2="7.7414" width="0.2032" layer="1"/>
 <wire x1="3.048" y1="8.6758" x2="3.698" y2="8.6758" width="0.2032" layer="1"/>
 <wire x1="4.2672" y1="14.9606" x2="4.2672" y2="14.1224" width="0.2032" layer="1"/>
-<via x="3.7846" y="4.6228" extent="1-16" drill="0.2032" diameter="0.508"/>
-<via x="6.471603125" y="5.0470625" extent="1-16" drill="0.2032" diameter="0.508"/>
+<via x="3.812696875" y="4.639265625" extent="1-16" drill="0.2032" diameter="0.508"/>
+<via x="6.4997" y="5.06353125" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="5.1562" y1="9.173" x2="5.178" y2="9.1948" width="0.1397" layer="1"/>
 <wire x1="5.178" y1="9.1948" x2="6.4008" y2="9.1948" width="0.1524" layer="1"/>
 <wire x1="6.4008" y1="9.1948" x2="6.6548" y2="9.4488" width="0.1524" layer="1"/>
@@ -1279,10 +1282,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.8862" y1="7.0358" x2="4.1721125" y2="6.7498875" width="0.1397" layer="1"/>
 <wire x1="4.1721125" y1="6.7498875" x2="4.1721125" y2="6.5597125" width="0.1397" layer="1"/>
 <wire x1="3.0799125" y1="5.5437125" x2="3.7846" y2="4.839025" width="0.1397" layer="1"/>
-<wire x1="3.7846" y1="4.839025" x2="3.7846" y2="4.6228" width="0.1397" layer="1"/>
-<wire x1="3.7846" y1="4.6228" x2="4.572" y2="4.5212" width="0.1397" layer="16"/>
-<wire x1="4.572" y1="4.5212" x2="6.471603125" y2="5.0470625" width="0.1397" layer="16" curve="45.652032"/>
-<wire x1="6.471603125" y1="5.0470625" x2="6.7171375" y2="5.0470625" width="0.1397" layer="1"/>
+<wire x1="3.7846" y1="4.839025" x2="3.812696875" y2="4.639265625" width="0.1397" layer="1"/>
+<wire x1="3.812696875" y1="4.639265625" x2="4.572" y2="4.5212" width="0.1397" layer="16"/>
+<wire x1="4.572" y1="4.5212" x2="6.4997" y2="5.06353125" width="0.1397" layer="16" curve="45.652032"/>
+<wire x1="6.4997" y1="5.06353125" x2="6.7171375" y2="5.0470625" width="0.1397" layer="1"/>
 <wire x1="6.7171375" y1="5.0470625" x2="7.9296" y2="3.8346" width="0.1397" layer="1"/>
 <via x="8.7312" y="5.0157" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="8.7312" y1="5.0157" x2="8.6804" y2="5.0292" width="0.1397" layer="16"/>
@@ -1294,7 +1297,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.6804" y1="5.5436" x2="8.5344" y2="5.6896" width="0.1397" layer="1"/>
 <wire x1="8.5344" y1="5.6896" x2="8.382" y2="5.6896" width="0.1397" layer="1"/>
 <wire x1="8.382" y1="5.6896" x2="7.114140625" y2="5.6896" width="0.1397" layer="1"/>
-<wire x1="7.114140625" y1="5.6896" x2="6.471603125" y2="5.0470625" width="0.1397" layer="1"/>
+<wire x1="7.114140625" y1="5.6896" x2="6.4997" y2="5.06353125" width="0.1397" layer="1"/>
 <wire x1="8.7066" y1="6.3246" x2="8.7066" y2="6.0142" width="0.1397" layer="1"/>
 <wire x1="8.7066" y1="6.0142" x2="8.382" y2="5.6896" width="0.1397" layer="1"/>
 <wire x1="10.8204" y1="5.08" x2="10.7696" y2="5.0292" width="0.1397" layer="1"/>
@@ -1538,7 +1541,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C6" pad="1"/>
 <contactref element="C7" pad="1"/>
 <contactref element="U$1" pad="P$1"/>
-<contactref element="U$8" pad="1"/>
+<contactref element="USB" pad="1"/>
 <wire x1="8.6296" y1="2.3106" x2="8.6296" y2="1.8732" width="0.1397" layer="1"/>
 <wire x1="8.6296" y1="1.8732" x2="8.4836" y2="1.7272" width="0.1397" layer="1"/>
 <wire x1="8.4836" y1="1.7272" x2="7.5692" y2="1.7272" width="0.1397" layer="1"/>
@@ -1714,13 +1717,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="13.366" y1="3.302" x2="15.9822" y2="5.9182" width="0.254" layer="16"/>
 </signal>
 <signal name="N$5">
-<contactref element="U$8" pad="6"/>
-<contactref element="U$8" pad="11"/>
-<contactref element="U$8" pad="7"/>
-<contactref element="U$8" pad="8"/>
-<contactref element="U$8" pad="9"/>
-<contactref element="U$8" pad="10"/>
-<contactref element="U$8" pad="5"/>
+<contactref element="USB" pad="6"/>
+<contactref element="USB" pad="11"/>
+<contactref element="USB" pad="7"/>
+<contactref element="USB" pad="8"/>
+<contactref element="USB" pad="9"/>
+<contactref element="USB" pad="10"/>
+<contactref element="USB" pad="5"/>
 <contactref element="FB1" pad="1"/>
 <wire x1="12.3444" y1="5.0038" x2="13.2726" y2="5.0038" width="0.2032" layer="1"/>
 <wire x1="13.2726" y1="5.0038" x2="13.8302" y2="5.917" width="0.2032" layer="1"/>
@@ -2068,9 +2071,14 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,6593870d0b03e99d"/>
 <approved hash="19,1,78d4aafadcc58329"/>
 <approved hash="19,1,f79fa158eae1485a"/>
+<approved hash="19,1,6333e0d3e3946074"/>
+<approved hash="19,1,f147013f0e53fe2b"/>
+<approved hash="4,1,9108815b623569aa"/>
+<approved hash="4,1,63e61aa6ea0fffd4"/>
 <approved hash="4,1,02f150db7374c9ff"/>
 <approved hash="4,1,2927b6bcac01ef48"/>
 <approved hash="4,1,4dc2e51ca9de3a39"/>
+<approved hash="4,1,45e14de16d1aa3d0"/>
 <approved hash="4,1,064e9c831b1b71ea"/>
 <approved hash="4,1,cc8ff3c6bff31b60"/>
 <approved hash="4,1,04309c98091a0cb7"/>
@@ -2087,6 +2095,35 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="4,1,2c075bd90db1d616"/>
 <approved hash="4,1,de8ecc0b8ab9147f"/>
 <approved hash="4,1,4287bfa2ba83db73"/>
+<approved hash="4,1,237c416141fffc7a"/>
+<approved hash="4,1,ab1f6ca676832e71"/>
+<approved hash="4,1,9acc3ccec8203a06"/>
+<approved hash="4,1,a01a474abf7dd2d6"/>
+<approved hash="4,1,e5be41292a36cb43"/>
+<approved hash="4,1,d2645cb24bf8f0a8"/>
+<approved hash="5,1,e699bd853b0504c4"/>
+<approved hash="19,1,f03854585077f417"/>
+<approved hash="19,1,dede3d45b14052db"/>
+<approved hash="19,1,f8d66c75f69f9ea2"/>
+<approved hash="19,1,07010d210e640444"/>
+<approved hash="19,1,7aca02646aadde8d"/>
+<approved hash="19,1,c4202d58fea19e91"/>
+<approved hash="19,1,0ffca31ca2150ef5"/>
+<approved hash="19,1,9c79dc19dc3a9c5a"/>
+<approved hash="19,1,205808780a062226"/>
+<approved hash="19,1,113a49afb10e9a91"/>
+<approved hash="19,1,de1d5b2175524c85"/>
+<approved hash="19,1,2cb54419582330ff"/>
+<approved hash="19,1,329297b8543e4dff"/>
+<approved hash="19,1,cc0030338604a6ca"/>
+<approved hash="19,1,cd9ed22eed588b13"/>
+<approved hash="19,1,b9c05a05d60635c3"/>
+<approved hash="19,1,651687880b86e918"/>
+<approved hash="19,1,edd9a85a345d71de"/>
+<approved hash="19,1,84baa65a5950fe43"/>
+<approved hash="19,1,38a47deae1e9a4a7"/>
+<approved hash="5,1,7f2fd1b02eb9555a"/>
+<approved hash="19,1,1f785f185e1c1e7c"/>
 <approved hash="4,2,02f150db7374c9ff"/>
 <approved hash="4,2,2927b6bcac01ef48"/>
 <approved hash="4,2,4dc2e51ca9de3a39"/>
@@ -2144,38 +2181,6 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="4,16,2c075bd90db1d616"/>
 <approved hash="4,16,de8ecc0b8ab9147f"/>
 <approved hash="4,16,4287bfa2ba83db73"/>
-<approved hash="4,1,9108815b623569aa"/>
-<approved hash="4,1,63e61aa6ea0fffd4"/>
-<approved hash="4,1,45e14de16d1aa3d0"/>
-<approved hash="4,1,237c416141fffc7a"/>
-<approved hash="4,1,ab1f6ca676832e71"/>
-<approved hash="4,1,9acc3ccec8203a06"/>
-<approved hash="4,1,a01a474abf7dd2d6"/>
-<approved hash="4,1,e5be41292a36cb43"/>
-<approved hash="4,1,d2645cb24bf8f0a8"/>
-<approved hash="5,1,e699bd853b0504c4"/>
-<approved hash="19,1,f03854585077f417"/>
-<approved hash="19,1,dede3d45b14052db"/>
-<approved hash="19,1,f8d66c75f69f9ea2"/>
-<approved hash="19,1,6333e0d3e3946074"/>
-<approved hash="19,1,7aca02646aadde8d"/>
-<approved hash="19,1,c4202d58fea19e91"/>
-<approved hash="19,1,0ffca31ca2150ef5"/>
-<approved hash="19,1,9c79dc19dc3a9c5a"/>
-<approved hash="19,1,f147013f0e53fe2b"/>
-<approved hash="19,1,113a49afb10e9a91"/>
-<approved hash="19,1,de1d5b2175524c85"/>
-<approved hash="19,1,2cb54419582330ff"/>
-<approved hash="19,1,329297b8543e4dff"/>
-<approved hash="19,1,cc0030338604a6ca"/>
-<approved hash="19,1,cd9ed22eed588b13"/>
-<approved hash="19,1,b9c05a05d60635c3"/>
-<approved hash="19,1,651687880b86e918"/>
-<approved hash="19,1,edd9a85a345d71de"/>
-<approved hash="19,1,84baa65a5950fe43"/>
-<approved hash="19,1,38a47deae1e9a4a7"/>
-<approved hash="5,1,7f2fd1b02eb9555a"/>
-<approved hash="19,1,1f785f185e1c1e7c"/>
 <approved hash="19,16,de1d5b2175524c85"/>
 <approved hash="19,16,329297b8543e4dff"/>
 <approved hash="5,16,36248b70937424de"/>
@@ -2189,8 +2194,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="5,16,ce01812ee991d8a8"/>
 <approved hash="5,16,fda9a1f2f591cbc0"/>
 <approved hash="5,16,f20fbd2ee991d8a6"/>
-<approved hash="5,16,e9abb5f2f591cbc2"/>
 <approved hash="5,16,e60da92ee991d8a4"/>
+<approved hash="5,16,e9abb5f2f591cbc2"/>
 <approved hash="5,16,e5adb9f2f591cbc4"/>
 <approved hash="5,16,ea0ba52ee991d8a2"/>
 <approved hash="5,16,940531709f142cff"/>

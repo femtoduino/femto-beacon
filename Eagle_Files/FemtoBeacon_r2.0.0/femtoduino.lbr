@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="2.15" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -175,43 +175,43 @@
 </package>
 <package name="USB_MICROB_PACKAGE">
 <description>This is the hirose ZX62-B-5PA(11) MICRO-USB B Type female connection.</description>
-<smd name="1" x="-1.3" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="2" x="-0.64" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="3" x="0" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="4" x="0.66" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="5" x="1.3" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="6" x="-3.1" y="-0.8" dx="2.1" dy="1.6" layer="1"/>
-<smd name="11" x="3.1" y="-0.8" dx="2.1" dy="1.6" layer="1"/>
-<smd name="7" x="-4" y="-2.95" dx="1.6" dy="1" layer="1"/>
-<smd name="10" x="4" y="-2.95" dx="1.6" dy="1" layer="1"/>
-<smd name="8" x="-1.2" y="-3.35" dx="1.9" dy="1.9" layer="1"/>
-<smd name="9" x="1.2" y="-3.35" dx="1.9" dy="1.9" layer="1"/>
+<smd name="1" x="-1.3" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="2" x="-0.64" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="3" x="0" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="4" x="0.66" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="5" x="1.3" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="6" x="-3.1" y="1.35" dx="2.1" dy="1.6" layer="1"/>
+<smd name="11" x="3.1" y="1.35" dx="2.1" dy="1.6" layer="1"/>
+<smd name="7" x="-4" y="-0.8" dx="1.6" dy="1" layer="1"/>
+<smd name="10" x="4" y="-0.8" dx="1.6" dy="1" layer="1"/>
+<smd name="8" x="-1.2" y="-1.2" dx="1.9" dy="1.9" layer="1"/>
+<smd name="9" x="1.2" y="-1.2" dx="1.9" dy="1.9" layer="1"/>
 <polygon width="0.127" layer="1">
-<vertex x="-4.8" y="-2"/>
-<vertex x="-4.8" y="-3.4"/>
-<vertex x="-3.1" y="-3.8"/>
-<vertex x="-3.1" y="-2"/>
+<vertex x="-4.8" y="0.15"/>
+<vertex x="-4.8" y="-1.25"/>
+<vertex x="-3.1" y="-1.65"/>
+<vertex x="-3.1" y="0.15"/>
 </polygon>
 <polygon width="0.127" layer="1">
-<vertex x="4.8" y="-2"/>
-<vertex x="4.8" y="-3.4"/>
-<vertex x="3.1" y="-3.8"/>
-<vertex x="3.1" y="-2"/>
+<vertex x="4.8" y="0.15"/>
+<vertex x="4.8" y="-1.25"/>
+<vertex x="3.1" y="-1.65"/>
+<vertex x="3.1" y="0.15"/>
 </polygon>
-<rectangle x1="-4.9022" y1="-2.3622" x2="-3.0988" y2="-1.905" layer="29"/>
+<rectangle x1="-4.9022" y1="-0.2122" x2="-3.0988" y2="0.245" layer="29"/>
 <polygon width="0.0254" layer="29">
-<vertex x="-3.0988" y="-3.5306"/>
-<vertex x="-3.0988" y="-3.8608"/>
-<vertex x="-4.9022" y="-3.556"/>
+<vertex x="-3.0988" y="-1.3806"/>
+<vertex x="-3.0988" y="-1.7108"/>
+<vertex x="-4.9022" y="-1.406"/>
 </polygon>
 <polygon width="0.0254" layer="29">
-<vertex x="3.0988" y="-3.5306"/>
-<vertex x="3.0988" y="-3.8608"/>
-<vertex x="4.9022" y="-3.556"/>
+<vertex x="3.0988" y="-1.3806"/>
+<vertex x="3.0988" y="-1.7108"/>
+<vertex x="4.9022" y="-1.406"/>
 </polygon>
-<rectangle x1="3.0988" y1="-2.3622" x2="4.9022" y2="-1.905" layer="29"/>
-<rectangle x1="-3.1242" y1="-3.8862" x2="-2.9972" y2="-1.905" layer="29"/>
-<rectangle x1="2.9972" y1="-3.8862" x2="3.1242" y2="-1.905" layer="29"/>
+<rectangle x1="3.0988" y1="-0.2122" x2="4.9022" y2="0.245" layer="29"/>
+<rectangle x1="-3.1242" y1="-1.7362" x2="-2.9972" y2="0.245" layer="29"/>
+<rectangle x1="2.9972" y1="-1.7362" x2="3.1242" y2="0.245" layer="29"/>
 </package>
 <package name="LDO_REGULATOR">
 <wire x1="1.4224" y1="0.8104" x2="1.4224" y2="-0.8104" width="0.2032" layer="51"/>

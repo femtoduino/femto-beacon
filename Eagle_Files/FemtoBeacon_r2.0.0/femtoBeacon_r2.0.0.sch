@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1279,43 +1279,43 @@ chip</description>
 </package>
 <package name="USB_MICROB_PACKAGE">
 <description>This is the hirose ZX62-B-5PA(11) MICRO-USB B Type female connection.</description>
-<smd name="1" x="-1.3" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="2" x="-0.64" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="3" x="0" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="4" x="0.66" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="5" x="1.3" y="-0.68" dx="0.4" dy="1.35" layer="1"/>
-<smd name="6" x="-3.1" y="-0.8" dx="2.1" dy="1.6" layer="1"/>
-<smd name="11" x="3.1" y="-0.8" dx="2.1" dy="1.6" layer="1"/>
-<smd name="7" x="-4" y="-2.95" dx="1.6" dy="1" layer="1"/>
-<smd name="10" x="4" y="-2.95" dx="1.6" dy="1" layer="1"/>
-<smd name="8" x="-1.2" y="-3.35" dx="1.9" dy="1.9" layer="1"/>
-<smd name="9" x="1.2" y="-3.35" dx="1.9" dy="1.9" layer="1"/>
+<smd name="1" x="-1.3" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="2" x="-0.64" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="3" x="0" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="4" x="0.66" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="5" x="1.3" y="1.47" dx="0.4" dy="1.35" layer="1"/>
+<smd name="6" x="-3.1" y="1.35" dx="2.1" dy="1.6" layer="1"/>
+<smd name="11" x="3.1" y="1.35" dx="2.1" dy="1.6" layer="1"/>
+<smd name="7" x="-4" y="-0.8" dx="1.6" dy="1" layer="1"/>
+<smd name="10" x="4" y="-0.8" dx="1.6" dy="1" layer="1"/>
+<smd name="8" x="-1.2" y="-1.2" dx="1.9" dy="1.9" layer="1"/>
+<smd name="9" x="1.2" y="-1.2" dx="1.9" dy="1.9" layer="1"/>
 <polygon width="0.127" layer="1">
-<vertex x="-4.8" y="-2"/>
-<vertex x="-4.8" y="-3.4"/>
-<vertex x="-3.1" y="-3.8"/>
-<vertex x="-3.1" y="-2"/>
+<vertex x="-4.8" y="0.15"/>
+<vertex x="-4.8" y="-1.25"/>
+<vertex x="-3.1" y="-1.65"/>
+<vertex x="-3.1" y="0.15"/>
 </polygon>
 <polygon width="0.127" layer="1">
-<vertex x="4.8" y="-2"/>
-<vertex x="4.8" y="-3.4"/>
-<vertex x="3.1" y="-3.8"/>
-<vertex x="3.1" y="-2"/>
+<vertex x="4.8" y="0.15"/>
+<vertex x="4.8" y="-1.25"/>
+<vertex x="3.1" y="-1.65"/>
+<vertex x="3.1" y="0.15"/>
 </polygon>
-<rectangle x1="-4.9022" y1="-2.3622" x2="-3.0988" y2="-1.905" layer="29"/>
+<rectangle x1="-4.9022" y1="-0.2122" x2="-3.0988" y2="0.245" layer="29"/>
 <polygon width="0.0254" layer="29">
-<vertex x="-3.0988" y="-3.5306"/>
-<vertex x="-3.0988" y="-3.8608"/>
-<vertex x="-4.9022" y="-3.556"/>
+<vertex x="-3.0988" y="-1.3806"/>
+<vertex x="-3.0988" y="-1.7108"/>
+<vertex x="-4.9022" y="-1.406"/>
 </polygon>
 <polygon width="0.0254" layer="29">
-<vertex x="3.0988" y="-3.5306"/>
-<vertex x="3.0988" y="-3.8608"/>
-<vertex x="4.9022" y="-3.556"/>
+<vertex x="3.0988" y="-1.3806"/>
+<vertex x="3.0988" y="-1.7108"/>
+<vertex x="4.9022" y="-1.406"/>
 </polygon>
-<rectangle x1="3.0988" y1="-2.3622" x2="4.9022" y2="-1.905" layer="29"/>
-<rectangle x1="-3.1242" y1="-3.8862" x2="-2.9972" y2="-1.905" layer="29"/>
-<rectangle x1="2.9972" y1="-3.8862" x2="3.1242" y2="-1.905" layer="29"/>
+<rectangle x1="3.0988" y1="-0.2122" x2="4.9022" y2="0.245" layer="29"/>
+<rectangle x1="-3.1242" y1="-1.7362" x2="-2.9972" y2="0.245" layer="29"/>
+<rectangle x1="2.9972" y1="-1.7362" x2="3.1242" y2="0.245" layer="29"/>
 </package>
 </packages>
 <symbols>
@@ -1571,13 +1571,13 @@ chip</description>
 <library name="MCP1700T-3302E_TT">
 <packages>
 <package name="MCP1700T-3302E/TT">
-<wire x1="0" y1="0" x2="2.9" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="1.3" width="0.127" layer="21"/>
-<wire x1="0" y1="1.3" x2="2.9" y2="1.3" width="0.127" layer="21"/>
-<wire x1="2.9" y1="0" x2="2.9" y2="1.3" width="0.127" layer="21"/>
-<smd name="GND" x="0.5" y="-0.6" dx="1" dy="0.5" layer="1" rot="R90"/>
-<smd name="VOUT" x="2.4" y="-0.6" dx="1" dy="0.5" layer="1" rot="R90"/>
-<smd name="VIN" x="1.45" y="1.9" dx="1" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-1.45" y1="-0.65" x2="1.45" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="0.65" x2="1.45" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.127" layer="21"/>
+<smd name="GND" x="-0.95" y="-1.25" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="VOUT" x="0.95" y="-1.25" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="VIN" x="0" y="1.25" dx="1" dy="0.5" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -1777,15 +1777,15 @@ ID: MCP1700T-3302E/TT</description>
 <library name="crystals">
 <packages>
 <package name="TSX-3225">
-<smd name="4" x="0" y="0" dx="1.4" dy="1.15" layer="1"/>
-<smd name="3" x="2.2" y="0" dx="1.4" dy="1.15" layer="1"/>
-<smd name="2" x="2.2" y="-1.6" dx="1.4" dy="1.15" layer="1"/>
-<smd name="1" x="0" y="-1.6" dx="1.4" dy="1.15" layer="1"/>
-<text x="1" y="-2.8" size="0.4064" layer="27" font="vector" ratio="16" align="top-center">&gt;Value</text>
-<text x="1.1" y="1" size="0.6096" layer="25" font="vector" ratio="16" align="bottom-center">&gt;Name</text>
-<circle x="-0.8" y="-2.25" radius="0.05" width="0.1" layer="21"/>
-<wire x1="-0.8" y1="-2.3" x2="-0.7" y2="-2.3" width="0.1" layer="21"/>
-<wire x1="-0.85" y1="-2.25" x2="-0.85" y2="-2.15" width="0.1" layer="21"/>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.15" layer="1"/>
+<text x="-0.1" y="-2" size="0.4064" layer="27" font="vector" ratio="16" align="top-center">&gt;Value</text>
+<text x="0" y="1.8" size="0.6096" layer="25" font="vector" ratio="16" align="bottom-center">&gt;Name</text>
+<circle x="-1.9" y="-1.45" radius="0.05" width="0.1" layer="21"/>
+<wire x1="-1.9" y1="-1.5" x2="-1.8" y2="-1.5" width="0.1" layer="21"/>
+<wire x1="-1.95" y1="-1.45" x2="-1.95" y2="-1.35" width="0.1" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2240,13 +2240,13 @@ ID: MCP1700T-3302E/TT</description>
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND"/>
 </part>
 <part name="U$87" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="TSX-3225" library="crystals" deviceset="TSX-3225" device="" value="26MHz"/>
+<part name="TSX-3225_CRYSTAL" library="crystals" deviceset="TSX-3225" device="" value="12MHz"/>
 <part name="U$20" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$21" library="microbuilder" deviceset="GND" device=""/>
-<part name="C3" library="parts_0201" deviceset="CAPACITOR_0201" device="" value="9pF">
+<part name="C3" library="parts_0201" deviceset="CAPACITOR_0201" device="" value="10pF">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND"/>
 </part>
-<part name="C4" library="parts_0201" deviceset="CAPACITOR_0201" device="" value="9pF">
+<part name="C4" library="parts_0201" deviceset="CAPACITOR_0201" device="" value="10pF">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND"/>
 </part>
 <part name="U$26" library="microbuilder" deviceset="GND" device=""/>
@@ -2291,7 +2291,7 @@ ID: MCP1700T-3302E/TT</description>
 <part name="U$93" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$94" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$89" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="U$8" library="femtoduino" deviceset="USB_MICROB" device=""/>
+<part name="USB" library="femtoduino" deviceset="USB_MICROB" device=""/>
 <part name="FB1" library="microbuilder" deviceset="FERRITE" device="_0603MP"/>
 <part name="U$11" library="microbuilder" deviceset="VIN" device=""/>
 <part name="U$13" library="microbuilder" deviceset="GND" device=""/>
@@ -2420,7 +2420,7 @@ by Alex Albino</text>
 <attribute name="DIGIKEY_PART" x="205.74" y="55.88" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$87" gate="G$1" x="205.74" y="71.12"/>
-<instance part="TSX-3225" gate="G$1" x="167.64" y="124.46"/>
+<instance part="TSX-3225_CRYSTAL" gate="G$1" x="167.64" y="124.46"/>
 <instance part="U$20" gate="G$1" x="195.58" y="121.92" rot="R90"/>
 <instance part="U$21" gate="G$1" x="147.32" y="129.54" rot="R270"/>
 <instance part="C3" gate="G$1" x="152.4" y="124.46">
@@ -2453,7 +2453,7 @@ by Alex Albino</text>
 <instance part="U$17" gate="G$1" x="147.32" y="154.94" rot="R270"/>
 <instance part="U$52" gate="G$1" x="195.58" y="147.32" rot="R90"/>
 <instance part="U$51" gate="G$1" x="63.5" y="73.66"/>
-<instance part="U$8" gate="G$1" x="15.24" y="20.32"/>
+<instance part="USB" gate="G$1" x="15.24" y="20.32"/>
 <instance part="FB1" gate="G$1" x="27.94" y="15.24"/>
 <instance part="U$11" gate="G$1" x="22.86" y="25.4" rot="R270"/>
 <instance part="U$13" gate="G$1" x="35.56" y="15.24" rot="R90"/>
@@ -2536,7 +2536,7 @@ by Alex Albino</text>
 <label x="33.02" y="132.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="TSX-3225" gate="G$1" pin="XTALIN"/>
+<pinref part="TSX-3225_CRYSTAL" gate="G$1" pin="XTALIN"/>
 <wire x1="160.02" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
 <label x="139.7" y="121.92" size="1.778" layer="95" rot="R180"/>
 <pinref part="C3" gate="G$1" pin="P$2"/>
@@ -2556,7 +2556,7 @@ by Alex Albino</text>
 <junction x="27.94" y="58.42"/>
 </segment>
 <segment>
-<pinref part="TSX-3225" gate="G$1" pin="XTALOUT"/>
+<pinref part="TSX-3225_CRYSTAL" gate="G$1" pin="XTALOUT"/>
 <wire x1="177.8" y1="129.54" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
 <label x="198.12" y="129.54" size="1.778" layer="95"/>
 <pinref part="C4" gate="G$1" pin="P$1"/>
@@ -2624,7 +2624,7 @@ by Alex Albino</text>
 <label x="96.52" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="D-"/>
+<pinref part="USB" gate="G$1" pin="D-"/>
 <wire x1="15.24" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
 <label x="30.48" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -2641,7 +2641,7 @@ by Alex Albino</text>
 <label x="96.52" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="D+"/>
+<pinref part="USB" gate="G$1" pin="D+"/>
 <wire x1="15.24" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
 <label x="30.48" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -2844,7 +2844,7 @@ by Alex Albino</text>
 <pinref part="C10" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="TSX-3225" gate="G$1" pin="GND_2"/>
+<pinref part="TSX-3225_CRYSTAL" gate="G$1" pin="GND_2"/>
 <wire x1="177.8" y1="121.92" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U$20" gate="G$1" pin="GND"/>
 <pinref part="C4" gate="G$1" pin="P$2"/>
@@ -2852,7 +2852,7 @@ by Alex Albino</text>
 <junction x="190.5" y="121.92"/>
 </segment>
 <segment>
-<pinref part="TSX-3225" gate="G$1" pin="GND_4"/>
+<pinref part="TSX-3225_CRYSTAL" gate="G$1" pin="GND_4"/>
 <wire x1="160.02" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$21" gate="G$1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="P$1"/>
@@ -2976,7 +2976,7 @@ by Alex Albino</text>
 <pinref part="C7" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="V"/>
+<pinref part="USB" gate="G$1" pin="V"/>
 <wire x1="15.24" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="VIN"/>
 </segment>
@@ -3104,28 +3104,28 @@ by Alex Albino</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="GND@2"/>
+<pinref part="USB" gate="G$1" pin="GND@2"/>
 <junction x="2.54" y="7.62"/>
-<pinref part="U$8" gate="G$1" pin="GND@3"/>
+<pinref part="USB" gate="G$1" pin="GND@3"/>
 <junction x="5.08" y="7.62"/>
 <wire x1="2.54" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GND@4"/>
+<pinref part="USB" gate="G$1" pin="GND@4"/>
 <junction x="7.62" y="7.62"/>
 <wire x1="5.08" y1="7.62" x2="7.62" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GND@5"/>
+<pinref part="USB" gate="G$1" pin="GND@5"/>
 <junction x="10.16" y="7.62"/>
 <wire x1="7.62" y1="7.62" x2="10.16" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GND@6"/>
+<pinref part="USB" gate="G$1" pin="GND@6"/>
 <junction x="12.7" y="7.62"/>
 <wire x1="10.16" y1="7.62" x2="12.7" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="GND@7"/>
+<pinref part="USB" gate="G$1" pin="GND@7"/>
 <junction x="15.24" y="7.62"/>
 <wire x1="12.7" y1="7.62" x2="15.24" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="7.62" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="15.24" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
 <junction x="20.32" y="15.24"/>
-<pinref part="U$8" gate="G$1" pin="GND@1"/>
+<pinref part="USB" gate="G$1" pin="GND@1"/>
 <wire x1="15.24" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="FB1" gate="G$1" pin="P$1"/>
 </segment>

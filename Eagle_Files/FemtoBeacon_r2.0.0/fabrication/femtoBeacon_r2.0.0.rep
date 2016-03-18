@@ -1,6 +1,6 @@
 Data Exported from: /home/aalbino/Projects/femto-beacon/Eagle_Files/FemtoBeacon_r2.0.0/femtoBeacon_r2.0.0.brd
 with: /home/aalbino/eagle-6.5.0/ulp/statistic-brd.ulp Version 1.3.8
-at: 5/27/15 6:24 PM
+at: 6/27/15 8:54 PM
 EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
 
 all Values in mm
@@ -302,11 +302,12 @@ VALUE	PAC	Q.	Top	Bot
 PULSE_ANT_2.4GHZ	ANT_BAR	1	1	0
 DNP	SPST_SMD	1	1	0
 0.1uF	PART	10	7	3
-9pF	PART	4	4	0
+10pF	PART	2	2	0
 2.2uF	PART	2	2	0
 0.47uF	PART	1	1	0
 22pF, C0G, 5%	PART	2	2	0
 DNP	PART	1	1	0
+9pF	PART	2	2	0
 10uF	_0402MP	2	2	0
 10nF	PART	1	1	0
 ~/-empty-/~FB1	_0603MP	1	1	0
@@ -317,7 +318,7 @@ BLUE	CHIPLED_0603_NOOUTLINE	1	1	0
 10K	PART	1	1	0
 2.2K	PART	2	0	2
 16MHz	TSX-3225	1	1	0
-26MHz	TSX-3225	1	1	0
+48MHz	TSX-3225	1	1	0
 1X1_ROUND	1X1_ROUND	19	19	0
 MPU-9250	QFN_3X3MM	1	0	1
 USB_MICROB	USB_MICROB_PACKAGE	1	1	0
