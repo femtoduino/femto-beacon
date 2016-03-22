@@ -705,7 +705,9 @@ design rules under a new name.</description>
 </element>
 <element name="U$12" library="balun" package="0805_BALUN" value="JOHANSON_2450BM15A0015E" x="21.082" y="7.874" rot="R270"/>
 <element name="U$76" library="atmel-samr21" package="QFN32" value="ATSAMR21E18A-MUT" x="14.224" y="7.874" rot="R90"/>
-<element name="CN1" library="microbuilder" package="USB_A-SMT" value="" x="5.842" y="8.382" rot="R90"/>
+<element name="CN1" library="microbuilder" package="USB_A-SMT" value="" x="5.842" y="8.382" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-0.408" y="4.882" size="0.4064" layer="27" ratio="10" rot="R180"/>
+</element>
 <element name="U$1" library="pins_fine_pitch" package="1X5_ROUND" value="1X5_ROUND" x="8.382" y="10.414"/>
 <element name="FB2" library="microbuilder" package="_0603MP" value="" x="9.144" y="12.446" smashed="yes">
 <attribute name="VALUE" x="8.1915" y="11.4935" size="0.4064" layer="27" ratio="10"/>
