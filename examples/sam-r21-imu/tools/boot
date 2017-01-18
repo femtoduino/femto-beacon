@@ -1,0 +1,5 @@
+#!/bin/bash
+telnet localhost 4444 <<EOF
+reset halt
+flash write_image erase $1" -ex "reset run"
+EOF

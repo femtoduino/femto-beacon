@@ -1,0 +1,38 @@
+%MOIN*%
+%FSLAX34Y34*%
+%IPPOS*%
+G04 --Define apertures--*
+G04 Frame aperture --*
+%ADD10C,0.010*%
+
+G04 Fudicial Copper apertures--*
+G04 0.5mm   = 0.01968 *
+%ADD11C,0.03937*%
+G04 1mm = 0.03937 *
+
+G04 Fudicial Mask apertures--*
+G04 double copper diameter--*
+G04 1mm = 0.03937*
+%ADD12C,0.078740*%
+G04 2mm = 0.078740 *
+
+
+G04 Drill Size For mounting fixture--*
+G04 2mm is prefered pin size--*
+G04 2mm = 0.078740 *
+G04 2mm+2.5mil = 0.08124 *
+%ADD13C,0.08124*%
+
+G04 --Start main section--*
+G54D10*
+M02*
+
+G04 Fudicial Apertures* 
+G04 Copy these to merged Mask layers* 
+G54D12*
+X2000Y-1000D03*
+X79860Y-1000D03*
+X2000Y42430D03*
+X79860Y42430D03*
+
+M02*

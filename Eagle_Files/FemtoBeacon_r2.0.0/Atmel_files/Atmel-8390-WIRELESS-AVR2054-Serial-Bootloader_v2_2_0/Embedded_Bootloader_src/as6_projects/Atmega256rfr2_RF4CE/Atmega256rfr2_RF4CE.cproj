@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>{bb5b8087-7d95-4b6f-ab80-433b8d4f5550}</ProjectGuid>
+    <avrdevice>ATmega256RFR2</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Atmega256rfr2_RF4CE</AssemblyName>
+    <Name>Atmega256rfr2_RF4CE</Name>
+    <RootNamespace>Atmega256rfr2_RF4CE</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>
+    </OverrideVtorValue>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <avrtool>com.atmel.avrdbg.tool.jtagicemk3</avrtool>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <com_atmel_avrdbg_tool_jtagicemkii>
+      <ToolType>com.atmel.avrdbg.tool.jtagicemkii</ToolType>
+      <ToolName>JTAGICE mkII</ToolName>
+      <ToolNumber>070000005DD3</ToolNumber>
+      <KeepTimersRunning>true</KeepTimersRunning>
+      <OverrideVtor>false</OverrideVtor>
+      <OverrideVtorValue>
+      </OverrideVtorValue>
+      <Channel>
+        <host>127.0.0.1</host>
+        <port>3030</port>
+        <ssl>False</ssl>
+      </Channel>
+      <ToolOptions>
+        <InterfaceName>JTAG</InterfaceName>
+        <InterfaceProperties>
+          <JtagDbgClock>250000</JtagDbgClock>
+          <JtagProgClock>1000000</JtagProgClock>
+          <IspClock>250000</IspClock>
+          <JtagInChain>false</JtagInChain>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+        </InterfaceProperties>
+      </ToolOptions>
+    </com_atmel_avrdbg_tool_jtagicemkii>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <dependencies>
+          <content-extension eid="Atmel.ASF" uuidref="Atmel.ASF" version="3.6.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>0</BootSegment>
+    <com_atmel_avrdbg_tool_edbg>
+      <ToolType>com.atmel.avrdbg.tool.edbg</ToolType>
+      <ToolName>XPRO-EDBG</ToolName>
+      <ToolNumber>ATML0000001200000007</ToolNumber>
+      <Channel>
+        <host>127.0.0.1</host>
+        <port>2775</port>
+        <ssl>False</ssl>
+      </Channel>
+      <ToolOptions>
+        <InterfaceName>JTAG</InterfaceName>
+        <InterfaceProperties>
+          <JtagDbgClock>250000</JtagDbgClock>
+          <JtagProgClock>1000000</JtagProgClock>
+          <IspClock>150000</IspClock>
+          <JtagInChain>false</JtagInChain>
+          <JtagEnableExtResetOnStartSession>true</JtagEnableExtResetOnStartSession>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+        </InterfaceProperties>
+      </ToolOptions>
+    </com_atmel_avrdbg_tool_edbg>
+    <com_atmel_avrdbg_tool_jtagicemk3>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.jtagicemk3</ToolType>
+      <ToolName xmlns="">JTAGICE3</ToolName>
+      <ToolNumber xmlns="">J30200000158</ToolNumber>
+      <Channel xmlns="">
+        <host>127.0.0.1</host>
+        <port>3093</port>
+        <ssl>False</ssl>
+      </Channel>
+      <ToolOptions xmlns="">
+        <InterfaceName>JTAG</InterfaceName>
+        <InterfaceProperties>
+          <JtagDbgClock>250000</JtagDbgClock>
+          <JtagProgClock>1000000</JtagProgClock>
+          <IspClock>150000</IspClock>
+          <JtagInChain>false</JtagInChain>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+        </InterfaceProperties>
+      </ToolOptions>
+    </com_atmel_avrdbg_tool_jtagicemk3>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <UsesExternalMakeFile>False</UsesExternalMakeFile>
+    <ToolchainSettings>
+      <AvrGcc xmlns="">
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>INCLUDE_RF4CE_FUNCTIONS</Value>
+            <Value>ATMEGA256RFR2</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>../../../application/avr/include</Value>
+            <Value>../../../application/common/include</Value>
+            <Value>../../..</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -include configuration.h</avrgcc.compiler.miscellaneous.OtherFlags>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.linker.memorysettings.Flash>
+          <ListValues>
+            <Value>.text=0x1f800</Value>
+            <Value>.access_sect=0x1fffe</Value>
+            <Value>.rf4ce = 0x1fd00</Value>
+            <Value>.far_addr_padding_sect = 0x1ffff</Value>
+          </ListValues>
+        </avrgcc.linker.memorysettings.Flash>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <UsesExternalMakeFile>False</UsesExternalMakeFile>
+    <ExternalMakeFilePath>D:\BitCloud_SerialBootloader_2_0_0\Embedded_Bootloader_src\Makefile</ExternalMakeFilePath>
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>False</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>False</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>INCLUDE_RF4CE_FUNCTIONS</Value>
+      <Value>ATMEGA256RFR2</Value>
+      <Value>DISABLE_FLASH_SWAP_RF4CE_FUNCTION</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../application/avr/include</Value>
+      <Value>../../../application/common/include</Value>
+      <Value>../../..</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -include configuration.h</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.linker.optimization.GarbageCollectUnusedSections>False</avrgcc.linker.optimization.GarbageCollectUnusedSections>
+  <avrgcc.linker.optimization.RelaxBranches>True</avrgcc.linker.optimization.RelaxBranches>
+  <avrgcc.linker.memorysettings.Flash>
+    <ListValues>
+      <Value>.text=0x1f800</Value>
+      <Value>.rf4ce=0x1fd00</Value>
+    </ListValues>
+  </avrgcc.linker.memorysettings.Flash>
+  <avrgcc.linker.miscellaneous.LinkerFlags>-Wl,--relax -Wl,--section-start=.access_sect=0x3fffd -Wl,--section-start=.far_addr_padding_sect=0x3ffff</avrgcc.linker.miscellaneous.LinkerFlags>
+  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\application\avr\src\flashLoader.c">
+      <SubType>compile</SubType>
+      <Link>src\flashLoader.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\src\rf4ceFlash.c">
+      <SubType>compile</SubType>
+      <Link>src\rf4ceFlash.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\src\sp_driver.s">
+      <SubType>compile</SubType>
+      <Link>src\sp_driver.s</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\src\uartSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\uartSerializer.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\src\twiSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\twiSerializer.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\src\calibMeasurement.s">
+      <SubType>compile</SubType>
+      <Link>src\calibMeasurement.s</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\src\hardwareInit.c">
+      <SubType>compile</SubType>
+      <Link>src\hardwareInit.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\src\eepromLoader.c">
+      <SubType>compile</SubType>
+      <Link>src\eepromLoader.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\src\usbFifoSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\usbFifoSerializer.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\include\timerInterval.h">
+      <SubType>compile</SubType>
+      <Link>include\timerInterval.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\include\rf4ceFlash.h">
+      <SubType>compile</SubType>
+      <Link>include\rf4ceFlash.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\include\eepromLoader.h">
+      <SubType>compile</SubType>
+      <Link>include\eepromLoader.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\include\usbFifoSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\usbFifoSerializer.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\include\uartSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\uartSerializer.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\include\twiSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\twiSerializer.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\include\hardwareInit.h">
+      <SubType>compile</SubType>
+      <Link>include\hardwareInit.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\avr\include\sp_driver.h">
+      <SubType>compile</SubType>
+      <Link>include\sp_driver.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\common\src\abstractSerializer.c">
+      <SubType>compile</SubType>
+      <Link>common\src\abstractSerializer.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\common\src\bootloader.c">
+      <SubType>compile</SubType>
+      <Link>common\src\bootloader.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\common\src\srecParser.c">
+      <SubType>compile</SubType>
+      <Link>common\src\srecParser.c</Link>
+    </Compile>
+    <Compile Include="..\..\application\common\include\abstractSerializer.h">
+      <SubType>compile</SubType>
+      <Link>common\include\abstractSerializer.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\common\include\srecParser.h">
+      <SubType>compile</SubType>
+      <Link>common\include\srecParser.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\common\include\bootStructure.h">
+      <SubType>compile</SubType>
+      <Link>common\include\bootStructure.h</Link>
+    </Compile>
+    <Compile Include="..\..\application\common\include\types.h">
+      <SubType>compile</SubType>
+      <Link>common\include\types.h</Link>
+    </Compile>
+    <Compile Include="..\..\configuration.h">
+      <SubType>compile</SubType>
+      <Link>configuration\configuration.h</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="common\" />
+    <Folder Include="src" />
+    <Folder Include="include" />
+    <Folder Include="configuration" />
+    <Folder Include="common\include" />
+    <Folder Include="common\src" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

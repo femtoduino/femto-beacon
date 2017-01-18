@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>5.0</ProjectVersion>
+    <ProjectGuid>{8e61032d-cac9-4f33-93e0-2d624c73004e}</ProjectGuid>
+    <avrdevice>Atmega128rfa1</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFile>Bootloader.elf</OutputFile>
+    <UseGlobalToolchain>False</UseGlobalToolchain>
+    <avrtoolinterface />
+  </PropertyGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\AvrGCC.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Bootloader_Atmega128rfa1_Gcc' ">
+    <UsesExternalMakeFile>True</UsesExternalMakeFile>
+    <OutputDirectory>..\makefiles\Atmega128rfa1_RF4CE\Bootloader_Atmega128rfa1_Gcc\Exe</OutputDirectory>
+    <ExternalMakeFilePath>..\makefiles\Atmega128rfa1_RF4CE\Makefile_Bootloader_Atmega128rfa1_Gcc</ExternalMakeFilePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include=".\..\application\avr\src\flashLoader.c">
+      <SubType>compile</SubType>
+      <Link>src\flashLoader.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\src\eepromLoader.c">
+      <SubType>compile</SubType>
+      <Link>src\eepromLoader.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\src\uartSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\uartSerializer.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\src\twiSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\twiSerializer.c</Link>
+    </Compile>	
+    <Compile Include=".\..\application\avr\src\calibMeasurement.s">
+      <SubType>compile</SubType>
+      <Link>src\calibMeasurement.s</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\src\rf4ceFlash.c">
+      <SubType>compile</SubType>
+      <Link>src\rf4ceFlash.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\src\hardwareInit.c">
+      <SubType>compile</SubType>
+      <Link>src\hardwareInit.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\src\sp_driver.s">
+      <SubType>compile</SubType>
+      <Link>src\sp_driver.s</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\src\usbFifoSerializer.c">
+      <SubType>compile</SubType>
+      <Link>src\usbFifoSerializer.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\include\timerInterval.h">
+      <SubType>compile</SubType>
+      <Link>include\timerInterval.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\include\eepromLoader.h">
+      <SubType>compile</SubType>
+      <Link>include\eepromLoader.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\include\usbFifoSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\usbFifoSerializer.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\include\uartSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\uartSerializer.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\include\twiSerializer.h">
+      <SubType>compile</SubType>
+      <Link>include\twiSerializer.h</Link>
+    </Compile>	
+    <Compile Include=".\..\application\avr\include\hardwareInit.h">
+      <SubType>compile</SubType>
+      <Link>include\hardwareInit.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\include\sp_driver.h">
+      <SubType>compile</SubType>
+      <Link>include\sp_driver.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\avr\include\rf4ceFlash.h">
+      <SubType>compile</SubType>
+      <Link>include\rf4ceFlash.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\src\abstractSerializer.c">
+      <SubType>compile</SubType>
+      <Link>common\src\abstractSerializer.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\src\twiParser.c">
+      <SubType>compile</SubType>
+      <Link>common\src\twiParser.c</Link>
+    </Compile>	
+    <Compile Include=".\..\application\common\src\bootloader.c">
+      <SubType>compile</SubType>
+      <Link>common\src\bootloader.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\src\srecParser.c">
+      <SubType>compile</SubType>
+      <Link>common\src\srecParser.c</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\abstractSerializer.h">
+      <SubType>compile</SubType>
+      <Link>common\include\abstractSerializer.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\twiParser.h">
+      <SubType>compile</SubType>
+      <Link>common\include\twiParser.h</Link>
+    </Compile>	
+    <Compile Include=".\..\application\common\include\srecParser.h">
+      <SubType>compile</SubType>
+      <Link>common\include\srecParser.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\bootStructure.h">
+      <SubType>compile</SubType>
+      <Link>common\include\bootStructure.h</Link>
+    </Compile>
+    <Compile Include=".\..\application\common\include\types.h">
+      <SubType>compile</SubType>
+      <Link>common\include\types.h</Link>
+    </Compile>
+    <Compile Include=".\..\configuration.h">
+      <SubType>compile</SubType>
+      <Link>configuration\configuration.h</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="common\" />
+    <Folder Include="src" />
+    <Folder Include="include" />
+    <Folder Include="configuration" />
+    <Folder Include="common\include" />
+    <Folder Include="common\src" />
+  </ItemGroup>
+</Project>

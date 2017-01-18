@@ -1,0 +1,164 @@
+APP_NAME = Bootloader
+CONFIG_NAME = Bootloader_Atxmega256A3_Iar
+LIST_PATH = $(CONFIG_NAME)/List
+EXE_PATH = $(CONFIG_NAME)/Exe
+OBJ_PATH = $(CONFIG_NAME)/Obj
+
+DEFINES = \
+  -DATXMEGA256A3 \
+  -DEXT_MEMORY 
+
+PREINCLUDE = configuration.h
+
+BUILD_CONFIGURATION = RELEASE
+#BUILD_CONFIGURATION = DEBUG
+
+#-------------------------------------------------------------------------------
+# CPU selection:
+#-------------------------------------------------------------------------------
+CPU = xm256a3
+
+#-------------------------------------------------------------------------------
+# Tools definitions:
+#-------------------------------------------------------------------------------
+COMPILER_AND_MICRO_TYPE = IAR_AVR
+IAR_PATH = "$(IAR_AVR_HOME)/avr"
+CC      = $(IAR_PATH)/bin/iccavr
+CPP     = $(CC)
+AS      = $(IAR_PATH)/bin/aavr
+LD      = $(IAR_PATH)/bin/xlink
+AR      = $(IAR_PATH)/bin/xar
+NM      = @echo "----NM: There is no such utility among IAR AVR tools."
+STRIP   = @echo "----STRIP: There is no such utility among IAR AVR tools."
+OBJCOPY = @echo "----OBJCOPY: There is no such utility among IAR AVR tools."
+OBJDUMP = @echo "----OBJDUMP: There is no such utility among IAR AVR tools."
+SIZE    = @echo "----SIZE: There is no such utility among IAR AVR tools."
+
+#-------------------------------------------------------------------------------
+# Compiler flags:
+#-------------------------------------------------------------------------------
+
+CFLAGS += -I$(IAR_PATH)/inc
+CFLAGS += --diag_suppress Pa050,Pe188,Pa082
+CFLAGS += -e
+CFLAGS += --cpu=$(CPU)
+CFLAGS += --silent
+ifeq ($(BUILD_CONFIGURATION), DEBUG)
+  CFLAGS += --debug
+endif # DEBUG
+CFLAGS += -I$(IAR_PATH)/inc/dlib
+CFLAGS += -ms
+CFLAGS += -y
+CFLAGS += --initializers_in_flash
+CFLAGS += --no_tbaa
+CFLAGS += -DENABLE_BIT_DEFINITIONS
+CFLAGS += -Ohz
+CFLAGS += --dlib_config $(IAR_PATH)/LIB/DLIB/dlAVR-5s-xmega-n.h
+
+ASMFLAGS  = -s+
+ASMFLAGS += -w+
+ASMFLAGS += -M'<>'
+ASMFLAGS += -t8
+ASMFLAGS += -u_enhancedCore
+ASMFLAGS += -D__HAS_ENHANCED_CORE__=1
+ASMFLAGS += -D__HAS_MUL__=1
+ASMFLAGS += -D__MEMORY_MODEL__=2
+ASMFLAGS += -v5
+ASMFLAGS += --xmega #Enable Xmega specific instructions
+ASMFLAGS += -D__HAS_ELPM__=1
+ASMFLAGS += -S
+ASM_EXT = s90
+
+CFLAGS += --preinclude $(PREINCLUDE)
+
+CFLAGS += $(DEFINES)
+#==============================================================================
+# Include paths flags
+#==============================================================================
+INCLUDEDIRS  =  -I./../../application/xmega/include
+PPATHDIRS    =  ./../../application/xmega/src
+INCLUDEDIRS += -I./../../application/common/include
+INCLUDEDIRS += -I./../../
+CPATHDIRS    =  ./../../application/common/src
+#==============================================================================
+# Linking
+#==============================================================================
+LINKER_FLAGS += -Fintel-extended
+LINKER_FLAGS += -l $(LIST_PATH)/$(APP_NAME).map
+LINKER_FLAGS += -xms
+LINKER_FLAGS += -H1895
+LINKER_FLAGS += -S
+LINKER_FLAGS += -e_PrintfSmall=_Printf
+LINKER_FLAGS += -f ./../../linkerScr/avrxmega256A3.xcl
+LINKER_FLAGS += $(IAR_PATH)/LIB/DLIB/dlAVR-5s-xmega-n.r90
+
+  pc_file  =  eepromLoader
+  pc_file +=  flashLoader
+  pc_file +=  hardwareInit
+
+  pc_file +=  twiSerializer   
+  pc_file +=  uartSerializer
+
+  pc_file +=  spiSerializer
+
+
+pc_file +=  spiMemInterface
+
+  cc_file  =  bootloader
+  cc_file +=  srecParser
+cc_file +=  extMemReader
+cc_file +=  memAt45db041
+cc_file +=  memAt25df041a
+  cc_file +=  abstractSerializer    
+
+  asm_file  = sp_driver
+
+cc_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(cc_file)))
+cc_sources = $(addsuffix .c,$(addprefix $(CPATHDIRS)/,$(cc_file)))
+pc_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(pc_file)))
+pc_sources = $(addsuffix .c,$(addprefix $(PPATHDIRS)/,$(pc_file)))
+asm_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(asm_file)))
+asm_sources = $(addsuffix .$(ASM_EXT),$(addprefix $(PPATHDIRS)/,$(asm_file)))
+
+OBJS  =  $(cc_objects)
+OBJS +=  $(pc_objects)
+OBJS +=  $(asm_objects)
+
+################ common c part ##############################
+$(OBJ_PATH)/%.o: $(CPATHDIRS)/%.c
+	$(CC) $(CFLAGS) $(INCLUDEDIRS) $^ -o $@
+################ c part ##############################
+
+################ personal c part ##############################
+$(OBJ_PATH)/%.o: $(PPATHDIRS)/%.c
+	$(CC) $(CFLAGS) $(INCLUDEDIRS) $^ -o $@
+################ c part ##############################
+
+################ assembler part ######################
+$(OBJ_PATH)/%.o: $(PPATHDIRS)/%.$(ASM_EXT)
+	$(AS) $(ASMFLAGS) $(INCLUDEDIRS) -o $@ $^
+################ assembler part ######################
+
+#-------------------------------------------------------------------------------
+# Target definitions:
+#-------------------------------------------------------------------------------
+
+all: directories $(EXE_PATH)/$(APP_NAME).hex root_files
+
+$(EXE_PATH)/$(APP_NAME).hex: $(OBJS)
+	@echo
+	@echo -----------------Linking---------------------------
+	$(LD) $(LINKER_FLAGS) $(OBJS) -o $@
+
+root_files:
+	cp -f $(EXE_PATH)/*.* ./../../
+
+directories:
+	@mkdir -p $(OBJ_PATH)
+	@mkdir -p $(LIST_PATH)
+	@mkdir -p $(EXE_PATH)
+
+clean:
+	@echo
+	@echo -------Application cleaning------------------------
+	-rm -rf $(CONFIG_NAME) ./../../$(APP_NAME).hex

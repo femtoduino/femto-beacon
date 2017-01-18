@@ -1,0 +1,480 @@
+{<#ifndef _CONFIGURATION_H_
+#define _CONFIGURATION_H_
+
+#define NO 0x01
+#define YES 0x02
+
+#define AT25F2048  0x01
+#define AT45DB041  0x02
+#define AT25DF041A 0x03
+
+#define CRYSTAL_12MHz 0x01
+#define CRYSTAL_16MHz 0x02
+#define CRYSTAL_18d432MHz 0x03
+
+${all_tree}
+
+#endif // _CONFIGURATION_H_
+
+>}
+group Main
+{
+  group General
+  {
+    text "Library settings"
+  }
+
+  group Application
+  {
+    text "Application settings"
+    help "General application settings."
+  }
+
+  group Hardware
+  {
+    text "Hardware settings"
+    help "Settings that define hardware configuration of the used board."
+  }
+
+  group Stack
+  {
+    text "BitCloud stack settings"
+    help "BitCloud stack settings - Config Server settings that alter core
+      functionality and behavior of the stack. Names of these setings start
+      with 'CS_' prefix. Settings that are not configured here will have
+      defualt values set from csDefaults.h file."
+
+    group NetworkParameters
+    {
+      text "Network join/start parameters "
+    }
+
+    group NodeAddressing
+    {
+      text "Node addressing settings"
+    }
+
+    group Topology
+    {
+      text "Topology settings"
+    }
+
+    group PowerManagement
+    {
+      text "Power Management settings" 
+    }
+
+    group Security
+    {
+      text "Security settings"
+    }
+
+    group Tables
+    {
+      text "Tables sizes"
+    }
+
+    group Buffers
+    {
+      text "Data buffers settings"
+    }
+
+    group DataTransmission
+    {
+      text "Data tramsmission settings"
+      group Fragmentation
+      {
+        text "Fragmentation settings"
+      }
+    }
+
+    group OTAU
+    {
+      text "OTAU settings"
+    }
+  }
+}
+projectName "Bootloader"
+/* Application-specific parameters definition */
+
+option COMPILER_TYPE
+{
+  group General
+  text "Compiler"
+  help "Defines compiler type that will be used to build application."
+  destination config
+  configOption
+
+  value GCC
+  {
+  }
+
+  value IAR
+  {
+  }
+}
+
+option MCU
+{
+  text "MCU"
+  help "MCU"
+  group Hardware
+  configOption
+  destination config
+  writeType define
+  
+  value ATMEGA1281
+  {
+    text "ATmega1281" 
+    enable USE_USART0
+    enable USE_USART1
+    enable USE_USB_FIFO
+  }
+
+  value ATMEGA2561
+  {
+    text "ATmega2561"
+    enable USE_USART0
+    enable USE_USART1
+    OTA = [NO_OTAU]
+    OTA = NO_OTAU
+    disable OTA
+    RF_FUNCTIONS = [NO_RF4]
+    RF_FUNCTIONS = NO_RF4
+    disable RF_FUNCTIONS
+  }
+
+  value ATXMEGA256A3
+  {
+    text "ATXmega256A3"
+    enable USE_USARTD0
+    enable USE_USARTF0
+    enable USE_SPIE
+    RF_FUNCTIONS = [NO_RF4]
+    RF_FUNCTIONS = NO_RF4
+    disable RF_FUNCTIONS
+    RCB_BB_RS232_CONTROLLER = [NO]
+    KEY_REMOTE_RS232_CONTROLLER = [NO]
+  }
+
+  value ATXMEGA256D3
+  {
+    text "ATXmega256D3"
+    enable USE_USARTD0
+    RF_FUNCTIONS = [NO_RF4]
+    RF_FUNCTIONS = NO_RF4
+    disable RF_FUNCTIONS
+    RCB_BB_RS232_CONTROLLER = [NO]
+    KEY_REMOTE_RS232_CONTROLLER = [NO]
+  }
+
+  value ATMEGA128RFA1
+  {
+    text "ATmega128RFA1"
+    enable USE_USART0
+    enable USE_USART1
+    enable USE_USB_FIFO
+  }
+
+  value ATXMEGA128A1
+  {
+    text "ATXmega256A1"
+    enable USE_USARTD0
+    enable USE_USARTF0
+    enable USE_SPIE
+    RF_FUNCTIONS = [NO_RF4]
+    RF_FUNCTIONS = NO_RF4
+    disable RF_FUNCTIONS
+    OTA = [NO_OTAU]
+    OTA = NO_OTAU
+    disable OTA
+    RCB_BB_RS232_CONTROLLER = [NO]
+    KEY_REMOTE_RS232_CONTROLLER = [NO]
+  }
+  value AT91SAM3S4C
+  {
+    text "AT91sam3S4c"
+    enable USE_USB_DFU
+    RF_FUNCTIONS = [NO_RF4]
+    RF_FUNCTIONS = NO_RF4
+    disable RF_FUNCTIONS
+    OTA = [NO_OTAU]
+    OTA = NO_OTAU
+    disable OTA
+    RCB_BB_RS232_CONTROLLER = [NO]
+    KEY_REMOTE_RS232_CONTROLLER = [NO]
+  }
+}
+
+option OTA
+{
+  group General
+  text "OTA Upgrade"
+  help "Enables or disables support for OTA Upgrade."
+  configOption
+  destination config
+
+  value OTAU
+  {
+    text "Enable"
+    RF_FUNCTIONS = [NO_RF4]
+  }
+
+  value NO_OTAU
+  {
+    text "Disable"
+  }
+  OTA = OTAU
+}
+
+option RF_FUNCTIONS
+{
+  group General
+  text "Use rf4ce functions"
+  configOption
+  destination config
+ 
+  value RF4
+  {
+    text "On"
+    OTA = [NO_OTAU]
+  }
+  value NO_RF4
+  {
+    text "Off"
+  }
+  
+  RF_FUNCTIONS = NO_RF4
+}
+
+option USE_USART0
+{
+  group Application
+  text "Use USART0"
+  help "Use USART0"
+  disabled
+
+  USE_USART0 = 0
+  value 1
+  {
+    text "Enable"
+  }
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option USE_USART1
+{
+  group Application
+  text "Use USART1"
+  help "Use USART1"
+  disabled
+
+  USE_USART1 = 1
+  value 1
+  {
+    text "Enable"
+  }
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option USE_USARTD0
+{
+  group Application
+  text "Use USARTD0"
+  help "Use USARTD0"
+  disabled
+
+  USE_USARTD0 = 1
+  value 1
+  {
+    text "Enable"
+  }
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option USE_USARTF0
+{
+  group Application
+  text "Use USARTF0"
+  help "Use USARTF0"
+  disabled
+
+  USE_USARTF0 = 1
+  value 1
+  {
+    text "Enable"
+  }
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option USE_USB_FIFO
+{
+  group Application
+  text "Use USB_FIFO"
+  help "Use USB_FIFO"
+  disabled
+
+  USE_USB_FIFO = 0
+  value 1
+  {
+    text "Enable"
+  }
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option USE_SPIE
+{
+  group Application
+  text "Use USE_SPIE"
+  help "Use USE_SPIE"
+  disabled
+
+  USE_SPIE = 0
+  value 1
+  {
+    text "Enable"
+  }
+  value 0
+  {
+    text "Disable"
+  }
+}
+
+option USE_USB_DFU
+{
+  group Application
+  text "Use USB DFU class"
+  help "Use USB DFU class"
+  disabled
+
+  USE_USB_DFU = 1
+  value 1
+  {
+    text "Enable"
+  }
+  value 0
+  {
+    text "Disable"
+  }
+
+}
+
+option EXTERNAL_MEMORY
+{
+  group Application
+  text "Use external memory"
+  help "Use external memory"
+  
+  EXTERNAL_MEMORY = AT25F2048
+
+  value AT25F2048
+  {
+    text "At25f2048"
+  }
+  value AT45DB041
+  {
+    text "At45db041"
+  }
+  value AT25DF041A
+  {
+    text "At25df041a"
+  }
+}
+
+option RCB_BB_RS232_CONTROLLER
+{
+  group Application
+  text "Rcb_bb RS-232 controller"
+  help "Rcb_bb RS-232 controller"
+  
+  RCB_BB_RS232_CONTROLLER = NO
+
+  value NO
+  {
+    text "No"
+  }
+  value YES
+  {
+    text "Yes"
+  }
+}
+
+option KEY_REMOTE_RS232_CONTROLLER
+{
+  group Application
+  text "Key remote RS-232 controller"
+  help "Key remote RS-232 controller"
+  
+  KEY_REMOTE_RS232_CONTROLLER = NO
+
+  value NO
+  {
+    text "No"
+  }
+  value YES
+  {
+    text "Yes"
+  }
+}
+
+option CRYSTAL_FREQUENCY
+{
+  group Application
+  text "MCU crystal frequency for Sam3s"
+  help "MCU crystal frequency for Sam3s"
+
+  CRYSTAL_FREQUENCY = CRYSTAL_12MHz
+
+  value CRYSTAL_12MHz
+  {
+  }
+
+  value CRYSTAL_16MHz
+  {
+  }
+
+  value CRYSTAL_18d432MHz
+  {
+  }
+}
+configurations {
+['ATMEGA128RFA1', '.GCC', 'EXT_MEMORY', '.PREINCLUDE', 'Bootloader_Atmega128rfa1_Gcc', 'Atmega128rfa1_OTAU']
+['ATMEGA128RFA1', '.IAR', 'EXT_MEMORY', '.PREINCLUDE', 'Bootloader_Atmega128rfa1_Iar', 'Atmega128rfa1_OTAU']
+['ATXMEGA256A3', '.GCC', '.PREINCLUDE', 'Bootloader_Atxmega256A3_Gcc', 'Atxmega256A3']
+['ATXMEGA256A3', '.IAR', '.PREINCLUDE', 'Bootloader_Atxmega256A3_Iar', 'Atxmega256A3']
+['ATXMEGA256A3', '.GCC', 'EXT_MEMORY', '.PREINCLUDE', 'Bootloader_Atxmega256A3_Gcc', 'Atxmega256A3_OTAU']
+['ATXMEGA256A3', '.IAR', 'EXT_MEMORY', '.PREINCLUDE', 'Bootloader_Atxmega256A3_Iar', 'Atxmega256A3_OTAU']
+['ATXMEGA128A1', '.GCC', '.PREINCLUDE', 'Bootloader_Atxmega128A1_Gcc', 'Atxmega128A1']
+['ATXMEGA128A1', '.IAR', '.PREINCLUDE', 'Bootloader_Atxmega128A1_Iar', 'Atxmega128A1']
+['ATMEGA2561', '.GCC', '.PREINCLUDE', 'Bootloader_Atmega2561_Gcc', 'Atmega2561']
+['ATMEGA2561', '.IAR', '.PREINCLUDE', 'Bootloader_Atmega2561_Iar', 'Atmega2561']
+['AT91SAM3S4C', '.GCC', '.PREINCLUDE', 'Bootloader_At91sam3s4c_Gcc', 'At91sam3s4c']
+['AT91SAM3S4C', '.IAR', '.PREINCLUDE', 'Bootloader_At91sam3s4c_Iar', 'At91sam3s4c']
+['ATMEGA1281', '.GCC', 'EXT_MEMORY', '.PREINCLUDE', 'Bootloader_Atmega1281_Gcc', 'Atmega1281_OTAU']
+['ATMEGA1281', '.IAR', 'EXT_MEMORY', '.PREINCLUDE', 'Bootloader_Atmega1281_Iar', 'Atmega1281_OTAU']
+['ATMEGA1281', '.GCC', 'INCLUDE_RF4CE_FUNCTIONS', '.PREINCLUDE', 'Bootloader_Atmega1281_Gcc', 'Atmega1281_RF4CE']
+['ATXMEGA256D3', '.GCC', '.PREINCLUDE', 'Bootloader_Atxmega256D3_Gcc', 'Atxmega256D3']
+['ATXMEGA256D3', '.IAR', '.PREINCLUDE', 'Bootloader_Atxmega256D3_Iar', 'Atxmega256D3']
+['ATXMEGA256D3', '.GCC', 'EXT_MEMORY', '.PREINCLUDE', 'Bootloader_Atxmega256D3_Gcc', 'Atxmega256D3_OTAU']
+['ATXMEGA256D3', '.IAR', 'EXT_MEMORY', '.PREINCLUDE', 'Bootloader_Atxmega256D3_Iar', 'Atxmega256D3_OTAU']
+['ATMEGA128RFA1', '.GCC', '.PREINCLUDE', 'Bootloader_Atmega128rfa1_Gcc', 'Atmega128rfa1']
+['ATMEGA128RFA1', '.IAR', '.PREINCLUDE', 'Bootloader_Atmega128rfa1_Iar', 'Atmega128rfa1']
+['ATMEGA1281', '.GCC', '.PREINCLUDE', 'Bootloader_Atmega1281_Gcc', 'Atmega1281']
+['ATMEGA1281', '.IAR', '.PREINCLUDE', 'Bootloader_Atmega1281_Iar', 'Atmega1281']
+['ATMEGA128RFA1', '.GCC', 'INCLUDE_RF4CE_FUNCTIONS', '.PREINCLUDE', 'Bootloader_Atmega128rfa1_Gcc', 'Atmega128rfa1_RF4CE']
+}

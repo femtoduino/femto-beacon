@@ -1,0 +1,132 @@
+APP_NAME = Bootloader
+CONFIG_NAME = Bootloader_At91sam3s4c_Iar
+LIST_PATH = $(CONFIG_NAME)/List
+EXE_PATH = $(CONFIG_NAME)/Exe
+OBJ_PATH = $(CONFIG_NAME)/Obj
+
+DEFINES = \
+  -DAT91SAM3S4C 
+
+PREINCLUDE = configuration.h
+
+BUILD_CONFIGURATION = RELEASE
+#BUILD_CONFIGURATION = DEBUG
+
+#-------------------------------------------------------------------------------
+# CPU selection:
+#-------------------------------------------------------------------------------
+CPU = cortex-m3
+
+#-------------------------------------------------------------------------------
+# Tools definitions:
+#-------------------------------------------------------------------------------
+COMPILER_AND_MICRO_TYPE = IAR_ARM
+IAR_PATH = "$(IAR_ARM_HOME)/arm"
+CC       = $(IAR_PATH)/bin/iccarm
+CPP      = $(CC)
+AS       = $(IAR_PATH)/bin/iasmarm
+LD       = $(IAR_PATH)/bin/ilinkarm
+AR       = $(IAR_PATH)/bin/iarchive
+IELFTOOL = $(IAR_PATH)/bin/ielftool
+NM       = @echo "----NM: There is no such utility among IAR tools."
+STRIP    = @echo "----STRIP: There is no such utility among IAR tools."
+OBJCOPY  = @echo "----OBJCOPY: There is no such utility among IAR tools."
+OBJDUMP  = @echo "----OBJDUMP: There is no such utility among IAR tools."
+SIZE     = @echo "----SIZE: There is no such utility among IAR tools."
+
+#-------------------------------------------------------------------------------
+# Compiler flags:
+#-------------------------------------------------------------------------------
+
+CFLAGS += --endian little
+CFLAGS += --fpu None
+CFLAGS += --dlib_config $(IAR_PATH)/inc/c/DLib_Config_Full.h
+CFLAGS += -Ohz  # Optimization High, size.
+INCLUDEDIRS += -I$(IAR_PATH)/inc  # Include paths to search.
+CFLAGS += --diag_suppress Pa050,Pe188,Pa082  # Suppress the list of tags as diagnostics.
+CFLAGS += -e # Enable IAR C/C++ language extensions
+CFLAGS += --cpu=$(CPU)  # CPU type.
+CFLAGS += --silent
+ifeq ($(BUILD_CONFIGURATION), DEBUG)
+  CFLAGS += --debug
+endif # DEBUG
+
+CFLAGS += --preinclude $(PREINCLUDE)
+
+CFLAGS += $(DEFINES)
+#==============================================================================
+# Include paths flags
+#==============================================================================
+INCLUDEDIRS  =  -I./../../application/cortexm3/include
+PPATHDIRS    =  ./../../application/cortexm3/src
+INCLUDEDIRS += -I./../../application/common/include
+INCLUDEDIRS += -I./../../
+CPATHDIRS    =  ./../../application/common/src
+#==============================================================================
+# Linking
+#==============================================================================
+LINKER_FLAGS  = --redirect _Printf=_PrintfTiny
+LINKER_FLAGS += --redirect _Scanf=_ScanfSmall
+LINKER_FLAGS += --semihosting
+LINKER_FLAGS += --entry __iar_program_start
+LINKER_FLAGS += --map $(LIST_PATH)/$(APP_NAME).map
+LINKER_FLAGS += --config ./../../linkerScr/at91SAM3S4C_FLASH.icf
+
+  pc_file  =  eepromLoader
+  pc_file +=  flashLoader
+  pc_file +=  hardwareInit
+  pc_file +=  descriptors
+  pc_file +=  dfuClass
+  pc_file +=  enumeration
+  pc_file +=  preparser
+  pc_file +=  startup
+  pc_file +=  usbSerializer
+  pc_file +=  vectorTable
+
+  cc_file  =  bootloader
+  cc_file +=  srecParser
+  cc_file +=  abstractSerializer
+
+cc_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(cc_file)))
+cc_sources = $(addsuffix .c,$(addprefix $(CPATHDIRS)/,$(cc_file)))
+pc_objects = $(addsuffix .o,$(addprefix $(OBJ_PATH)/,$(pc_file)))
+pc_sources = $(addsuffix .c,$(addprefix $(PPATHDIRS)/,$(pc_file)))
+
+OBJS  =  $(cc_objects)
+OBJS +=  $(pc_objects)
+
+################ common c part ##############################
+$(OBJ_PATH)/%.o: $(CPATHDIRS)/%.c
+	$(CC) $(CFLAGS) $(INCLUDEDIRS) $^ -o $@
+################ c part ##############################
+
+################ personal c part ##############################
+$(OBJ_PATH)/%.o: $(PPATHDIRS)/%.c
+	$(CC) $(CFLAGS) $(INCLUDEDIRS) $^ -o $@
+################ c part ##############################
+
+#-------------------------------------------------------------------------------
+# Target definitions:
+#-------------------------------------------------------------------------------
+
+all: directories $(EXE_PATH)/$(APP_NAME).elf $(EXE_PATH)/$(APP_NAME).bin root_files
+$(EXE_PATH)/$(APP_NAME).elf: $(OBJS)
+	@echo
+	@echo -----------------Linking---------------------------
+	$(LD) $(LINKER_FLAGS) $(OBJS) -o $@
+
+$(EXE_PATH)/$(APP_NAME).bin: $(EXE_PATH)/$(APP_NAME).elf
+	$(IELFTOOL) --silent --bin $(EXE_PATH)/$(APP_NAME).elf $(EXE_PATH)/$(APP_NAME).bin
+
+root_files:
+	cp -f $(EXE_PATH)/*.* ./../../
+
+directories:
+	@mkdir -p $(OBJ_PATH)
+	@mkdir -p $(LIST_PATH)
+	@mkdir -p $(EXE_PATH)
+
+clean:
+	@echo
+	@echo -------Application cleaning------------------------
+	-rm -rf $(CONFIG_NAME) ./../../$(APP_NAME).hex

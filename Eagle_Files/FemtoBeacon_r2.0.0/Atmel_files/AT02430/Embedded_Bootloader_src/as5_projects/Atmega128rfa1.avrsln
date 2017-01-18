@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Atmega128rfa1", "Atmega128rfa1.cproj", "{3E43D805-C70E-4836-AF6E-3D0320BC91A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Bootloader_Atmega128rfa1_Gcc|AVR = Bootloader_Atmega128rfa1_Gcc|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E43D805-C70E-4836-AF6E-3D0320BC91A0}.Bootloader_Atmega128rfa1_Gcc|AVR.ActiveCfg = Bootloader_Atmega128rfa1_Gcc|AVR
+		{3E43D805-C70E-4836-AF6E-3D0320BC91A0}.Bootloader_Atmega128rfa1_Gcc|AVR.Build.0 = Bootloader_Atmega128rfa1_Gcc|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "Atxmega256A3_OTAU", "Atxmega256A3_OTAU.avrgccproj", "{AB225462-136D-411B-A974-9A9C5C7238BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Bootloader_Atxmega256A3_Gcc|AVR = Bootloader_Atxmega256A3_Gcc|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB225462-136D-411B-A974-9A9C5C7238BC}.Bootloader_Atxmega256A3_Gcc|AVR.ActiveCfg = Bootloader_Atxmega256A3_Gcc|AVR
+		{AB225462-136D-411B-A974-9A9C5C7238BC}.Bootloader_Atxmega256A3_Gcc|AVR.Build.0 = Bootloader_Atxmega256A3_Gcc|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
