@@ -3,13 +3,13 @@ FemtoBeacon - Atmel SAM R21 (ARM Cortex M0+, SAM D21 with built in AT86RF233)
 
 To contribute work, please do the following:
 
- - Fork https://github.com/femtoio/femto-beacon
+ - Fork https://github.com/femtoduino/femto-beacon
  - Checkout your fork of femto-beacon to your machine. You should now have something like `https://github.com/<your_username>/femto-beacon`
  - Add the femtoio/femto-beacon repository as the 'upstream' remote repository of your fork.
 
 ```
 # Inside the checkout of your fork, add us as the remote repository named 'upstream'
-git remote add upstream https://github.com/femtoio/femto-beacon.git
+git remote add upstream https://github.com/femtoduino/femto-beacon.git
 
 # Remember to fetch from upstream to get all branch information
 git fetch upstream
@@ -41,7 +41,12 @@ git push origin my-new-branch
 We will review and assess the changes before accepting or rejecting your changes.
 
 ## Requirements
-On Ubuntu machines, you will need Terry Guo's arm-none-eabi-* toolchain, along with the build-essentials package, openocd 0.9.x with cmsis-dap and hidapi-libusb enabled, and our fork of BOSSA.
+
+For Arduino support, see https://github.com/femtoduino/ArduinoCore-atsamd21e18a/
+
+For bare-metal programming, see below.
+
+On Ubuntu machines, you will need Terry Guo's arm-none-eabi-* toolchain, along with the build-essentials package, openocd 0.9.x with cmsis-dap and hidapi-libusb enabled, and the BOSSA utility.
 
 See the following on how to build OpenOCD on your machine: https://github.com/RIOT-OS/RIOT/wiki/OpenOCD
 You must assert the required libraries are installed on your machine.
@@ -56,13 +61,14 @@ sudo make install
 
 Install Eclipse C++, and the GNU ARM Eclipse plugins.
 
-Additionally, our fork of the BOSSA utility includes support for the ATSAMR21E18A chip w/ SAM-BA bootloader (in the 'arduino' branch)
-See https://github.com/femtoio/BOSSA
+Install the BOSSA utility.
+
+See https://github.com/shumatech/BOSSA
 
 
 ## Setup
 Download the Atmel Software Framework into the libraries/ folder before compiling examples.
-If you have the Atmel Software framework files in a directory named `asf-3.21.0`, then you would need it as `femto-io/libraries/asf-3.21.0`
+If you have the Atmel Software framework files in a directory named `asf-3.21.0`, then you would need it as `femto-beacon/libraries/asf-3.21.0`
 
 Symlink the boards/femtobeacon folder into your copy of the ASF framework (libraries/asf-x.xx.x/sam0/boards/femtobeacon).
 Symlink the femtoIO MPU9250 library folder into your copy of the ASF framework (libraries/asf-x.xx.x/thirdparty/MPU9250).
@@ -91,3 +97,8 @@ cd MyNewProject/
 ln -s /path/to/femto-beacon/libraries libraries
 ```
 You can then copy/modify the asf.h, config.mk, and Makefile into your new project. Remember to modify config.mk to include the paths of the ASF modules you wish to use.
+
+
+## FemtoBeacon BT support (Nordic nRF52832 Bluetooth 4.2 + NFC, ARM Cortex M4L)
+This board is unreleased at this time. These notes are here for future use.
+For toolchain setup, see https://devzone.nordicsemi.com/tutorials/7/
