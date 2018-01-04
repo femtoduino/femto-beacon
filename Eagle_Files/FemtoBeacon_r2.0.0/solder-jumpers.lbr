@@ -63,12 +63,12 @@
 <packages>
 <package name="SOLDER_JUMP">
 <description>Solder Jumper, Open.</description>
-<smd name="1" x="-0.762" y="0" dx="1.27" dy="1.27" layer="1" roundness="50" cream="no"/>
-<smd name="2" x="0.762" y="0" dx="1.27" dy="1.27" layer="1" roundness="50" cream="no"/>
-<wire x1="-1.651" y1="0.889" x2="1.651" y2="0.889" width="0.127" layer="21"/>
-<wire x1="1.651" y1="0.889" x2="1.651" y2="-0.889" width="0.127" layer="21"/>
-<wire x1="1.651" y1="-0.889" x2="-1.651" y2="-0.889" width="0.127" layer="21"/>
-<wire x1="-1.651" y1="-0.889" x2="-1.651" y2="0.889" width="0.127" layer="21"/>
+<smd name="1" x="-0.508" y="0" dx="0.762" dy="1.016" layer="1" roundness="50" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.762" dy="1.016" layer="1" roundness="50" cream="no"/>
+<wire x1="-1.143" y1="0.889" x2="1.143" y2="0.889" width="0.127" layer="21"/>
+<wire x1="1.143" y1="0.889" x2="1.143" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="1.143" y1="-0.889" x2="-1.143" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-1.143" y1="-0.889" x2="-1.143" y2="0.889" width="0.127" layer="21"/>
 </package>
 <package name="SOLDER_JUMP_CLOSED">
 <smd name="1" x="-0.508" y="0" dx="0.762" dy="1.016" layer="1" roundness="50" cream="no"/>

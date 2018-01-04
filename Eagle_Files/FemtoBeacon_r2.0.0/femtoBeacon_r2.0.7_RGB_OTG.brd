@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="yes" active="yes"/>
@@ -291,6 +291,8 @@ OTG</text>
 <vertex x="23.495" y="9.398"/>
 <vertex x="23.876" y="10.922"/>
 </polygon>
+<dimension x1="0" y1="27.94" x2="33.02" y2="27.94" x3="16.51" y3="33.02" textsize="1.778" layer="51" unit="inch" visible="yes"/>
+<dimension x1="33.02" y1="0" x2="33.02" y2="27.94" x3="40.64" y3="13.97" textsize="1.778" layer="51" unit="inch" visible="yes"/>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -973,12 +975,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="13.7094" y="7.5438" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="XOSCRF" library="crystals" package="TSX-3225" value="16MHz" x="15.8508" y="19.8756" smashed="yes"/>
-<element name="C14" library="parts_0201" package="PART" value="9pF" x="13.4046" y="20.1168" smashed="yes" rot="R270">
-<attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="13.4046" y="20.1168" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
-<element name="C15" library="parts_0201" package="PART" value="9pF" x="18.2052" y="19.177" smashed="yes" rot="R270">
-<attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="18.2052" y="19.177" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
+<element name="C14" library="parts_0201" package="PART" value="9pF" x="13.4046" y="20.1168" smashed="yes" rot="R270"/>
+<element name="C15" library="parts_0201" package="PART" value="9pF" x="18.2052" y="19.177" smashed="yes" rot="R270"/>
 <element name="IMU" library="mpu9250" package="QFN_3X3MM" value="MPU-9250" x="18.5692" y="13.445" rot="MR0"/>
 <element name="C31" library="parts_0201" package="PART" value="10nF" x="13.6078" y="7.4676" smashed="yes">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="13.6078" y="7.4676" size="1.778" layer="27" display="off"/>
@@ -990,9 +988,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="23.4122" y="10.9982" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="USB" library="femtoduino" package="USB_MICROB_PACKAGE" value="USB_MICROB" x="22.2602" y="14.097" rot="R90"/>
-<element name="FB1" library="microbuilder" package="_0603MP" value="" x="18.6624" y="10.0838" smashed="yes" rot="R180">
-<attribute name="VALUE" x="19.6149" y="11.0363" size="0.4064" layer="27" ratio="10" rot="R180"/>
-</element>
+<element name="FB1" library="microbuilder" package="_0603MP" value="Ferrite" x="18.6624" y="10.0838" smashed="yes" rot="R180"/>
 <element name="R3" library="microbuilder" package="_0402" value="330" x="13.811" y="11.811" smashed="yes" rot="MR270"/>
 <element name="FID1" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.54" y="7.62"/>
 <element name="FID2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.54" y="20.32"/>
@@ -1000,15 +996,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="FID4" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.54" y="7.62" rot="MR0"/>
 <element name="FID5" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="2.54" y="20.32" rot="MR0"/>
 <element name="FID6" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="30.48" y="20.32" rot="MR0"/>
-<element name="R4" library="parts_0201" package="PART" value="330" x="19.7104" y="20.0152" smashed="yes">
-<attribute name="DIGIKEY_PART" value="" x="19.7104" y="20.0152" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R6" library="parts_0201" package="PART" value="330" x="19.558" y="20.701" smashed="yes">
-<attribute name="DIGIKEY_PART" value="" x="17.018" y="15.621" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R7" library="parts_0201" package="PART" value="330" x="19.812" y="21.463" smashed="yes">
-<attribute name="DIGIKEY_PART" value="" x="19.812" y="16.383" size="1.778" layer="27" display="off"/>
-</element>
+<element name="R4" library="parts_0201" package="PART" value="330" x="19.7104" y="20.0152" smashed="yes"/>
+<element name="R6" library="parts_0201" package="PART" value="330" x="19.558" y="20.701" smashed="yes"/>
+<element name="R7" library="parts_0201" package="PART" value="330" x="19.812" y="21.463" smashed="yes"/>
 <element name="RGBLED" library="osram_opto_LED" package="LRTB_R48G" value="LRTB_R48G" x="21.082" y="20.193" rot="R270">
 <attribute name="MFR_ID" value="LRTB R48G" x="10.922" y="22.733" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -1016,28 +1006,26 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C13" library="parts_0201" package="PART" value="DNP" x="9.906" y="11.049" smashed="yes">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="3.81" y="19.431" size="1.778" layer="27" display="off"/>
 </element>
-<element name="UFLANT" library="adafruit" package="U.FL" value="" x="4.953" y="14.097" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="3.683" y="17.272" size="0.8128" layer="28" ratio="10" rot="MR180"/>
-</element>
+<element name="UFLANT" library="adafruit" package="U.FL" value="uFL" x="4.953" y="14.097" smashed="yes" rot="MR180"/>
 <element name="C11" library="microbuilder" package="_0402MP" value="1.2pF" x="9.779" y="11.811" smashed="yes"/>
 <element name="L1" library="microbuilder" package="_0603MP" value="1.8nH" x="8.382" y="11.811" smashed="yes" rot="R270">
 <attribute name="MFR_ID" value="L-14C1N8SV4T" x="2.286" y="22.479" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="ANT_SMD" library="molex-antenna-2.4GHz" package="0479480001" value="0479480001" x="5.429" y="14.08" rot="R180"/>
 <element name="ASWITCH" library="skyworks_solutions" package="AS222-92LF" value="AS222-92LF" x="8.255" y="14.097" rot="MR0"/>
-<element name="C12" library="parts_0201" package="PART" value="22pF, C0G, 5%" x="10.001" y="16.637" smashed="yes" rot="R180">
+<element name="C12" library="parts_0201" package="PART" value="22pF" x="10.001" y="16.637" smashed="yes" rot="R180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="13.049" y="16.637" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C18" library="parts_0201" package="PART" value="22pF, C0G, 5%" x="7.239" y="15.748" smashed="yes" rot="MR180">
+<element name="C18" library="parts_0201" package="PART" value="22pF" x="7.239" y="15.748" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="4.191" y="15.748" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="C19" library="parts_0201" package="PART" value="22pF, C0G, 5%" x="9.271" y="15.875" smashed="yes" rot="MR180">
+<element name="C19" library="parts_0201" package="PART" value="22pF" x="9.271" y="15.875" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="6.223" y="15.875" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="C20" library="parts_0201" package="PART" value="22pF, C0G, 5%" x="7.239" y="12.446" smashed="yes" rot="MR180">
+<element name="C20" library="parts_0201" package="PART" value="22pF" x="7.239" y="12.446" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="4.191" y="12.446" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="C23" library="parts_0201" package="PART" value="22pF, C0G, 5%" x="9.271" y="12.446" smashed="yes" rot="MR180">
+<element name="C23" library="parts_0201" package="PART" value="22pF" x="9.271" y="12.446" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="6.223" y="12.446" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R5" library="parts_0201" package="PART" value="330" x="18.669" y="14.224" smashed="yes"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1925" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -49,7 +49,6 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -61,52 +60,39 @@
 </layers>
 <library>
 <packages>
-<package name="AS222-92LF">
-<wire x1="-1.1" y1="0.625" x2="1.1" y2="0.625" width="0.127" layer="23"/>
-<wire x1="-1.1" y1="-0.625" x2="1.1" y2="-0.625" width="0.127" layer="23"/>
-<wire x1="-1.1" y1="0.625" x2="-1.1" y2="-0.625" width="0.127" layer="21"/>
-<circle x="-0.8" y="-0.3" radius="0.1" width="0.127" layer="21"/>
-<wire x1="1.1" y1="0.625" x2="1.1" y2="-0.625" width="0.127" layer="21"/>
-<smd name="PIN5" x="0" y="0.95" dx="0.55" dy="0.4" layer="1" rot="R90"/>
-<smd name="PIN2" x="0" y="-0.95" dx="0.55" dy="0.4" layer="1" rot="R270"/>
-<smd name="PIN6" x="-0.65" y="0.95" dx="0.55" dy="0.4" layer="1" rot="R90"/>
-<smd name="PIN4" x="0.65" y="0.95" dx="0.55" dy="0.34" layer="1" rot="R90"/>
-<smd name="PIN1" x="-0.65" y="-0.95" dx="0.55" dy="0.4" layer="1" rot="R270"/>
-<smd name="PIN3" x="0.65" y="-0.95" dx="0.55" dy="0.4" layer="1" rot="R270"/>
-<wire x1="-1.1" y1="-0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.625" x2="-1" y2="0.625" width="0.127" layer="21"/>
-<wire x1="1.1" y1="0.625" x2="1" y2="0.625" width="0.127" layer="21"/>
-<wire x1="1.1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
+<package name="0479480001">
+<smd name="ANT" x="-0.9625" y="0.9625" dx="1.54" dy="1.54" layer="1"/>
+<smd name="NC1" x="0.9775" y="0.9625" dx="1.54" dy="1.54" layer="1"/>
+<smd name="NC2" x="0.9775" y="-0.9775" dx="1.54" dy="1.54" layer="1"/>
+<smd name="NC3" x="-0.9625" y="-0.9775" dx="1.54" dy="1.54" layer="1"/>
+<wire x1="-1.4625" y1="2.0625" x2="-2.0625" y2="2.0625" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-2.0625" y1="2.0625" x2="-2.0625" y2="1.4625" width="0.127" layer="21" style="shortdash"/>
 </package>
 </packages>
 <symbols>
-<symbol name="AS222-92LF">
-<pin name="1" x="-10.16" y="5.08" visible="pin" length="middle"/>
-<pin name="2" x="-10.16" y="0" visible="pin" length="middle"/>
-<pin name="3" x="-10.16" y="-5.08" visible="pin" length="middle"/>
-<pin name="4" x="10.16" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="5" x="10.16" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="6" x="10.16" y="5.08" visible="pin" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<symbol name="0479480001">
+<pin name="1" x="-5.08" y="0" visible="pad" length="middle"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="middle"/>
+<pin name="3" x="-5.08" y="-5.08" visible="pad" length="middle"/>
+<pin name="4" x="-5.08" y="-7.62" visible="pad" length="middle"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-7.62" width="0.254" layer="94" style="shortdash"/>
+<wire x1="5.08" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-7.62" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AS222-92LF">
+<deviceset name="0479480001">
 <gates>
-<gate name="G$1" symbol="AS222-92LF" x="0" y="0"/>
+<gate name="G$1" symbol="0479480001" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="AS222-92LF">
+<device name="" package="0479480001">
 <connects>
-<connect gate="G$1" pin="1" pad="PIN1"/>
-<connect gate="G$1" pin="2" pad="PIN2"/>
-<connect gate="G$1" pin="3" pad="PIN3"/>
-<connect gate="G$1" pin="4" pad="PIN4"/>
-<connect gate="G$1" pin="5" pad="PIN5"/>
-<connect gate="G$1" pin="6" pad="PIN6"/>
+<connect gate="G$1" pin="1" pad="ANT"/>
+<connect gate="G$1" pin="2" pad="NC1"/>
+<connect gate="G$1" pin="3" pad="NC2"/>
+<connect gate="G$1" pin="4" pad="NC3"/>
 </connects>
 <technologies>
 <technology name=""/>
