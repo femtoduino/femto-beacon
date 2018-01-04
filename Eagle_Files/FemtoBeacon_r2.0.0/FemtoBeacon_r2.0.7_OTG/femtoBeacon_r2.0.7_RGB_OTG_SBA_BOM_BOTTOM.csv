@@ -1,0 +1,28 @@
+##########################################################################
+       Name: Placement Bill of Materials Generator
+
+    Version: 5 (2-sided bottom)
+         By: Small Batch Assembly
+        URL: www.smallbatchassembly.com
+ SourceFile: femtoBeacon_r2.0.7_RGB_OTG.brd
+   DateTime: 11/24/17 7:54 PM
+      Units: inches
+##########################################################################
+REF,PACKAGE,VALUE,X,Y,ROTATION,
+ASWITCH   , AS222-92LF            , AS222-92LF     , -0.3250, 0.5550, 0.0
+BARO   , MS5611-01BA03            , MS5611-01BA03     , -0.9004, 0.5545, 0.0
+C18   , PART            , 22pF     , -0.2850, 0.6200, 180.0
+C19   , PART            , 22pF     , -0.3650, 0.6250, 180.0
+C20   , PART            , 22pF     , -0.2850, 0.4900, 180.0
+C23   , PART            , 22pF     , -0.3650, 0.4900, 180.0
+C29   , PART            , 0.1uF     , -0.6587, 0.3750, 90.0
+C30   , PART            , 0.1uF     , -0.6067, 0.3975, 0.0
+C32   , PART            , 0.1uF     , -0.9217, 0.4330, 180.0
+FID4   , FIDUCIAL_1MM            , FIDUCIAL     , -0.1000, 0.3000, 0.0
+FID5   , FIDUCIAL_1MM            , FIDUCIAL     , -0.1000, 0.8000, 0.0
+FID6   , FIDUCIAL_1MM            , FIDUCIAL     , -1.2000, 0.8000, 0.0
+IMU   , QFN_3X3MM            , MPU-9250     , -0.7311, 0.5293, 0.0
+R3   , _0402            , 330     , -0.5437, 0.4650, 270.0
+R8   , PART            , 2.2K     , -0.8657, 0.6920, 90.0
+R9   , PART            , 2.2K     , -0.8127, 0.6770, 90.0
+UFLANT   , U.FL            , uFL     , -0.1950, 0.5550, 180.0

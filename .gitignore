@@ -41,6 +41,8 @@
 
 # Atmel Software Framework folder
 /libraries/asf-*/
+/libraries/MPU9250
+/libraries/LwMesh
 
 # EAGLE PCB related files
 # Ignore list for Eagle, a PCB layout tool

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -754,7 +754,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$54" library="pins_1.27mm_pitch" package="1X1_ROUND" value="1X1_ROUND" x="7.9374" y="17.126"/>
 <element name="U$9" library="pins_1.27mm_pitch" package="1X1_ROUND" value="1X1_ROUND" x="9.0762" y="0.812"/>
 <element name="U$10" library="pins_1.27mm_pitch" package="1X1_ROUND" value="1X1_ROUND" x="10.1938" y="0.8882"/>
-<element name="U$44" library="freeimu" package="MS5611-01BA03" value="MS5611-01BA03" x="15.7904" y="9.0051" rot="MR0"/>
+<element name="BARO" library="freeimu" package="MS5611-01BA03" value="MS5611-01BA03" x="15.7904" y="9.0051" rot="MR0"/>
 <element name="C29" library="parts_0201" package="PART" value="0.1uF" x="9.6512" y="4.4458" smashed="yes" rot="MR90">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="9.6512" y="4.4458" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
@@ -775,7 +775,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="L6" library="microbuilder" package="_0603MP" value="10uH" x="3.8862" y="13.1826" smashed="yes"/>
 <element name="C21" library="microbuilder" package="_0402MP" value="10uF" x="3.7592" y="14.9606" smashed="yes" rot="R180"/>
 <element name="C22" library="microbuilder" package="_0402MP" value="10uF" x="4.7752" y="14.1224" smashed="yes"/>
-<element name="U$76" library="atmel-samr21" package="QFN32" value="ATSAMR21E18A-MUT" x="7.8062" y="9.923" rot="R270"/>
+<element name="IC" library="atmel-samr21" package="QFN32" value="ATSAMR21E18A-MUT" x="7.8062" y="9.923" rot="R270"/>
 <element name="C10" library="parts_0201" package="PART" value="0.1uF" x="6.6294" y="3.1496" smashed="yes" rot="R180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="6.6294" y="2.4638" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -787,7 +787,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="4.4196" y="6.8072" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="ANT1" library="bar_antenna" package="ANT_BAR" value="PULSE_ANT_2.4GHZ" x="1.143" y="8.9662" rot="R90"/>
-<element name="U$12" library="balun" package="0805_BALUN" value="JOHANSON_2450BM15A0015E" x="3.048" y="9.5758" rot="R270"/>
+<element name="BAL" library="balun" package="0805_BALUN" value="JOHANSON_2450BM15A0015E" x="3.048" y="9.5758" rot="R270"/>
 <element name="C11" library="parts_0201" package="PART" value="22pF, C0G, 5%" x="2.794" y="11.43" smashed="yes" rot="R180">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="2.794" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -804,7 +804,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C15" library="parts_0201" package="PART" value="9pF" x="11.1252" y="14.097" smashed="yes" rot="R270">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="11.1252" y="14.097" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$6" library="mpu9250" package="QFN_3X3MM" value="MPU-9250" x="11.4892" y="8.365" rot="MR0"/>
+<element name="IMU" library="mpu9250" package="QFN_3X3MM" value="MPU-9250" x="11.4892" y="8.365" rot="MR0"/>
 <element name="C31" library="parts_0201" package="PART" value="10nF" x="6.5278" y="2.3876" smashed="yes">
 <attribute name="DIGIKEY_PART" value="490-3194-1-ND" x="6.5278" y="2.3876" size="1.778" layer="27" display="off"/>
 </element>
@@ -822,7 +822,7 @@ Please make sure your boards conform to these design rules.</description>
 <signals>
 <signal name="PA06/A0">
 <contactref element="U$54" pad="P$1"/>
-<contactref element="U$76" pad="7"/>
+<contactref element="IC" pad="7"/>
 <wire x1="6.5562" y1="12.573" x2="6.5562" y2="13.3066" width="0.1524" layer="1"/>
 <wire x1="6.5562" y1="13.3066" x2="6.5024" y2="13.3604" width="0.1524" layer="1"/>
 <via x="6.5024" y="13.3604" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -836,7 +836,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA07/A1">
 <contactref element="U$43" pad="P$1"/>
-<contactref element="U$76" pad="8"/>
+<contactref element="IC" pad="8"/>
 <wire x1="6.0562" y1="12.573" x2="6.0562" y2="12.689" width="0.1524" layer="1"/>
 <wire x1="6.0562" y1="12.689" x2="5.9944" y2="12.8524" width="0.1524" layer="1"/>
 <wire x1="5.9944" y1="12.8524" x2="5.9944" y2="13.716" width="0.1524" layer="1"/>
@@ -851,7 +851,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C8" pad="1"/>
 <contactref element="L6" pad="2"/>
 <contactref element="C22" pad="2"/>
-<contactref element="U$76" pad="4"/>
+<contactref element="IC" pad="4"/>
 <wire x1="8.0562" y1="12.573" x2="8.0562" y2="11.8066" width="0.1524" layer="1"/>
 <wire x1="8.0562" y1="11.8066" x2="8.128" y2="11.7348" width="0.1524" layer="1"/>
 <via x="8.128" y="11.7348" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -880,9 +880,9 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="PA08/I2C/SDA">
 <contactref element="U$42" pad="P$1"/>
 <contactref element="R8" pad="1"/>
-<contactref element="U$44" pad="7"/>
-<contactref element="U$76" pad="9"/>
-<contactref element="U$6" pad="P$24"/>
+<contactref element="BARO" pad="7"/>
+<contactref element="IC" pad="9"/>
+<contactref element="IMU" pad="P$24"/>
 <wire x1="5.1562" y1="11.673" x2="6.085" y2="11.673" width="0.1524" layer="1"/>
 <wire x1="6.085" y1="11.673" x2="6.1976" y2="11.5824" width="0.1524" layer="1"/>
 <via x="6.1976" y="11.5824" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -910,9 +910,9 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="PA09/I2C/SCL">
 <contactref element="U$41" pad="P$1"/>
 <contactref element="R9" pad="1"/>
-<contactref element="U$44" pad="8"/>
-<contactref element="U$76" pad="10"/>
-<contactref element="U$6" pad="P$23"/>
+<contactref element="BARO" pad="8"/>
+<contactref element="IC" pad="10"/>
+<contactref element="IMU" pad="P$23"/>
 <wire x1="5.1562" y1="11.173" x2="5.8958" y2="11.173" width="0.1524" layer="1"/>
 <wire x1="5.8958" y1="11.173" x2="6.1976" y2="10.8712" width="0.1524" layer="1"/>
 <via x="6.1976" y="10.8712" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -950,7 +950,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="11.684" y1="12.0396" x2="12.0904" y2="11.6332" width="0.254" layer="15"/>
 </signal>
 <signal name="PA14/XIN_MC/RX">
-<contactref element="U$76" pad="15"/>
+<contactref element="IC" pad="15"/>
 <contactref element="XOSC" pad="1"/>
 <contactref element="C3" pad="2"/>
 <wire x1="3.968915625" y1="6.038684375" x2="5.4864" y2="4.5212" width="0.1524" layer="1"/>
@@ -971,7 +971,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.625684375" y1="5.987884375" x2="3.574884375" y2="6.038684375" width="0.1524" layer="16"/>
 </signal>
 <signal name="PA15/XOUT_MC/TX">
-<contactref element="U$76" pad="16"/>
+<contactref element="IC" pad="16"/>
 <contactref element="U$39" pad="P$1"/>
 <contactref element="XOSC" pad="3"/>
 <contactref element="C4" pad="1"/>
@@ -990,7 +990,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA16/I2C">
 <contactref element="U$38" pad="P$1"/>
-<contactref element="U$76" pad="17"/>
+<contactref element="IC" pad="17"/>
 <wire x1="6.0562" y1="7.273" x2="6.0562" y2="7.9866" width="0.1397" layer="1"/>
 <wire x1="6.0562" y1="7.9866" x2="5.9944" y2="8.0772" width="0.1397" layer="1"/>
 <via x="5.9944" y="8.0772" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -999,7 +999,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA17/I2C">
 <contactref element="U$37" pad="P$1"/>
-<contactref element="U$76" pad="18"/>
+<contactref element="IC" pad="18"/>
 <wire x1="6.5562" y1="7.273" x2="6.5532" y2="7.3208" width="0.1397" layer="1"/>
 <wire x1="6.5532" y1="7.3208" x2="6.5532" y2="8.4582" width="0.1397" layer="1"/>
 <via x="6.5532" y="8.4582" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -1008,8 +1008,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA18/INTA">
 <contactref element="U$36" pad="P$1"/>
-<contactref element="U$76" pad="19"/>
-<contactref element="U$6" pad="P$11"/>
+<contactref element="IC" pad="19"/>
+<contactref element="IMU" pad="P$11"/>
 <wire x1="7.0562" y1="7.273" x2="7.0612" y2="7.268" width="0.1397" layer="1"/>
 <wire x1="7.0612" y1="7.268" x2="7.0612" y2="6.4516" width="0.1397" layer="1"/>
 <via x="7.0612" y="6.4516" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -1024,8 +1024,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA19/FSYNC">
 <contactref element="U$35" pad="P$1"/>
-<contactref element="U$76" pad="20"/>
-<contactref element="U$6" pad="P$12"/>
+<contactref element="IC" pad="20"/>
+<contactref element="IMU" pad="P$12"/>
 <wire x1="7.5562" y1="7.273" x2="7.5692" y2="7.3616" width="0.1397" layer="1"/>
 <wire x1="7.5692" y1="7.3616" x2="7.5692" y2="7.7216" width="0.1397" layer="1"/>
 <wire x1="7.5692" y1="7.7216" x2="7.1628" y2="8.128" width="0.1397" layer="1"/>
@@ -1043,7 +1043,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA24/USBDM">
 <contactref element="U$9" pad="P$1"/>
-<contactref element="U$76" pad="22"/>
+<contactref element="IC" pad="22"/>
 <contactref element="USB" pad="2"/>
 <wire x1="8.5562" y1="7.273" x2="8.5562" y2="7.7506" width="0.1397" layer="1"/>
 <wire x1="8.5562" y1="7.7506" x2="7.7724" y2="8.4328" width="0.1397" layer="1"/>
@@ -1073,7 +1073,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA25/USBDP">
 <contactref element="U$10" pad="P$1"/>
-<contactref element="U$76" pad="23"/>
+<contactref element="IC" pad="23"/>
 <contactref element="USB" pad="3"/>
 <wire x1="13.7102" y1="9.017" x2="12.4714" y2="9.017" width="0.2032" layer="1"/>
 <wire x1="12.4714" y1="9.017" x2="10.922" y2="7.4676" width="0.2032" layer="1"/>
@@ -1093,7 +1093,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA27">
 <contactref element="U$7" pad="P$1"/>
-<contactref element="U$76" pad="25"/>
+<contactref element="IC" pad="25"/>
 <wire x1="10.4562" y1="8.173" x2="10.0388" y2="8.173" width="0.1524" layer="1"/>
 <wire x1="10.0388" y1="8.173" x2="9.8552" y2="8.3566" width="0.1524" layer="1"/>
 <wire x1="9.8552" y1="8.3566" x2="9.6774" y2="8.3566" width="0.1524" layer="1"/>
@@ -1118,7 +1118,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C1" pad="1"/>
 <contactref element="R2" pad="1"/>
 <contactref element="U$45" pad="P$1"/>
-<contactref element="U$76" pad="26"/>
+<contactref element="IC" pad="26"/>
 <wire x1="10.4562" y1="8.673" x2="10.0214" y2="8.673" width="0.1524" layer="1"/>
 <wire x1="10.0214" y1="8.673" x2="9.3472" y2="9.3472" width="0.1524" layer="1"/>
 <wire x1="9.3472" y1="9.3472" x2="9.1948" y2="9.3472" width="0.1524" layer="1"/>
@@ -1146,7 +1146,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA28">
 <contactref element="U$48" pad="P$1"/>
-<contactref element="U$76" pad="27"/>
+<contactref element="IC" pad="27"/>
 <wire x1="10.4562" y1="9.173" x2="10.0802" y2="9.173" width="0.1524" layer="1"/>
 <wire x1="10.0802" y1="9.173" x2="9.1948" y2="10.0584" width="0.1524" layer="1"/>
 <via x="9.1948" y="10.0584" extent="1-16" drill="0.2032" diameter="0.508"/>
@@ -1160,7 +1160,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="VDDCORE">
 <contactref element="C9" pad="1"/>
-<contactref element="U$76" pad="29"/>
+<contactref element="IC" pad="29"/>
 <wire x1="10.4562" y1="10.173" x2="11.5954" y2="10.173" width="0.1524" layer="1"/>
 <wire x1="11.5954" y1="10.173" x2="11.9888" y2="10.5664" width="0.1524" layer="1"/>
 <wire x1="11.9888" y1="10.5664" x2="11.9888" y2="11.0236" width="0.1524" layer="1"/>
@@ -1171,7 +1171,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="PA30/SWCLK">
 <contactref element="R4" pad="1"/>
 <contactref element="U$46" pad="P$1"/>
-<contactref element="U$76" pad="31"/>
+<contactref element="IC" pad="31"/>
 <via x="11.5062" y="15.9964" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="11.5062" y1="15.9964" x2="10.4196" y2="15.9964" width="0.254" layer="2"/>
 <wire x1="10.4196" y1="15.9964" x2="10.16" y2="16.256" width="0.254" layer="2"/>
@@ -1200,7 +1200,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="PA31/SWDIO">
 <contactref element="U$47" pad="P$1"/>
-<contactref element="U$76" pad="32"/>
+<contactref element="IC" pad="32"/>
 <via x="10.8712" y="13.1064" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="10.8712" y1="13.1064" x2="10.7696" y2="13.1064" width="0.254" layer="15"/>
 <wire x1="10.7696" y1="13.1064" x2="9.398" y2="14.478" width="0.254" layer="15"/>
@@ -1221,30 +1221,30 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C7" pad="2"/>
 <contactref element="LED2" pad="C"/>
 <contactref element="U$2" pad="P$1"/>
-<contactref element="U$44" pad="3"/>
+<contactref element="BARO" pad="3"/>
 <contactref element="C29" pad="2"/>
-<contactref element="U$44" pad="5"/>
-<contactref element="U$44" pad="4"/>
+<contactref element="BARO" pad="5"/>
+<contactref element="BARO" pad="4"/>
 <contactref element="C17" pad="2"/>
 <contactref element="C16" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C22" pad="1"/>
 <contactref element="C21" pad="1"/>
-<contactref element="U$76" pad="28"/>
-<contactref element="U$76" pad="33"/>
-<contactref element="U$76" pad="3"/>
-<contactref element="U$76" pad="6"/>
-<contactref element="U$76" pad="11"/>
-<contactref element="U$76" pad="14"/>
+<contactref element="IC" pad="28"/>
+<contactref element="IC" pad="33"/>
+<contactref element="IC" pad="3"/>
+<contactref element="IC" pad="6"/>
+<contactref element="IC" pad="11"/>
+<contactref element="IC" pad="14"/>
 <contactref element="C10" pad="2"/>
 <contactref element="XOSC" pad="2"/>
 <contactref element="XOSC" pad="4"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C4" pad="2"/>
-<contactref element="U$12" pad="5"/>
-<contactref element="U$12" pad="2"/>
-<contactref element="U$12" pad="6"/>
+<contactref element="BAL" pad="5"/>
+<contactref element="BAL" pad="2"/>
+<contactref element="BAL" pad="6"/>
 <contactref element="C13" pad="2"/>
 <contactref element="C14" pad="1"/>
 <contactref element="XOSCRF" pad="4"/>
@@ -1254,7 +1254,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C31" pad="1"/>
 <contactref element="C30" pad="1"/>
 <contactref element="C32" pad="2"/>
-<contactref element="U$6" pad="P$20"/>
+<contactref element="IMU" pad="P$20"/>
 <contactref element="FB1" pad="2"/>
 <wire x1="1.143" y1="10.2662" x2="1.143" y2="9.7536" width="0.2032" layer="1"/>
 <wire x1="1.143" y1="9.7536" x2="1.2954" y2="9.6012" width="0.2032" layer="1"/>
@@ -1417,21 +1417,21 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$5" pad="P$1"/>
 <contactref element="R8" pad="2"/>
 <contactref element="R9" pad="2"/>
-<contactref element="U$44" pad="1"/>
-<contactref element="U$44" pad="2"/>
+<contactref element="BARO" pad="1"/>
+<contactref element="BARO" pad="2"/>
 <contactref element="C29" pad="1"/>
 <contactref element="L6" pad="1"/>
 <contactref element="C21" pad="2"/>
 <contactref element="C16" pad="1"/>
-<contactref element="U$76" pad="30"/>
-<contactref element="U$76" pad="24"/>
+<contactref element="IC" pad="30"/>
+<contactref element="IC" pad="24"/>
 <contactref element="C10" pad="1"/>
-<contactref element="U$6" pad="P$8"/>
+<contactref element="IMU" pad="P$8"/>
 <contactref element="C31" pad="2"/>
-<contactref element="U$6" pad="P$22"/>
-<contactref element="U$6" pad="P$13"/>
+<contactref element="IMU" pad="P$22"/>
+<contactref element="IMU" pad="P$13"/>
 <contactref element="C30" pad="2"/>
-<contactref element="U$6" pad="P$1"/>
+<contactref element="IMU" pad="P$1"/>
 <wire x1="3.2512" y1="14.9606" x2="3.2512" y2="13.3096" width="0.2032" layer="1"/>
 <wire x1="6.8778" y1="2.3876" x2="6.8778" y2="2.317" width="0.1397" layer="1"/>
 <wire x1="6.8778" y1="2.317" x2="6.9088" y2="2.3368" width="0.1397" layer="1"/>
@@ -1578,7 +1578,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.4128" y1="15.2964" x2="12.4588" y2="15.2916" width="0.1524" layer="1"/>
 </signal>
 <signal name="XTALOUT">
-<contactref element="U$76" pad="1"/>
+<contactref element="IC" pad="1"/>
 <contactref element="C15" pad="1"/>
 <contactref element="XOSCRF" pad="3"/>
 <wire x1="9.8708" y1="15.5956" x2="9.8242" y2="15.6972" width="0.1524" layer="1"/>
@@ -1594,7 +1594,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.4338" y1="14.447" x2="11.1252" y2="14.447" width="0.254" layer="2"/>
 </signal>
 <signal name="XTALIN">
-<contactref element="U$76" pad="2"/>
+<contactref element="IC" pad="2"/>
 <contactref element="C14" pad="2"/>
 <contactref element="XOSCRF" pad="1"/>
 <wire x1="6.3246" y1="14.6868" x2="6.3246" y2="14.3002" width="0.254" layer="1"/>
@@ -1609,7 +1609,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.0012" y1="13.6652" x2="7.6708" y2="13.9956" width="0.1524" layer="1"/>
 </signal>
 <signal name="AVDD">
-<contactref element="U$76" pad="5"/>
+<contactref element="IC" pad="5"/>
 <contactref element="C17" pad="1"/>
 <wire x1="7.5562" y1="12.573" x2="7.5562" y2="11.4678" width="0.1524" layer="1"/>
 <wire x1="7.5562" y1="11.4678" x2="7.5184" y2="11.43" width="0.1524" layer="1"/>
@@ -1633,7 +1633,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="7.5184" y1="10.6172" x2="7.5184" y2="11.43" width="0.254" layer="2"/>
 </signal>
 <signal name="RFP">
-<contactref element="U$76" pad="12"/>
+<contactref element="IC" pad="12"/>
 <contactref element="C12" pad="1"/>
 <via x="2.3114" y="7.0414" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="5.1562" y1="10.173" x2="4.7114" y2="10.173" width="0.1524" layer="1"/>
@@ -1647,7 +1647,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="2.3114" y1="12.0142" x2="2.4892" y2="12.192" width="0.1524" layer="16"/>
 </signal>
 <signal name="RFN">
-<contactref element="U$76" pad="13"/>
+<contactref element="IC" pad="13"/>
 <contactref element="C11" pad="1"/>
 <wire x1="5.1562" y1="9.673" x2="4.6526" y2="9.673" width="0.1524" layer="1"/>
 <wire x1="4.6526" y1="9.673" x2="4.1656" y2="10.16" width="0.1524" layer="1"/>
@@ -1657,25 +1657,25 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.2456" y1="11.3284" x2="3.144" y2="11.43" width="0.1524" layer="1"/>
 </signal>
 <signal name="DVDD">
-<contactref element="U$76" pad="21"/>
+<contactref element="IC" pad="21"/>
 <contactref element="C2" pad="1"/>
 <wire x1="8.0562" y1="7.273" x2="8.0562" y2="6.3742" width="0.1397" layer="1"/>
 <wire x1="8.0562" y1="6.3742" x2="8.0066" y2="6.3246" width="0.1397" layer="1"/>
 </signal>
 <signal name="N$1">
-<contactref element="U$12" pad="3"/>
+<contactref element="BAL" pad="3"/>
 <contactref element="C11" pad="2"/>
 <wire x1="2.398" y1="10.4758" x2="2.398" y2="11.384" width="0.2032" layer="1"/>
 <wire x1="2.398" y1="11.384" x2="2.444" y2="11.43" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="U$12" pad="4"/>
+<contactref element="BAL" pad="4"/>
 <contactref element="C12" pad="2"/>
 <wire x1="2.398" y1="8.6758" x2="2.398" y2="7.6248" width="0.2032" layer="1"/>
 <wire x1="2.398" y1="7.6248" x2="2.3114" y2="7.7414" width="0.2032" layer="1"/>
 </signal>
 <signal name="ANT_OUT">
-<contactref element="U$12" pad="1"/>
+<contactref element="BAL" pad="1"/>
 <contactref element="ANT1" pad="1"/>
 <via x="3.9878" y="9.5758" extent="1-16" drill="0.2032" diameter="0.508"/>
 <wire x1="3.9878" y1="9.5758" x2="3.8354" y2="9.6266" width="0.2032" layer="1"/>
@@ -1703,7 +1703,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="1.5748" y1="6.7564" x2="1.524" y2="6.9596" width="0.2032" layer="1" curve="-47.92529"/>
 </signal>
 <signal name="N$4">
-<contactref element="U$6" pad="P$10"/>
+<contactref element="IMU" pad="P$10"/>
 <contactref element="C32" pad="1"/>
 <wire x1="15.9568" y1="5.9436" x2="15.9822" y2="5.9182" width="0.2032" layer="16"/>
 <wire x1="11.2892" y1="6.865" x2="11.2892" y2="5.3732" width="0.2032" layer="16"/>

@@ -80,7 +80,12 @@ CSRCS = sam_r21_imu.c \
        sam0/utils/stdio/read.c                            \
        sam0/utils/stdio/write.c                           \
        sam0/utils/syscalls/gcc/syscalls.c                 \
-       thirdparty/MPU9250/MPU9250.c
+       thirdparty/MPU9250/MPU9250.c                       \
+       thirdparty/LwMesh/hal/src/hal.c                    \
+       thirdparty/LwMesh/hal/src/halGpio.c                \
+       thirdparty/LwMesh/hal/src/halPhy.c                 \
+       thirdparty/LwMesh/hal/src/halStartup.c             \
+       thirdparty/LwMesh/hal/src/halTimer.c
 
 # List of assembler source files.
 ASSRCS = 
@@ -121,7 +126,11 @@ INC_PATH = \
        sam0/utils/stdio/stdio_serial                      \
        thirdparty/CMSIS/Include                           \
        thirdparty/CMSIS/Lib/GCC                           \
-       thirdparty/MPU9250
+       thirdparty/MPU9250                                 \
+       thirdparty/LwMesh/hal/atsamd21/inc                 \
+       thirdparty/LwMesh/nwk/inc                          \
+       thirdparty/LwMesh/phy/at86rf233/inc                \
+       thirdparty/LwMesh/sys/inc
 
 # Additional search paths for libraries.
 LIB_PATH =  \
@@ -157,7 +166,12 @@ ARFLAGS =
 ASFLAGS = 
 
 # Extra flags to use when compiling.
-CFLAGS = 
+
+CFLAGS = -W -Wall --std=gnu99 -Os                         \
+         -fdata-sections -ffunction-sections              \
+         -funsigned-char -funsigned-bitfields             \
+         -mcpu=cortex-m0plus -mthumb                      \
+         -MD -MP
 
 # Extra flags to use when preprocessing.
 #
@@ -175,10 +189,13 @@ CPPFLAGS = \
        -D SYSTICK_MODE                                    \
        -D TC_ASYNC=true                                   \
        -D USART_CALLBACK_MODE=true                        \
-       -D __SAMR21E18A__
+       -D __SAMR21E18A__                                  \
+       -D HAL_ATSAMD21J18
 
 # Extra flags to use when linking. SAM-BA Bootloader, (USB only) is 4k.
 LDFLAGS =-Wl,--section-start=.text=0x1000 \
+         -mcpu=cortex-m0plus -mthumb      \
+         -Wl,--gc-sections
 
 # Pre- and post-build commands
 PREBUILD_CMD = 

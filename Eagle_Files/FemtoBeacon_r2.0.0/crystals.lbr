@@ -153,6 +153,14 @@ ABM8G-32.000MHZ-B4Y-T</description>
 <wire x1="-1.2" y1="-0.6" x2="-1.2" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1.2" y1="-1" x2="-0.8" y2="-1" width="0.127" layer="21"/>
 </package>
+<package name="FA-128">
+<smd name="1" x="-0.725" y="-0.575" dx="0.95" dy="0.85" layer="1"/>
+<smd name="2" x="0.725" y="-0.575" dx="0.95" dy="0.85" layer="1"/>
+<smd name="3" x="0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
+<smd name="4" x="-0.725" y="0.575" dx="0.95" dy="0.85" layer="1"/>
+<wire x1="-1.4" y1="-0.8" x2="-1.4" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-1.2" x2="-1" y2="-1.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="EPSON_CRYSTAL_TSX-3225">
@@ -425,6 +433,24 @@ Abracon 48MHz crystal</description>
 </gates>
 <devices>
 <device name="" package="ABM11">
+<connects>
+<connect gate="G$1" pin="GND@1" pad="2"/>
+<connect gate="G$1" pin="GND@2" pad="4"/>
+<connect gate="G$1" pin="XIN" pad="1"/>
+<connect gate="G$1" pin="XOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FA-128">
+<gates>
+<gate name="G$1" symbol="EPSON_CRYSTAL_TSX-3225" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="FA-128">
 <connects>
 <connect gate="G$1" pin="GND@1" pad="2"/>
 <connect gate="G$1" pin="GND@2" pad="4"/>

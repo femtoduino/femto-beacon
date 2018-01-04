@@ -1,0 +1,426 @@
+Data Exported from: /home/aalbino/Projects/femto-beacon/Eagle_Files/FemtoBeacon_r2.0.0/femtoBeacon_dongle_r2.0.3_PANELIZED.brd
+with: /home/aalbino/eagle-7.6.0/ulp/statistic-brd.ulp Version 1.3.9
+at: 6/26/17 11:07 AM
+EAGLE Version 7.6.0 Copyright (c) 1988-2016 CadSoft
+
+all Values in mm
+max. Board length (Layer 20)
+X = 38.10
+Y = 96.52
+Outline contour = 299.72
+
+used layers 4
+
+ 1 Top
+ 2 Route2
+15 Route15
+16 Bottom
+_________________________
+
+1176  	 Wire(s) incl. Arc(s)
+24    	 Polygon(s)
+_________________________
+451   	 SMD(s) top
+0     	 SMD(s) bottom
+===================
+451   	 SMD(s) total
+
+36    	 PAD(s)
+_________________________
+152   	 Via
+172   	 Hole
+===================
+360   	 Drills total
+_________________________
+451	 tCream
+0	 bCream
+_________________________
+Routing Info: 
+140   	 Signal(s) 
+487   	 PAD/SMD total
+===================
+456   	 PAD/SMD on Signal
+_________________________
+Packages used area:
+~ 1755.89 mm² (0.176 dm²)
+_________________________
+
+
+============================
+
+============================
+143 Elements: 0 locked / 143 unlocked
+0 Testpoints (TP)
+
+----------------------------
+LAYER
+Nb.	Name	Used
+  1	Top	1
+  2	Route2	1
+  3	Route3	0
+ 14	Route14	0
+ 15	Route15	1
+ 16	Bottom	1
+ 17	Pads	1
+ 18	Vias	1
+ 19	Unrouted	1
+ 20	Dimension	1
+ 21	tPlace	1
+ 22	bPlace	0
+ 23	tOrigins	1
+ 24	bOrigins	0
+ 25	tNames	1
+ 26	bNames	1
+ 27	tValues	1
+ 28	bValues	0
+ 29	tStop	1
+ 30	bStop	1
+ 31	tCream	1
+ 32	bCream	0
+ 33	tFinish	0
+ 34	bFinish	0
+ 35	tGlue	1
+ 36	bGlue	0
+ 37	tTest	0
+ 38	bTest	0
+ 39	tKeepout	0
+ 40	bKeepout	0
+ 41	tRestrict	1
+ 42	bRestrict	0
+ 43	vRestrict	0
+ 44	Drills	1
+ 45	Holes	1
+ 46	Milling	1
+ 47	Measures	0
+ 48	Document	0
+ 49	Reference	0
+ 50	dxf	0
+ 51	tDocu	1
+ 52	bDocu	0
+ 53	tGND_GNDA	0
+ 54	bGND_GNDA	0
+ 56	wert	0
+ 57	tCAD	0
+100	Muster	0
+101	Patch_Top	0
+102	Mittellin	0
+103	Stiffner	0
+104	Name	0
+105	Beschreib	0
+106	BGA-Top	0
+107	BD-Top	0
+108	tBridges	0
+109	tBPL	0
+110	bBPL	0
+111	MPL	0
+112	tSilk	0
+116	Patch_BOT	0
+121	sName	0
+122	_bPlace	0
+123	tTestmark	0
+124	bTestmark	0
+125	_tNames	0
+126	_bNames	0
+127	_tValues	0
+128	_bValues	0
+131	tAdjust	0
+132	bAdjust	0
+144	Drill_legend	0
+150	Notes	0
+151	HeatSink	0
+152	_bDocu	0
+153	FabDoc1	0
+154	FabDoc2	0
+155	FabDoc3	0
+199	Contour	0
+200	200bmp	0
+201	201bmp	0
+202	202bmp	0
+203	203bmp	0
+204	204bmp	0
+205	205bmp	0
+206	206bmp	0
+207	207bmp	0
+208	208bmp	0
+209	209bmp	0
+210	210bmp	0
+211	211bmp	0
+212	212bmp	0
+213	213bmp	0
+214	214bmp	0
+215	215bmp	0
+216	216bmp	0
+217	217bmp	0
+218	218bmp	0
+219	219bmp	0
+220	220bmp	0
+221	221bmp	0
+222	222bmp	0
+223	223bmp	0
+224	224bmp	0
+248	Housing	0
+249	Edge	0
+250	Descript	0
+251	SMDround	0
+254	cooling	0
+
+----------------------------
+CLASS
+# 	Name	min. Width	Clearance	min. Drill	Used
+0	default	0.0000 	0.0000 	0.0000 	140 
+
+----------------------------
+WIDTH
+WIRE	Q.
+0.2540 	128 
+0.2032 	1048
+
+ARC	Q.
+ * Wire width are saved in 0.2 micron resolution.
+
+POLY. width	Q.
+0.2032 	24  
+
+POLY. Isol.	Q.
+0.0000 	16  
+0.5080 	8   
+
+Polygon
+Type	Name	Layer	Rank	Width
+Signal	GND	16	1	0.203
+Signal	GND	1	1	0.203
+Signal	GND1	16	1	0.203
+Signal	GND1	1	1	0.203
+Signal	GND2	16	1	0.203
+Signal	GND2	1	1	0.203
+Signal	GND3	16	1	0.203
+Signal	GND3	1	1	0.203
+Signal	N$6	1	1	0.203
+Signal	N$7	2	1	0.203
+Signal	N$8	15	1	0.203
+Signal	N$9	16	1	0.203
+Signal	N$16	1	1	0.203
+Signal	N$17	2	1	0.203
+Signal	N$18	15	1	0.203
+Signal	N$19	16	1	0.203
+Signal	N$27	1	1	0.203
+Signal	N$28	2	1	0.203
+Signal	N$29	15	1	0.203
+Signal	N$30	16	1	0.203
+Signal	N$37	1	1	0.203
+Signal	N$38	2	1	0.203
+Signal	N$39	15	1	0.203
+Signal	N$40	16	1	0.203
+ * Wire width are saved in 0.2 micron resolution.
+
+----------------------------
+CIRCLE (width)	Q.
+
+CIRCLE diam.	Q.
+
+----------------------------
+TEXT (w)	Q.
+
+TEXT (s)	Q.
+
+----------------------------
+SMD x	SMD y	Roundn.	Q.
+0.8890 	0.6985 	0%	8   
+0.4000 	0.5000 	0%	144 
+0.5000 	0.5000 	0%	32  
+0.8000 	2.5000 	0%	16  
+0.8000 	0.8000 	0%	32  
+1.5000 	1.5000 	100%	3   
+1.0000 	0.5000 	0%	12  
+1.0000 	0.3500 	0%	24  
+0.3000 	0.7000 	0%	128 
+1.8000 	1.8000 	0%	4   
+1.5400 	1.5400 	0%	16  
+1.4000 	1.1500 	0%	32  
+
+PAD tDiam	Q.
+3.5160 	8   
+1.5000 	8   
+1.1064 	20  
+
+PAD bDiam	Q.
+3.5160 	8   
+1.5000 	8   
+1.1064 	20  
+
+PAD tRestring	Q.
+0.5080 	8   
+0.2500 	8   
+0.2032 	20  
+
+PAD bRestring	Q.
+0.5080 	8   
+0.2500 	8   
+0.2032 	20  
+
+PAD iDiam	Q.
+3.5160 	8   
+1.5000 	8   
+1.1064 	20  
+
+PAD iRestring	Q.
+0.5080 	8   
+0.2500 	8   
+0.2032 	20  
+
+VIA Outer-Diam	Q.
+0.5080 	144 
+2.5400 	8   
+
+VIA Outer-Restring 	Q.
+0.1524 	144 
+0.6350 	8   
+
+VIA Inner-Diam.	Q.
+0.3048 	144 
+1.3716 	8   
+
+VIA Inner-Restring	Q.
+0.0508 	152 
+
+VIA drill	Q.
+0.2032 	144 
+1.2700 	8   
+
+VIA Stack	Q.
+01-16	152 
+01-16-PAD	36  
+
+PAD drill	Q.
+2.5000 	8   
+1.0000 	8   
+0.7000 	20  
+
+----------------------------
+HOLE drill	Q.
+2.5400 	16  
+0.5080 	156 
+
+RACK
+T01   0.2
+T02   0.5
+T03   0.7
+T04   1.0
+T05   1.3
+T06   2.5
+
+----------------------------
+LIBRARY	Q.
+femtoduino	4   
+parts_0201	72  
+microbuilder	36  
+adafruit	3   
+MCP1700T-3302E_TT	4   
+pins_fine_pitch	4   
+balun	4   
+atmel-samr21	4   
+molex-antenna-2.4GHz	4   
+crystals	8   
+
+PACKAGE	Q.
+SPST_SMD	4   
+PART	72  
+_0402MP	16  
+USB_A-SMT	4   
+_0603MP	12  
+FIDUCIAL_1MM	3   
+MCP1700T-3302E/TT	4   
+CHIPLED_0603_NOOUTLINE	4   
+1X5_ROUND	4   
+0805_BALUN	4   
+QFN32	4   
+0479480001	4   
+TSX-3225	8   
+
+VALUE	PAC	Q.	Top	Bot
+DNP	SPST_SMD	4	4	0
+0.1uF	PART	28	28	0
+10pF	PART	8	8	0
+2.2uF	_0402MP	8	8	0
+0.47uF	PART	4	4	0
+22pF, C0G, 5%	PART	8	8	0
+DNP	PART	4	4	0
+9pF	PART	8	8	0
+10uF	_0402MP	8	8	0
+~/-empty-/~CN1	USB_A-SMT	1	1	0
+~/-empty-/~CN2	USB_A-SMT	1	1	0
+~/-empty-/~CN3	USB_A-SMT	1	1	0
+~/-empty-/~CN4	USB_A-SMT	1	1	0
+~/-empty-/~FB1	_0603MP	1	1	0
+~/-empty-/~FB2	_0603MP	1	1	0
+~/-empty-/~FB3	_0603MP	1	1	0
+~/-empty-/~FB4	_0603MP	1	1	0
+~/-empty-/~FB5	_0603MP	1	1	0
+~/-empty-/~FB6	_0603MP	1	1	0
+~/-empty-/~FB7	_0603MP	1	1	0
+~/-empty-/~FB8	_0603MP	1	1	0
+FIDUCIAL	FIDUCIAL_1MM	3	3	0
+10uH	_0603MP	4	4	0
+MCP1700T-3302E/TT	MCP1700T-3302E/TT	4	4	0
+BLUE	CHIPLED_0603_NOOUTLINE	4	4	0
+330	PART	8	8	0
+10K	PART	4	4	0
+1X5_ROUND	1X5_ROUND	4	4	0
+JOHANSON_2450BM15A0015E	0805_BALUN	4	4	0
+ATSAMR21E18A-MUT	QFN32	4	4	0
+0479480001	0479480001	4	4	0
+12MHz	TSX-3225	4	4	0
+16MHz	TSX-3225	4	4	0
+
+----------------------------
+RECT x	RECT y	Q.
+0 RECT (copper)
+
+----------------------------
+RECT Layer	Q.
+
+----------------------------
+TEXT (s)	Q.
+0 TEXT size (copper)
+
+TEXT (w)	Q.
+0 TEXT wire width (copper)
+
+TEXT 	Q.
+0.8128 	4   
+0.7112 	8   
+2 TEXT size (place)
+1 TEXT wire width (place)
+
+CIRCLE diam.	Q.
+0 CIRCLE (copper)
+
+False signals:
+Signal-Name	Vias	Coordinate Layer
+MOUNT1	1	(29.2100 19.0500) L 1-16
+MOUNT2	1	(29.2100 7.8740) L 1-16
+MOUNT3	1	(29.2100 41.9100) L 1-16
+MOUNT4	1	(29.2100 30.7340) L 1-16
+MOUNT5	1	(29.2100 64.7700) L 1-16
+MOUNT6	1	(29.2100 53.5940) L 1-16
+MOUNT7	1	(29.2100 87.6300) L 1-16
+
+Rudimentarily signal name(s):
+WIRE 'N$6' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$7' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$8' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$9' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$16' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$17' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$18' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$19' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$27' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$28' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$29' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$30' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$37' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$38' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$39' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+WIRE 'N$40' (-9.4096 -2.0287) (-10.4096 -2.0287);DELETE (-9.4096 -2.0287);
+
+End report
