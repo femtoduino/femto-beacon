@@ -1,0 +1,403 @@
+Data Exported from: /home/aalbino/Projects/femto-beacon/Eagle_Files/FemtoBeacon_r2.0.0/femtoBeacon_r2.0.3_PANELIZED.brd
+with: /home/aalbino/eagle-7.6.0/ulp/statistic-brd.ulp Version 1.3.9
+at: 6/26/17 10:35 AM
+EAGLE Version 7.6.0 Copyright (c) 1988-2016 CadSoft
+
+all Values in mm
+max. Board length (Layer 20)
+X = 63.50
+Y = 78.74
+Outline contour = 299.72
+
+used layers 4
+
+ 1 Top
+ 2 Route2
+15 Route15
+16 Bottom
+_________________________
+
+3810  	 Wire(s) incl. Arc(s)
+12    	 Polygon(s)
+_________________________
+717   	 SMD(s) top
+273   	 SMD(s) bottom
+===================
+990   	 SMD(s) total
+
+114   	 PAD(s)
+_________________________
+336   	 Via
+239   	 Hole
+===================
+689   	 Drills total
+_________________________
+749	 tCream
+305	 bCream
+_________________________
+Routing Info: 
+210   	 Signal(s) 
+1104  	 PAD/SMD total
+===================
+978   	 PAD/SMD on Signal
+_________________________
+Packages used area:
+~ 1426.22 mm² (0.143 dm²)
+_________________________
+
+
+============================
+
+============================
+372 Elements: 0 locked / 372 unlocked
+0 Testpoints (TP)
+
+----------------------------
+LAYER
+Nb.	Name	Used
+  1	Top	1
+  2	Route2	1
+  3	Route3	0
+ 14	Route14	0
+ 15	Route15	1
+ 16	Bottom	1
+ 17	Pads	1
+ 18	Vias	1
+ 19	Unrouted	1
+ 20	Dimension	1
+ 21	tPlace	1
+ 22	bPlace	1
+ 23	tOrigins	1
+ 24	bOrigins	1
+ 25	tNames	1
+ 26	bNames	1
+ 27	tValues	1
+ 28	bValues	1
+ 29	tStop	1
+ 30	bStop	1
+ 31	tCream	1
+ 32	bCream	1
+ 33	tFinish	0
+ 34	bFinish	0
+ 35	tGlue	1
+ 36	bGlue	0
+ 37	tTest	0
+ 38	bTest	0
+ 39	tKeepout	0
+ 40	bKeepout	0
+ 41	tRestrict	1
+ 42	bRestrict	1
+ 43	vRestrict	0
+ 44	Drills	1
+ 45	Holes	1
+ 46	Milling	1
+ 47	Measures	0
+ 48	Document	0
+ 49	Reference	0
+ 50	dxf	0
+ 51	tDocu	1
+ 52	bDocu	0
+ 53	tGND_GNDA	0
+ 54	bGND_GNDA	0
+ 56	wert	0
+ 57	tCAD	0
+100	Muster	0
+101	Patch_Top	0
+102	Mittellin	0
+103	Stiffner	0
+104	Name	0
+105	Beschreib	0
+106	BGA-Top	0
+107	BD-Top	0
+108	tBridges	0
+109	tBPL	0
+110	bBPL	0
+111	MPL	0
+112	tSilk	0
+116	Patch_BOT	0
+121	sName	0
+122	_bPlace	0
+123	tTestmark	0
+124	bTestmark	0
+125	_tNames	0
+126	_bNames	0
+127	_tValues	0
+128	_bValues	0
+131	tAdjust	0
+132	bAdjust	0
+144	Drill_legend	0
+150	Notes	0
+151	HeatSink	0
+152	_bDocu	0
+153	FabDoc1	0
+154	FabDoc2	0
+155	FabDoc3	0
+199	Contour	0
+200	200bmp	0
+201	201bmp	0
+202	202bmp	0
+203	203bmp	0
+204	204bmp	0
+205	205bmp	0
+206	206bmp	0
+207	207bmp	0
+208	208bmp	0
+209	209bmp	0
+210	210bmp	0
+211	211bmp	0
+212	212bmp	0
+213	213bmp	0
+214	214bmp	0
+215	215bmp	0
+216	216bmp	0
+217	217bmp	0
+218	218bmp	0
+219	219bmp	0
+220	220bmp	0
+221	221bmp	0
+222	222bmp	0
+223	223bmp	0
+224	224bmp	0
+248	Housing	0
+249	Edge	0
+250	Descript	0
+251	SMDround	0
+254	cooling	0
+
+----------------------------
+CLASS
+# 	Name	min. Width	Clearance	min. Drill	Used
+0	default	0.0000 	0.0000 	0.0000 	210 
+
+----------------------------
+WIDTH
+WIRE	Q.
+0.2032 	582 
+0.1397 	312 
+0.1524 	1320
+0.2540 	1482
+0.5080 	12  
+1.2700 	30  
+0.3810 	6   
+0.3048 	6   
+
+ARC	Q.
+0.2032 	24  
+0.1397 	18  
+0.3810 	6   
+0.1524 	12  
+ * Wire width are saved in 0.2 micron resolution.
+
+POLY. width	Q.
+0.1270 	12  
+
+POLY. Isol.	Q.
+0.5080 	6   
+0.2540 	6   
+
+Polygon
+Type	Name	Layer	Rank	Width
+Signal	BOTTOM	16	1	0.127
+Signal	BOTTOM1	16	1	0.127
+Signal	BOTTOM2	16	1	0.127
+Signal	BOTTOM3	16	1	0.127
+Signal	BOTTOM4	16	1	0.127
+Signal	BOTTOM5	16	1	0.127
+Signal	TOP	1	1	0.127
+Signal	TOP1	1	1	0.127
+Signal	TOP2	1	1	0.127
+Signal	TOP3	1	1	0.127
+Signal	TOP4	1	1	0.127
+Signal	TOP5	1	1	0.127
+ * Wire width are saved in 0.2 micron resolution.
+
+----------------------------
+CIRCLE (width)	Q.
+
+CIRCLE diam.	Q.
+
+----------------------------
+TEXT (w)	Q.
+
+TEXT (s)	Q.
+
+----------------------------
+SMD x	SMD y	Roundn.	Q.
+1.0000 	0.3500 	0%	36  
+0.9000 	0.5000 	0%	48  
+0.8890 	0.6985 	0%	12  
+0.4000 	0.5000 	0%	288 
+0.5000 	0.5000 	0%	48  
+0.8000 	0.8000 	0%	36  
+1.5000 	1.5000 	100%	6   
+0.3000 	0.7000 	0%	192 
+1.8000 	1.8000 	0%	6   
+0.6000 	0.2500 	100%	144 
+1.7000 	1.5400 	25%	6   
+1.0000 	0.5000 	0%	18  
+0.7620 	1.0160 	50%	12  
+1.5400 	1.5400 	0%	24  
+0.4000 	1.3500 	0%	30  
+2.1000 	1.6000 	0%	12  
+1.6000 	1.0000 	0%	12  
+1.9000 	1.9000 	0%	12  
+1.4000 	1.1500 	0%	48  
+
+PAD tDiam	Q.
+0.9144 	114 
+
+PAD bDiam	Q.
+0.9144 	114 
+
+PAD tRestring	Q.
+0.1778 	114 
+
+PAD bRestring	Q.
+0.1778 	114 
+
+PAD iDiam	Q.
+0.9144 	114 
+
+PAD iRestring	Q.
+0.1778 	114 
+
+VIA Outer-Diam	Q.
+0.5080 	336 
+
+VIA Outer-Restring 	Q.
+0.1524 	336 
+
+VIA Inner-Diam.	Q.
+0.3048 	336 
+
+VIA Inner-Restring	Q.
+0.0508 	336 
+
+VIA drill	Q.
+0.2032 	336 
+
+VIA Stack	Q.
+01-16	336 
+01-16-PAD	114 
+
+PAD drill	Q.
+0.5588 	114 
+
+----------------------------
+HOLE drill	Q.
+0.5080 	231 
+2.5400 	8   
+
+RACK
+T01   0.2
+T02   0.5
+T03   0.6
+T04   2.5
+
+----------------------------
+LIBRARY	Q.
+balun	6   
+freeimu	6   
+femtoduino	12  
+parts_0201	144 
+microbuilder	42  
+adafruit	6   
+atmel-samr21	6   
+mpu9250	6   
+MCP1700T-3302E_TT	6   
+solder-jumpers	6   
+pins_1.27mm_pitch	114 
+molex-antenna-2.4GHz	6   
+crystals	12  
+
+PACKAGE	Q.
+0805_BALUN	6   
+MS5611-01BA03	6   
+SPST_SMD	6   
+PART	144 
+_0402MP	24  
+_0603MP	12  
+FIDUCIAL_1MM	6   
+QFN32	6   
+QFN_3X3MM	6   
+MCP1700T-3302E/TT	6   
+CHIPLED_0603_NOOUTLINE	6   
+SOLDER_JUMP_CLOSED	6   
+1X1_ROUND	114 
+0479480001	6   
+USB_MICROB_PACKAGE	6   
+TSX-3225	12  
+
+VALUE	PAC	Q.	Top	Bot
+JOHANSON_2450BM15A0015E	0805_BALUN	6	6	0
+MS5611-01BA03	MS5611-01BA03	6	0	6
+DNP	SPST_SMD	6	6	0
+0.1uF	PART	60	42	18
+10pF	PART	12	12	0
+2.2uF	_0402MP	12	12	0
+0.47uF	PART	6	6	0
+22pF, C0G, 5%	PART	12	12	0
+DNP	PART	6	6	0
+9pF	PART	12	12	0
+10uF	_0402MP	12	12	0
+10nF	PART	6	6	0
+~/-empty-/~FB1	_0603MP	1	1	0
+~/-empty-/~FB2	_0603MP	1	1	0
+~/-empty-/~FB3	_0603MP	1	1	0
+~/-empty-/~FB4	_0603MP	1	1	0
+~/-empty-/~FB5	_0603MP	1	1	0
+~/-empty-/~FB6	_0603MP	1	1	0
+FIDUCIAL	FIDUCIAL_1MM	6	3	3
+ATSAMR21E18A-MUT	QFN32	6	6	0
+MPU-9250	QFN_3X3MM	6	0	6
+10uH	_0603MP	6	6	0
+MCP1700T-3302E/TT	MCP1700T-3302E/TT	6	6	0
+BLUE	CHIPLED_0603_NOOUTLINE	6	6	0
+330	PART	12	12	0
+10K	PART	6	6	0
+2.2K	PART	12	0	12
+SOLDER_JUMPER_CLOSED	SOLDER_JUMP_CLOSED	6	0	6
+1X1_ROUND	1X1_ROUND	114	114	0
+0479480001	0479480001	6	6	0
+USB_MICROB	USB_MICROB_PACKAGE	6	6	0
+12MHz	TSX-3225	6	6	0
+16MHz	TSX-3225	6	6	0
+
+----------------------------
+RECT x	RECT y	Q.
+0 RECT (copper)
+
+----------------------------
+RECT Layer	Q.
+
+----------------------------
+TEXT (s)	Q.
+0 TEXT size (copper)
+
+TEXT (w)	Q.
+0 TEXT wire width (copper)
+
+TEXT 	Q.
+0.7112 	126 
+1 TEXT size (place)
+1 TEXT wire width (place)
+
+CIRCLE diam.	Q.
+0 CIRCLE (copper)
+
+
+Rudimentarily signal name(s):
+WIRE 'BOTTOM' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'BOTTOM1' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'BOTTOM2' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'BOTTOM3' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'BOTTOM4' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'BOTTOM5' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'TOP' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'TOP1' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'TOP2' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'TOP3' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'TOP4' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+WIRE 'TOP5' (-1.0000 -1.7747) (-2.0000 -1.7747);DELETE (-1.0000 -1.7747);
+
+End report

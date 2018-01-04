@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: 400118.PcbDoc   6/17/2015  1:50:57 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : 400118-RoundHoles.TXT
+ASCII SlotHoles File : 400118-SlotHoles.TXT
+EIA File   : 400118.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        12mil (0.3048mm)         Round          572              71.21 Inch (1808.71 mm)
+T2        13mil (0.3302mm)         Round          16               0.71 Inch (18.00 mm)
+T3        19.7mil (0.50038mm)      Slot           2                0.58 Inch (14.64 mm)
+T4        35.4mil (0.89916mm)      Round          82               12.41 Inch (315.14 mm)
+T5        39.4mil (1.00076mm)      Round          2                3.32 Inch (84.21 mm)
+T6        46.9mil (1.19126mm)      Round          1                0.00 Inch (0.00 mm)
+T7        70.1mil (1.78054mm)      Round          2                1.10 Inch (27.94 mm)
+T8        126mil (3.2004mm)        Round          5                7.13 Inch (181.19 mm)
+T9        39mil (0.9906mm)         Round          3         NPTH   0.38 Inch (9.72 mm)
+---------------------------------------------------------------------------
+Totals                                            685              96.83 Inch (2459.55 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

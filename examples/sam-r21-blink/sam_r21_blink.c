@@ -6,7 +6,7 @@
 
 // See http://jjmilburn.github.io/2014/09/18/Atmel-SAMD20-EclipseCDT/
 
-#define MY_LED    PIN_PA08
+#define MY_LED    PIN_PA28
 
 void configure_port_pins(void);
 void configure_port_pins(void)
