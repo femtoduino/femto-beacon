@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="yes" active="yes"/>
@@ -28,8 +28,8 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
@@ -210,7 +210,8 @@ OTG</text>
 <hole x="25.207" y="15.604" drill="0.508"/>
 <hole x="25.08" y="11.794" drill="0.508"/>
 <hole x="25.207" y="12.556" drill="0.508"/>
-<wire x1="0" y1="0" x2="0" y2="27.94" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="0" y2="14.08" width="0" layer="20"/>
+<wire x1="0" y1="14.08" x2="0" y2="27.94" width="0" layer="20"/>
 <wire x1="0" y1="27.94" x2="33.02" y2="27.94" width="0" layer="20"/>
 <wire x1="33.02" y1="27.94" x2="33.02" y2="0" width="0" layer="20"/>
 <wire x1="33.02" y1="0" x2="0" y2="0" width="0" layer="20"/>
@@ -291,8 +292,33 @@ OTG</text>
 <vertex x="23.495" y="9.398"/>
 <vertex x="23.876" y="10.922"/>
 </polygon>
-<dimension x1="0" y1="27.94" x2="33.02" y2="27.94" x3="16.51" y3="33.02" textsize="1.778" layer="51" unit="inch" visible="yes"/>
-<dimension x1="33.02" y1="0" x2="33.02" y2="27.94" x3="40.64" y3="13.97" textsize="1.778" layer="51" unit="inch" visible="yes"/>
+<dimension x1="33.02" y1="0" x2="33.02" y2="27.94" x3="49.784" y3="13.97" textsize="1.778" layer="51" visible="yes"/>
+<dimension x1="33.02" y1="27.94" x2="30.48" y2="25.4" x3="31.75" y3="30.48" textsize="1.778" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="2.54" y1="25.4" x2="0" y2="25.4" x3="1.27" y3="40.64" textsize="1.778" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="2.54" y1="25.4" x2="2.54" y2="27.94" x3="-7.62" y3="26.67" textsize="1.778" layer="51" visible="yes"/>
+<wire x1="2.54" y1="25.4" x2="2.54" y2="20.32" width="0.254" layer="51" style="shortdash"/>
+<wire x1="2.54" y1="20.32" x2="2.54" y2="2.54" width="0.254" layer="51" style="shortdash"/>
+<wire x1="30.48" y1="25.4" x2="30.48" y2="20.32" width="0.254" layer="51" style="shortdash"/>
+<wire x1="30.48" y1="20.32" x2="30.48" y2="2.54" width="0.254" layer="51" style="shortdash"/>
+<wire x1="2.54" y1="25.4" x2="30.48" y2="25.4" width="0.254" layer="51" style="shortdash"/>
+<dimension x1="2.54" y1="20.32" x2="2.54" y2="25.4" x3="-12.7" y3="22.86" textsize="1.778" layer="51" visible="yes"/>
+<dimension x1="2.54" y1="2.54" x2="2.54" y2="7.62" x3="-15.24" y3="5.08" textsize="1.778" layer="51" visible="yes"/>
+<dimension x1="2.54" y1="2.54" x2="2.54" y2="0" x3="-7.62" y3="1.27" textsize="1.778" layer="51" visible="yes"/>
+<wire x1="2.54" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="51" style="shortdash"/>
+<circle x="16.08" y="14.08" radius="9" width="0.002540625" layer="19"/>
+<dimension x1="16.08" y1="14.08" x2="16.08" y2="27.94" x3="38.1" y3="21.01" textsize="1.778" layer="51" visible="yes"/>
+<dimension x1="16.083590625" y1="23.08" x2="16.076409375" y2="5.08" x3="43.68" y3="14.0689875" textsize="1.778" layer="51" dtype="diameter" visible="yes"/>
+<dimension x1="0" y1="0" x2="33.02" y2="0" x3="16.51" y3="-10.16" textsize="1.778" layer="51" visible="yes"/>
+<wire x1="0" y1="14.08" x2="16.08" y2="14.08" width="0" layer="19"/>
+<wire x1="2.794" y1="16.08" x2="16.08" y2="16.08" width="0" layer="19"/>
+<wire x1="2.794" y1="12.08" x2="16.08" y2="12.08" width="0" layer="19"/>
+<wire x1="2.794" y1="16.08" x2="2.794" y2="12.08" width="0" layer="19"/>
+<dimension x1="0" y1="14.08" x2="0" y2="16.08" x3="-2.54" y3="15.08" textsize="1.778" layer="51" visible="yes"/>
+<dimension x1="16.08" y1="24.35" x2="22.86" y2="38.1" x3="30.48" y3="38.1" textsize="1.778" layer="51" dtype="leader" visible="yes"/>
+<text x="33.02" y="38.1" size="1.778" layer="51">2.54mm diameter Milling</text>
+<dimension x1="31.471703125" y1="3.3333625" x2="29.488296875" y2="1.7466375" x3="40.64" y3="-10.16" textsize="1.778" layer="51" dtype="diameter" visible="yes"/>
+<wire x1="2.54" y1="20.32" x2="30.48" y2="20.32" width="0.254" layer="51" style="shortdash"/>
+<dimension x1="16.08" y1="16.08" x2="33.02" y2="12.7" x3="24.55" y3="-5.08" textsize="1.778" layer="51" dtype="horizontal" visible="yes"/>
 </plain>
 <libraries>
 <library name="microbuilder">
