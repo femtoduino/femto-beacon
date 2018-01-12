@@ -1,0 +1,13 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"MFR_ID";
+"1";"";"PTCFUSE-1206";"R1206";"F1";"PTC fuses, resettable thermistors";"1206L050/15YR";
+"1";"0.1uF";"CAPACITOR_0201";"PART";"C2";"";"GRM033C80J104KE84D";
+"1";"10UH";"INDUCTOR_0402MP";"_0402MP";"L2";"Inductors";"LQM18FN100M00D";
+"1";"15nH";"INDUCTOR_FIXED_0201";"PART";"L1";"";"LQP03HQ15NJ02D";
+"9";"1X1_ROUND_MM";"1X1_ROUND_MM";"1X1_ROUND_MM";"U$16, U$17, U$18, U$19, U$20, U$21, U$22, U$23, U$24";"";"";
+"1";"1X5_ROUND";"1X5_ROUND";"1X5_ROUND";"U$6";"";"";
+"3";"330";"RESISTOR_0201";"PART";"R1, R2, R3";"";"CRCW0201330RJNED";
+"1";"4.7uF";"CAP_CERAMIC_0402MP";"_0402MP";"C1";"Ceramic Capacitors";"CC0402KRX5R6BB475";
+"3";"FIDUCIAL";"FIDUCIAL";"FIDUCIAL_1MM";"FID1, FID2, FID3";"For use by pick and place machines to calibrate the vision/machine, 1mm";"";
+"1";"LRTB_R48G";"LRTB_R48G";"LRTB_R48G";"LED1";"";"";
+"1";"SCHOTTKY";"LED0603_NOOUTLINE";"CHIPLED_0603_NOOUTLINE";"LED2";"LED";"SD0603S040S0R2";
+"1";"TY_BLE_EYSHSNZWZ";"TY_BLE_EYSHSNZWZ";"MODULE";"IC";"";"EYSHSNZWZ";
