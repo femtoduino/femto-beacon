@@ -1,0 +1,352 @@
+Data Exported from: /Users/aalbino/Projects/femto-beacon/Eagle_Files/FemtoBeacon_ESP32_Coin_r1.0.0/femto-beacon-esp32coin.brd
+with: /Applications/EAGLE-9.3.0/examples/ulps/examples/statistic-brd.ulp Version 1.3.9
+at: 4/2/19 12:58 AM
+EAGLE Version 9.3.0 Copyright (c) 1988-2019 Autodesk, Inc.
+
+all Values in mm
+max. Board length (Layer 20)
+X = 25.40
+Y = 25.40
+Outline contour = 101.60
+
+used layers 4
+
+ 1 Top
+ 2 Route2
+15 Route15
+16 Bottom
+_________________________
+
+380   	 Wire(s) incl. Arc(s)
+1     	 Polygon(s)
+_________________________
+137   	 SMD(s) top
+0     	 SMD(s) bottom
+===================
+137   	 SMD(s) total
+
+15    	 PAD(s)
+_________________________
+37    	 Via
+18    	 Hole
+===================
+70    	 Drills total
+_________________________
+146	 tCream
+0	 bCream
+_________________________
+Routing Info: 
+36    	 Signal(s) 
+152   	 PAD/SMD total
+===================
+132   	 PAD/SMD on Signal
+_________________________
+Packages used area:
+~ 155.52 mm² (0.016 dm²)
+_________________________
+
+
+============================
+6 Unroutet airwires ***
+
+============================
+48 Elements: 0 locked / 48 unlocked
+0 Testpoints (TP)
+
+----------------------------
+LAYER
+Nb.	Name	Used
+  1	Top	1
+  2	Route2	1
+ 15	Route15	1
+ 16	Bottom	1
+ 17	Pads	1
+ 18	Vias	1
+ 19	Unrouted	1
+ 20	Dimension	1
+ 21	tPlace	1
+ 22	bPlace	1
+ 23	tOrigins	1
+ 24	bOrigins	0
+ 25	tNames	1
+ 26	bNames	0
+ 27	tValues	1
+ 28	bValues	0
+ 29	tStop	1
+ 30	bStop	1
+ 31	tCream	1
+ 32	bCream	0
+ 33	tFinish	0
+ 34	bFinish	0
+ 35	tGlue	1
+ 36	bGlue	0
+ 37	tTest	0
+ 38	bTest	0
+ 39	tKeepout	1
+ 40	bKeepout	0
+ 41	tRestrict	1
+ 42	bRestrict	0
+ 43	vRestrict	0
+ 44	Drills	1
+ 45	Holes	1
+ 46	Milling	1
+ 47	Measures	0
+ 48	Document	0
+ 49	Reference	0
+ 50	dxf	0
+ 51	tDocu	1
+ 52	bDocu	0
+ 53	tGND_GNDA	0
+ 54	bGND_GNDA	0
+ 56	wert	0
+ 57	tCAD	0
+100	Muster	0
+101	Patch_Top	0
+102	Mittellin	0
+103	Stiffner	0
+104	Name	0
+105	Beschreib	0
+106	BGA-Top	0
+107	BD-Top	0
+108	tBridges	0
+109	tBPL	0
+110	bBPL	0
+111	MPL	0
+112	tSilk	0
+116	Patch_BOT	0
+121	sName	0
+122	_bPlace	0
+123	tTestmark	0
+124	bTestmark	0
+125	_tNames	0
+126	_bNames	0
+127	_tValues	0
+128	_bValues	0
+131	tAdjust	0
+132	bAdjust	0
+144	Drill_legend	0
+150	Notes	0
+151	HeatSink	0
+152	_bDocu	0
+153	FabDoc1	0
+154	FabDoc2	0
+155	FabDoc3	0
+199	Contour	0
+200	200bmp	0
+201	201bmp	0
+202	202bmp	0
+203	203bmp	0
+204	204bmp	0
+205	205bmp	0
+206	206bmp	0
+207	207bmp	0
+208	208bmp	0
+209	209bmp	0
+210	210bmp	0
+211	211bmp	0
+212	212bmp	0
+213	213bmp	0
+214	214bmp	0
+215	215bmp	0
+216	216bmp	0
+217	217bmp	0
+218	218bmp	0
+219	219bmp	0
+220	220bmp	0
+221	221bmp	0
+222	222bmp	0
+223	223bmp	0
+224	224bmp	0
+248	Housing	0
+249	Edge	0
+250	Descript	0
+251	SMDround	0
+254	cooling	0
+
+----------------------------
+CLASS
+# 	Name	min. Width	Clearance	min. Drill	Used
+0	default	0.0000 	0.0000 	0.0000 	36  
+
+----------------------------
+WIDTH
+WIRE	Q.
+0.2540 	184 
+0.1524 	14  
+0.3810 	58  
+0.1778 	115 
+0.1270 	9   
+
+ARC	Q.
+ * Wire width are saved in 0.2 micron resolution.
+
+POLY. width	Q.
+0.2540 	1   
+
+POLY. Isol.	Q.
+0.2540 	1   
+
+Polygon
+Type	Name	Layer	Rank	Width
+Signal	GND	2	1	0.254
+ * Wire width are saved in 0.2 micron resolution.
+
+----------------------------
+CIRCLE (width)	Q.
+
+CIRCLE diam.	Q.
+
+----------------------------
+TEXT (w)	Q.
+
+TEXT (s)	Q.
+
+----------------------------
+SMD x	SMD y	Roundn.	Q.
+1.5400 	1.5400 	0%	4   
+1.7000 	0.8000 	0%	2   
+0.4000 	0.5000 	0%	52  
+0.5000 	0.5000 	0%	6   
+0.8000 	0.8000 	0%	8   
+1.5000 	1.5000 	100%	3   
+0.1800 	0.4000 	0%	48  
+1.0000 	1.0000 	0%	1   
+1.0000 	0.5000 	0%	3   
+0.4500 	0.4500 	0%	4   
+0.9500 	0.8500 	0%	4   
+1.4000 	0.7500 	0%	2   
+
+PAD tDiam	Q.
+1.0500 	15  
+
+PAD bDiam	Q.
+1.0500 	15  
+
+PAD tRestring	Q.
+0.1750 	15  
+
+PAD bRestring	Q.
+0.1750 	15  
+
+PAD iDiam	Q.
+1.0500 	15  
+
+PAD iRestring	Q.
+0.1750 	15  
+
+VIA Outer-Diam	Q.
+0.5080 	37  
+
+VIA Outer-Restring 	Q.
+0.1270 	37  
+
+VIA Inner-Diam.	Q.
+0.4572 	37  
+
+VIA Inner-Restring	Q.
+0.1016 	37  
+
+VIA drill	Q.
+0.2540 	37  
+
+VIA Stack	Q.
+01-16	37  
+01-16-PAD	15  
+
+PAD drill	Q.
+0.7000 	15  
+
+----------------------------
+HOLE drill	Q.
+0.5080 	18  
+
+RACK
+T01   0.3
+T02   0.5
+T03   0.7
+
+----------------------------
+LIBRARY	Q.
+molex-antenna-2.4GHz	1   
+omron_tactile_switch	1   
+parts_0201	26  
+microbuilder	7   
+adafruit	3   
+esp32-wroom-32	1   
+MCP1700T-3302E_TT	1   
+pins_1.27mm_pitch	5   
+osram_opto_LED	1   
+crystals	2   
+
+PACKAGE	Q.
+0479480001	1   
+SIDE_ACT_NO_GND_NO_BOSS	1   
+PART	26  
+_0402MP	3   
+_0603MP	4   
+FIDUCIAL_1MM	3   
+ESP32-QFN48_5X5	1   
+MCP1700T-3302E/TT	1   
+1X3_ROUND	5   
+LRTB_R48G	1   
+FA-128	1   
+ABS06-107-32.768KHZ-T	1   
+
+VALUE	PAC	Q.	Top	Bot
+0479480001	0479480001	1	1	0
+TACTILE_SWITCH_NO_GND_NO_BOSS	SIDE_ACT_NO_GND_NO_BOSS	1	1	0
+1uF	PART	3	3	0
+2.2uF	_0402MP	2	2	0
+10pF	PART	2	2	0
+270pF	PART	2	2	0
+6.8pF	PART	1	1	0
+2.4pF	PART	1	1	0
+10uF	_0603MP	2	2	0
+0.1uF	PART	5	5	0
+0.47uF	_0402MP	1	1	0
+100pF	PART	1	1	0
+10nF/6.3V(10%)	PART	1	1	0
+3.3nF/6.3V(10%)	PART	1	1	0
+4.1pF	PART	2	2	0
+~/-empty-/~FB1	_0603MP	1	1	0
+~/-empty-/~FB2	_0603MP	1	1	0
+FIDUCIAL	FIDUCIAL_1MM	3	3	0
+ESP32-QFN_5X5	ESP32-QFN48_5X5	1	1	0
+1.6nH	PART	1	1	0
+MCP1700T-3302E/TT	MCP1700T-3302E/TT	1	1	0
+1X3_ROUND	1X3_ROUND	5	5	0
+20K(5%)	PART	1	1	0
+10K	PART	1	1	0
+270	PART	3	3	0
+DNP	PART	1	1	0
+LRTB_R48G	LRTB_R48G	1	1	0
+40MHz	FA-128	1	1	0
+ABS06-107-32.768KHZ-T	ABS06-107-32.768KHZ-T	1	1	0
+
+----------------------------
+RECT x	RECT y	Q.
+0 RECT (copper)
+
+----------------------------
+RECT Layer	Q.
+
+----------------------------
+TEXT (s)	Q.
+0 TEXT size (copper)
+
+TEXT (w)	Q.
+0 TEXT wire width (copper)
+
+TEXT 	Q.
+0.6096 	13  
+0.8128 	6   
+2 TEXT size (place)
+2 TEXT wire width (place)
+
+CIRCLE diam.	Q.
+0 CIRCLE (copper)
+
+False signals:
+Signal-Name	Vias	Coordinate Layer
+N$8	3	(10.1600 9.9060) L 19
+End report
