@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -918,6 +918,18 @@ Hacker House</text>
 <vertex x="19.685" y="24.511"/>
 <vertex x="19.685" y="25.908"/>
 </polygon>
+<dimension x1="0" y1="82.54" x2="59.436" y2="82.54" x3="29.718" y3="104.14" textsize="1.778" layer="20" dtype="horizontal" width="0.254" visible="yes"/>
+<dimension x1="55.88" y1="80.5815" x2="55.88" y2="76.8985" x3="71.882" y3="78.74" textsize="1.778" layer="20" dtype="diameter" width="0.254" visible="yes"/>
+<dimension x1="59.436" y1="0" x2="59.436" y2="82.54" x3="89.916" y3="41.27" textsize="1.778" layer="20" dtype="vertical" width="0.254" visible="yes"/>
+<dimension x1="48.768" y1="5.08" x2="47.752" y2="80.264" x3="53.086" y3="42.672" textsize="1.778" layer="20" dtype="vertical" width="0.254" visible="yes"/>
+<dimension x1="5.08" y1="78.74" x2="0" y2="78.74" x3="2.54" y3="91.948" textsize="1.778" layer="20" dtype="horizontal" width="0.254" visible="yes"/>
+<dimension x1="5.08" y1="78.74" x2="55.88" y2="78.74" x3="30.48" y3="88.9" textsize="1.778" layer="20" dtype="horizontal" width="0.254" visible="yes"/>
+<dimension x1="5.08" y1="78.74" x2="5.08" y2="82.55" x3="-13.97" y3="80.645" textsize="1.778" layer="20" dtype="vertical" width="0.254" visible="yes"/>
+<dimension x1="5.08" y1="10.16" x2="4.826" y2="0" x3="-7.112" y3="5.08" textsize="1.778" layer="20" dtype="vertical" width="0.254" visible="yes"/>
+<dimension x1="10.668" y1="80.264" x2="48.26" y2="80.264" x3="29.464" y3="82.042" textsize="1.778" layer="20" dtype="horizontal" width="0.254" visible="yes"/>
+<dimension x1="17.78" y1="15.24" x2="48.514" y2="14.224" x3="33.147" y3="-13.97" textsize="1.778" layer="20" dtype="horizontal" width="0.254" visible="yes"/>
+<dimension x1="5.08" y1="10.16" x2="5.08" y2="78.74" x3="-3.302" y3="44.45" textsize="1.778" layer="20" dtype="vertical" width="0.254" visible="yes"/>
+<dimension x1="48.514" y1="13.97" x2="59.436" y2="0" x3="53.975" y3="-5.08" textsize="1.778" layer="20" dtype="horizontal" width="0.254" visible="yes"/>
 </plain>
 <libraries>
 <library name="microbuilder">
