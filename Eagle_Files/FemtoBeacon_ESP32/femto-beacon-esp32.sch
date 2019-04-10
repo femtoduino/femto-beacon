@@ -8,22 +8,22 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="52" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="52" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -32,8 +32,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -41,17 +41,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -2941,7 +2941,7 @@ chip</description>
 </packages>
 <symbols>
 <symbol name="LRTB_R48G">
-<pin name="GND" x="-5.08" y="7.62" visible="pin" length="short"/>
+<pin name="VCC" x="-5.08" y="7.62" visible="pin" length="short"/>
 <pin name="R" x="-5.08" y="5.08" visible="pin" length="short"/>
 <pin name="G" x="-5.08" y="2.54" visible="pin" length="short"/>
 <pin name="B" x="-5.08" y="0" visible="pin" length="short"/>
@@ -2990,8 +2990,8 @@ chip</description>
 <connects>
 <connect gate="G$1" pin="B" pad="4"/>
 <connect gate="G$1" pin="G" pad="3"/>
-<connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="R" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4566,7 +4566,6 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <part name="R16" library="microbuilder" deviceset="RESISTOR" device="_0402MP" value="270">
 <attribute name="MPN" value="CRCW0402270RFKED"/>
 </part>
-<part name="U$38" library="microbuilder" deviceset="GND" device=""/>
 <part name="CN1" library="microbuilder" deviceset="USB_TYPEA" device=""/>
 <part name="PROG" library="microbuilder" deviceset="HEADER-1X1" device="ROUND"/>
 <part name="P+3" library="microbuilder" deviceset="VCC" device="" value="3.3V"/>
@@ -4582,6 +4581,7 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <part name="U$43" library="microbuilder" deviceset="GND" device=""/>
 <part name="SJ3" library="microbuilder" deviceset="SOLDERJUMPER" device="CLOSED" value="DNP"/>
 <part name="U$30" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="P+7" library="microbuilder" deviceset="VCC" device="" value="3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -4863,9 +4863,6 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <attribute name="VALUE" x="226.06" y="37.465" size="1.27" layer="96" font="vector"/>
 <attribute name="MPN" x="228.6" y="40.64" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$38" gate="G$1" x="228.6" y="60.96" smashed="yes" rot="R180">
-<attribute name="VALUE" x="230.124" y="63.5" size="1.27" layer="96" rot="R180"/>
-</instance>
 <instance part="PROG" gate="G$1" x="68.58" y="121.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="74.93" y="118.745" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="74.93" y="127" size="1.778" layer="96" rot="R180"/>
@@ -4905,6 +4902,9 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 </instance>
 <instance part="U$43" gate="G$1" x="10.16" y="7.62" smashed="yes" rot="R270">
 <attribute name="VALUE" x="7.62" y="9.144" size="1.27" layer="96" rot="R270"/>
+</instance>
+<instance part="P+7" gate="VCC" x="228.6" y="60.96" smashed="yes">
+<attribute name="VALUE" x="227.076" y="61.976" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -5012,16 +5012,10 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <pinref part="U$29" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="CN_BATT_CHARGE" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="38.1" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="38.1" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="40.64" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="RGB1" gate="G$1" pin="GND"/>
-<wire x1="233.68" y1="48.26" x2="228.6" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="48.26" x2="228.6" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$38" gate="G$1" pin="GND"/>
+<pinref part="CN_BATT_CHARGE" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JTAG" gate="A" pin="1"/>
@@ -5097,6 +5091,12 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <pinref part="UART" gate="A" pin="2"/>
 <wire x1="231.14" y1="165.1" x2="231.14" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="RGB1" gate="G$1" pin="VCC"/>
+<wire x1="233.68" y1="48.26" x2="228.6" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="48.26" x2="228.6" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="SD1" class="0">
@@ -5374,18 +5374,13 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <pinref part="JP1" gate="A" pin="8"/>
 </segment>
 </net>
-<net name="IO34/BLUE" class="0">
+<net name="IO34" class="0">
 <segment>
 <pinref part="MOD1" gate="G$1" pin="IO34"/>
 <wire x1="149.86" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="127" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
 <label x="114.3" y="104.14" size="1.778" layer="95" rot="R270"/>
 <pinref part="JP1" gate="A" pin="7"/>
-</segment>
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="40.64" x2="200.66" y2="40.64" width="0.1524" layer="91"/>
-<label x="198.12" y="40.64" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="IO35" class="0">
@@ -5443,13 +5438,18 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <pinref part="JP1" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="IO27" class="0">
+<net name="IO27/BLUE" class="0">
 <segment>
 <pinref part="MOD1" gate="G$1" pin="IO27"/>
 <wire x1="149.86" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="111.76" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
 <label x="129.54" y="104.14" size="1.778" layer="95" rot="R270"/>
 <pinref part="JP1" gate="A" pin="1"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="40.64" x2="200.66" y2="40.64" width="0.1524" layer="91"/>
+<label x="198.12" y="40.64" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="IO2" class="0">
@@ -5545,11 +5545,11 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 </net>
 <net name="VLIPO" class="0">
 <segment>
-<pinref part="CN_BATT_CHARGE" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="40.64" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SW_BATTMODE" gate="G$1" pin="P"/>
-<wire x1="83.82" y1="40.64" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
 <label x="81.28" y="33.02" size="1.778" layer="95" rot="R90"/>
+<pinref part="CN_BATT_CHARGE" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="38.1" x2="83.82" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN_LDO" class="0">
