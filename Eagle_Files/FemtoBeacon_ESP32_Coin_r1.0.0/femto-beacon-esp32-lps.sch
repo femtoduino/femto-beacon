@@ -242,7 +242,7 @@ LETTER landscape</description>
 <smd name="48" x="-2.3" y="-1.575" dx="0.18" dy="0.4" layer="1" rot="R270"/>
 <wire x1="-2.667" y1="-2.2" x2="-2.667" y2="-2.667" width="0.254" layer="21"/>
 <wire x1="-2.667" y1="-2.667" x2="-2.2" y2="-2.667" width="0.254" layer="21"/>
-<smd name="49" x="0" y="0" dx="1" dy="1" layer="1" cream="no"/>
+<smd name="49" x="0" y="0" dx="1" dy="1" layer="1" stop="no" cream="no"/>
 <rectangle x1="-1.6" y1="0.8" x2="-0.8" y2="1.6" layer="31"/>
 <rectangle x1="0.8" y1="0.8" x2="1.6" y2="1.6" layer="31"/>
 <rectangle x1="0.8" y1="-1.6" x2="1.6" y2="-0.8" layer="31"/>
@@ -273,6 +273,16 @@ LETTER landscape</description>
 <vertex x="1.7" y="-1.8"/>
 <vertex x="-1.55" y="-1.8"/>
 <vertex x="-1.8" y="-1.55"/>
+</polygon>
+<polygon width="0.1" layer="29" spacing="0.1">
+<vertex x="-1.8635" y="1.7" curve="-90"/>
+<vertex x="-1.7" y="1.8635"/>
+<vertex x="1.7" y="1.8635" curve="-90"/>
+<vertex x="1.8635" y="1.7"/>
+<vertex x="1.8635" y="-1.7" curve="-90"/>
+<vertex x="1.7" y="-1.8635"/>
+<vertex x="-1.55" y="-1.8635"/>
+<vertex x="-1.8635" y="-1.55"/>
 </polygon>
 </package>
 </packages>
@@ -2371,7 +2381,6 @@ ID: MCP1700T-3302E/TT</description>
 <part name="R5" library="parts_0201" deviceset="RESISTOR_0201" device="" value="270">
 <attribute name="MPN" value="RC0201FR-07270RL"/>
 </part>
-<part name="U$25" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$35" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$36" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="FID1" library="adafruit" deviceset="FIDUCIAL" device=""/>
@@ -2415,6 +2424,7 @@ ID: MCP1700T-3302E/TT</description>
 </part>
 <part name="U$38" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$39" library="pins_1.27mm_pitch" deviceset="1X4_ROUND" device=""/>
+<part name="U$9" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2651,9 +2661,6 @@ schematic</text>
 <attribute name="VALUE" x="198.12" y="147.955" size="1.016" layer="96" font="vector" rot="R180"/>
 <attribute name="MPN" x="198.12" y="144.78" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U$25" gate="G$1" x="210.82" y="149.86" smashed="yes" rot="R180">
-<attribute name="VALUE" x="212.344" y="152.4" size="1.27" layer="96" rot="R180"/>
-</instance>
 <instance part="U$35" gate="G$1" x="203.2" y="73.66" smashed="yes" rot="R270">
 <attribute name="VALUE" x="200.66" y="75.184" size="1.27" layer="96" rot="R270"/>
 </instance>
@@ -2670,6 +2677,9 @@ schematic</text>
 <attribute name="NAME" x="43.815" y="119.38" size="1.016" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="48.895" y="119.38" size="1.016" layer="96" font="vector" rot="R90"/>
 <attribute name="MPN" x="45.72" y="119.38" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$9" gate="G$1" x="213.36" y="149.86" smashed="yes">
+<attribute name="VALUE" x="211.836" y="150.876" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -2803,11 +2813,6 @@ schematic</text>
 <pinref part="C24" gate="G$1" pin="P$2"/>
 <pinref part="U$34" gate="G$1" pin="GND"/>
 <wire x1="27.94" y1="45.72" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="RGB1" gate="G$1" pin="GND"/>
-<wire x1="213.36" y1="147.32" x2="210.82" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$25" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="PIN_GPIO_A" gate="G$1" pin="3"/>
@@ -2948,6 +2953,10 @@ schematic</text>
 <pinref part="PIN_GPIO_A" gate="G$1" pin="2"/>
 <pinref part="U$36" gate="G$1" pin="3.3V"/>
 <wire x1="200.66" y1="76.2" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RGB1" gate="G$1" pin="GND"/>
+<pinref part="U$9" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="VDD_SDIO" class="0">
@@ -3192,7 +3201,7 @@ schematic</text>
 <label x="119.38" y="73.66" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="R" class="0">
+<net name="IO26/R" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="144.78" x2="177.8" y2="144.78" width="0.1524" layer="91"/>
@@ -3204,7 +3213,7 @@ schematic</text>
 <label x="116.84" y="73.66" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="G" class="0">
+<net name="IO4/G" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="142.24" x2="177.8" y2="142.24" width="0.1524" layer="91"/>
@@ -3217,7 +3226,7 @@ schematic</text>
 <label x="149.86" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="B" class="0">
+<net name="IO5/B" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="139.7" x2="177.8" y2="139.7" width="0.1524" layer="91"/>

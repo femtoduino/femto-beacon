@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
@@ -219,7 +219,7 @@
 <smd name="48" x="-2.3" y="-1.575" dx="0.18" dy="0.4" layer="1" rot="R270"/>
 <wire x1="-2.667" y1="-2.2" x2="-2.667" y2="-2.667" width="0.254" layer="21"/>
 <wire x1="-2.667" y1="-2.667" x2="-2.2" y2="-2.667" width="0.254" layer="21"/>
-<smd name="49" x="0" y="0" dx="1" dy="1" layer="1" cream="no"/>
+<smd name="49" x="0" y="0" dx="1" dy="1" layer="1" stop="no" cream="no"/>
 <rectangle x1="-1.6" y1="0.8" x2="-0.8" y2="1.6" layer="31"/>
 <rectangle x1="0.8" y1="0.8" x2="1.6" y2="1.6" layer="31"/>
 <rectangle x1="0.8" y1="-1.6" x2="1.6" y2="-0.8" layer="31"/>
@@ -250,6 +250,16 @@
 <vertex x="1.7" y="-1.8"/>
 <vertex x="-1.55" y="-1.8"/>
 <vertex x="-1.8" y="-1.55"/>
+</polygon>
+<polygon width="0.1" layer="29" spacing="0.1">
+<vertex x="-1.8635" y="1.7" curve="-90"/>
+<vertex x="-1.7" y="1.8635"/>
+<vertex x="1.7" y="1.8635" curve="-90"/>
+<vertex x="1.8635" y="1.7"/>
+<vertex x="1.8635" y="-1.7" curve="-90"/>
+<vertex x="1.7" y="-1.8635"/>
+<vertex x="-1.55" y="-1.8635"/>
+<vertex x="-1.8635" y="-1.55"/>
 </polygon>
 </package>
 </packages>

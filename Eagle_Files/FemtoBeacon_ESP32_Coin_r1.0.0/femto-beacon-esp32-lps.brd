@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="30" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="21" fill="1" visible="yes" active="yes"/>
@@ -147,7 +147,7 @@
 <text x="41.402" y="19.05" size="0.6096" layer="22" font="vector" ratio="20" rot="MR344.5" align="center-left">BOOT</text>
 <text x="10.033" y="17.399" size="0.8128" layer="22" font="vector" ratio="20" rot="MR270" align="center">FemtoBeacon</text>
 <text x="8.89" y="17.399" size="0.8128" layer="22" font="vector" ratio="20" rot="MR270" align="center">ESP32 LPS</text>
-<text x="33.782" y="9.652" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0" align="center">1.0.0</text>
+<text x="33.782" y="9.652" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0" align="center">1.0.1</text>
 <text x="33.528" y="19.05" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0" align="center">IO26=R</text>
 <text x="33.528" y="18.034" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0" align="center">IO4=G</text>
 <text x="33.528" y="16.51" size="0.8128" layer="22" font="vector" ratio="20" rot="MR0" align="center">IO5=B</text>
@@ -229,7 +229,7 @@
 <text x="18.288" y="23.622" size="0.6096" layer="22" font="vector" ratio="20" rot="MR270" align="center-left">INT</text>
 <text x="17.018" y="23.622" size="0.6096" layer="22" font="vector" ratio="20" rot="MR270" align="center-left">FSYNC</text>
 <text x="15.494" y="22.987" size="0.6096" layer="22" font="vector" ratio="20" rot="MR90" align="center">SPI
-(1.8V)</text>
+(3.3V)</text>
 <text x="16.002" y="20.574" size="0.6096" layer="22" font="vector" ratio="20" rot="MR0" align="center">GND</text>
 <text x="16.256" y="15.24" size="0.6096" layer="22" font="vector" ratio="20" rot="MR0" align="center">FSYNC</text>
 <polygon width="0.254" layer="30">
@@ -252,6 +252,17 @@
 <hole x="37.465" y="27.9271" drill="0.508"/>
 <hole x="36.703" y="27.9271" drill="0.508"/>
 <hole x="35.941" y="27.9271" drill="0.508"/>
+<text x="38.608" y="12.573" size="0.6096" layer="22" font="vector" ratio="20" rot="MR45" align="center-left">IO35</text>
+<text x="37.846" y="11.811" size="0.6096" layer="22" font="vector" ratio="20" rot="MR45" align="center-left">IO34</text>
+<text x="37.084" y="11.049" size="0.6096" layer="22" font="vector" ratio="20" rot="MR45" align="center-left">EN</text>
+<text x="23.368" y="9.779" size="0.6096" layer="22" font="vector" ratio="20" rot="MR90" align="center-left">LPS/EXTON</text>
+<text x="22.098" y="9.652" size="0.6096" layer="22" font="vector" ratio="20" rot="MR90" align="center-left">LPS/WAKE</text>
+<text x="20.828" y="9.652" size="0.6096" layer="22" font="vector" ratio="20" rot="MR90" align="center-left">LPS/RST</text>
+<text x="19.558" y="9.652" size="0.6096" layer="22" font="vector" ratio="20" rot="MR90" align="center-left">LPS/IRQ</text>
+<text x="23.749" y="23.622" size="0.6096" layer="21" font="vector" ratio="20" rot="R270" align="center-left">MTMS</text>
+<text x="22.352" y="23.622" size="0.6096" layer="21" font="vector" ratio="20" rot="R270" align="center-left">MTDO</text>
+<text x="21.209" y="23.622" size="0.6096" layer="21" font="vector" ratio="20" rot="R270" align="center-left">MTDI</text>
+<text x="19.812" y="23.622" size="0.6096" layer="21" font="vector" ratio="20" rot="R270" align="center-left">MTCK</text>
 </plain>
 <libraries>
 <library name="esp32-wroom-32">
@@ -312,7 +323,7 @@
 <smd name="48" x="-2.3" y="-1.575" dx="0.18" dy="0.4" layer="1" rot="R270"/>
 <wire x1="-2.667" y1="-2.2" x2="-2.667" y2="-2.667" width="0.254" layer="21"/>
 <wire x1="-2.667" y1="-2.667" x2="-2.2" y2="-2.667" width="0.254" layer="21"/>
-<smd name="49" x="0" y="0" dx="1" dy="1" layer="1" cream="no"/>
+<smd name="49" x="0" y="0" dx="1" dy="1" layer="1" stop="no" cream="no"/>
 <rectangle x1="-1.6" y1="0.8" x2="-0.8" y2="1.6" layer="31"/>
 <rectangle x1="0.8" y1="0.8" x2="1.6" y2="1.6" layer="31"/>
 <rectangle x1="0.8" y1="-1.6" x2="1.6" y2="-0.8" layer="31"/>
@@ -343,6 +354,16 @@
 <vertex x="1.7" y="-1.8"/>
 <vertex x="-1.55" y="-1.8"/>
 <vertex x="-1.8" y="-1.55"/>
+</polygon>
+<polygon width="0.1" layer="29" spacing="0.1">
+<vertex x="-1.8635" y="1.7" curve="-90"/>
+<vertex x="-1.7" y="1.8635"/>
+<vertex x="1.7" y="1.8635" curve="-90"/>
+<vertex x="1.8635" y="1.7"/>
+<vertex x="1.8635" y="-1.7" curve="-90"/>
+<vertex x="1.7" y="-1.8635"/>
+<vertex x="-1.55" y="-1.8635"/>
+<vertex x="-1.8635" y="-1.55"/>
 </polygon>
 </package>
 </packages>
@@ -1291,8 +1312,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="BOOT1" pad="1"/>
 <wire x1="39.6843" y1="20.33681875" x2="38.9223" y2="20.33681875" width="0.254" layer="1"/>
 <wire x1="38.9223" y1="20.33681875" x2="38.2873" y2="20.97181875" width="0.254" layer="1"/>
-<wire x1="38.2873" y1="20.97181875" x2="37.846" y2="20.97181875" width="0.254" layer="1"/>
-<wire x1="37.846" y1="20.97181875" x2="36.81318125" y2="20.97181875" width="0.254" layer="1"/>
+<wire x1="38.2873" y1="20.97181875" x2="36.81318125" y2="20.97181875" width="0.254" layer="1"/>
 <wire x1="36.81318125" y1="20.97181875" x2="36.576" y2="21.209" width="0.254" layer="1"/>
 <wire x1="36.576" y1="21.209" x2="35.941" y2="21.209" width="0.254" layer="1"/>
 <contactref element="C22" pad="1"/>
@@ -1319,9 +1339,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="28.321" y1="15.367" x2="27.726" y2="15.962" width="0.381" layer="2"/>
 <wire x1="28.321" y1="13.1445" x2="28.321" y2="13.208" width="0.254" layer="1"/>
 <wire x1="33.274" y1="17.255" x2="33.274" y2="12.2989" width="0.381" layer="2"/>
-<contactref element="RGB1" pad="1"/>
-<wire x1="38.017" y1="20.4148" x2="38.017" y2="20.80081875" width="0.254" layer="1"/>
-<wire x1="38.017" y1="20.80081875" x2="37.846" y2="20.97181875" width="0.254" layer="1"/>
 <contactref element="PIN_GPIO_A" pad="P$3"/>
 <wire x1="28.302678125" y1="10.373246875" x2="28.534246875" y2="10.373246875" width="0.381" layer="2"/>
 <wire x1="28.534246875" y1="10.373246875" x2="29.083" y2="10.922" width="0.381" layer="2"/>
@@ -1411,6 +1428,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="20.193" y1="14.605" x2="18.669" y2="14.605" width="0.381" layer="2"/>
 <wire x1="17.3482" y1="15.9258" x2="17.3482" y2="17.4244" width="0.381" layer="2"/>
 <wire x1="18.669" y1="14.605" x2="17.3482" y2="15.9258" width="0.381" layer="2"/>
+<wire x1="0.978" y1="23.313" x2="0.978" y2="21.12" width="0.254" layer="1"/>
+<wire x1="1.362" y1="20.736" x2="2.378" y2="20.736" width="0.254" layer="1"/>
+<wire x1="0.978" y1="21.12" x2="1.362" y2="20.736" width="0.254" layer="1"/>
 </signal>
 <signal name="XOUT">
 <contactref element="IC1" pad="44"/>
@@ -1639,6 +1659,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="21.433" y1="14.435" x2="21.463" y2="14.465" width="0.254" layer="1"/>
 <wire x1="22.225" y1="14.605" x2="21.603" y2="14.605" width="0.254" layer="1"/>
 <wire x1="21.603" y1="14.605" x2="21.433" y2="14.435" width="0.254" layer="1"/>
+<contactref element="RGB1" pad="1"/>
+<wire x1="38.017" y1="20.4148" x2="38.027" y2="20.4248" width="0.254" layer="1"/>
+<via x="38.027" y="20.4248" extent="1-16" drill="0.254" diameter="0.508"/>
+<wire x1="38.027" y1="20.4248" x2="38.027" y2="21.136" width="0.254" layer="16"/>
+<wire x1="38.462946875" y1="21.571946875" x2="39.51505" y2="21.571946875" width="0.254" layer="16"/>
+<wire x1="38.027" y1="21.136" x2="38.462946875" y2="21.571946875" width="0.254" layer="16"/>
 </signal>
 <signal name="VIN_PIN">
 <contactref element="FB2" pad="2"/>
@@ -2051,7 +2077,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="IO27">
 <contactref element="IC1" pad="16"/>
 </signal>
-<signal name="R">
+<signal name="IO26/R">
 <contactref element="R5" pad="2"/>
 <via x="38.323" y="18.923" extent="1-16" drill="0.254" diameter="0.508"/>
 <contactref element="IC1" pad="15"/>
@@ -2067,7 +2093,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="35.882" y1="15.934" x2="36.449" y2="15.367" width="0.1778" layer="1"/>
 <wire x1="38.227" y1="14.605" x2="38.227" y2="15.621" width="0.254" layer="15"/>
 </signal>
-<signal name="G">
+<signal name="IO4/G">
 <contactref element="R4" pad="2"/>
 <contactref element="IC1" pad="24"/>
 <wire x1="35.557" y1="19.084" x2="35.8647" y2="19.084" width="0.1778" layer="1"/>
@@ -2076,7 +2102,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="35.8815" y1="19.1008" x2="35.8815" y2="19.50795" width="0.1778" layer="1"/>
 <wire x1="36.15455" y1="19.781" x2="36.4998" y2="19.781" width="0.1778" layer="1"/>
 </signal>
-<signal name="B">
+<signal name="IO5/B">
 <contactref element="R3" pad="2"/>
 <via x="35.718" y="20.447" extent="1-16" drill="0.254" diameter="0.508"/>
 <contactref element="IC1" pad="34"/>
@@ -2265,6 +2291,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="21,19,0345014701470345"/>
 <approved hash="21,19,1b5a1ba419d867d8"/>
 <approved hash="19,1,2f24590249623784"/>
+<approved hash="19,1,f9b4c8047be573ac"/>
 </errors>
 </board>
 </drawing>
