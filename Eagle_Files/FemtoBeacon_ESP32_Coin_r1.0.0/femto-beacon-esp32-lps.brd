@@ -1043,7 +1043,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </autorouter>
 <elements>
 <element name="IC1" library="esp32-wroom-32" package="ESP32-QFN48_5X5" value="ESP32-QFN_5X5" x="33.257" y="17.509" smashed="yes">
-<attribute name="MPN" value="ESP32-S0WD" x="33.257" y="17.509" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ESP32‑D2WD" x="33.257" y="17.509" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C6" library="parts_0201" package="PART" value="270pF" x="32.9184" y="12.6365" smashed="yes" rot="R90">
 <attribute name="MPN" value="GRM033R71C271KA01D" x="32.9184" y="12.6365" size="1.778" layer="27" rot="R90" display="off"/>

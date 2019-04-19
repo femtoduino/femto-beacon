@@ -355,6 +355,8 @@ LETTER landscape</description>
 </symbols>
 <devicesets>
 <deviceset name="ESP32-QFN_5X5">
+<description>ESP32-D2WD - has 2 MiB internal flash&lt;br/&gt;
+ESP32-S0WD - has 0 MiB internal flash (requires external SPI flash)</description>
 <gates>
 <gate name="G$1" symbol="ESP32-QFN48_5X5" x="0" y="0"/>
 </gates>
@@ -412,9 +414,7 @@ LETTER landscape</description>
 <connect gate="G$1" pin="XTAL_P" pad="45"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MPN" value="ESP32-S0WD"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2247,7 +2247,9 @@ ID: MCP1700T-3302E/TT</description>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
-<part name="IC1" library="esp32-wroom-32" deviceset="ESP32-QFN_5X5" device=""/>
+<part name="IC1" library="esp32-wroom-32" deviceset="ESP32-QFN_5X5" device="">
+<attribute name="MPN" value="ESP32‑D2WD"/>
+</part>
 <part name="U$1" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$2" library="microbuilder" deviceset="VIN" device=""/>
 <part name="U$4" library="microbuilder" deviceset="GND" device=""/>
@@ -2440,7 +2442,9 @@ schematic</text>
 <attribute name="SHEET" x="233.68" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="165.1" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="IC1" gate="G$1" x="127" y="111.76" smashed="yes"/>
+<instance part="IC1" gate="G$1" x="127" y="111.76" smashed="yes">
+<attribute name="MPN" x="127" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$1" gate="G$1" x="185.42" y="129.54" smashed="yes" rot="R270">
 <attribute name="VALUE" x="186.436" y="131.064" size="1.27" layer="96" rot="R270"/>
 </instance>

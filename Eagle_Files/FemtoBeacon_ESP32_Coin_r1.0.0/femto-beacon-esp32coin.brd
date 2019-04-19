@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="21" fill="1" visible="yes" active="yes"/>
@@ -663,7 +663,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </autorouter>
 <elements>
 <element name="IC1" library="esp32-wroom-32" package="ESP32-QFN48_5X5" value="ESP32-QFN_5X5" x="12.683" y="13.699" smashed="yes">
-<attribute name="MPN" value="ESP32-S0WD" x="12.683" y="13.699" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ESP32-D2WD" x="12.683" y="13.699" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C6" library="parts_0201" package="PART" value="270pF" x="12.3444" y="8.8265" smashed="yes" rot="R90">
 <attribute name="MPN" value="GRM033R71C271KA01D" x="12.3444" y="8.8265" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1215,7 +1215,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="18.3876375" y1="14.9154" x2="19.5016" y2="14.9154" width="0.1778" layer="1"/>
 <wire x1="19.5016" y1="14.9154" x2="20.132696875" y2="14.284303125" width="0.1778" layer="1"/>
 </signal>
-<signal name="EN">
+<signal name="RESET">
 <contactref element="IC1" pad="9"/>
 <contactref element="C22" pad="2"/>
 <contactref element="R2" pad="2"/>
