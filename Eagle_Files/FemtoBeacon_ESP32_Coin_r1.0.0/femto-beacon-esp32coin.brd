@@ -711,10 +711,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="GRM188R61C106KAALD" x="8.509" y="9.3345" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C12" library="parts_0201" package="PART" value="0.1uF" x="8.3185" y="7.62" smashed="yes">
-<attribute name="MPN" value="CC0402KRX7R6BB104" x="8.3185" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM033C80J104KE84D" x="8.3185" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C13" library="parts_0201" package="PART" value="0.1uF" x="9.017" y="6.2865" smashed="yes" rot="R180">
-<attribute name="MPN" value="CC0402KRX7R6BB104" x="9.017" y="6.2865" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="GRM033C80J104KE84D" x="9.017" y="6.2865" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="FB1" library="microbuilder" package="_0603MP" value="" x="10.033" y="18.923" smashed="yes" rot="R90">
 <attribute name="MPN" value="BLM18RK102SN1D" x="10.033" y="18.923" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" display="off"/>
@@ -735,7 +735,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="0201YC101KAT2A" x="8.19785" y="14.732" size="0.6096" layer="27" font="vector" ratio="20" display="off"/>
 </element>
 <element name="C17" library="parts_0201" package="PART" value="0.1uF" x="11.303" y="9.4615" smashed="yes" rot="R90">
-<attribute name="MPN" value="CC0402KRX7R6BB104" x="11.303" y="9.4615" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" display="off"/>
+<attribute name="MPN" value="GRM033C80J104KE84D" x="11.303" y="9.4615" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" display="off"/>
 </element>
 <element name="PIN_UART" library="pins_1.27mm_pitch" package="1X3_ROUND" value="1X3_ROUND" x="8.509" y="19.558" smashed="yes" rot="R315"/>
 <element name="PIN_EN" library="pins_1.27mm_pitch" package="1X3_ROUND" value="1X3_ROUND" x="18.94105" y="8.001" smashed="yes" rot="R315"/>
@@ -745,7 +745,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="CL03A105KQ3CSNH" x="14.351" y="17.0815" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" display="off"/>
 </element>
 <element name="C19" library="parts_0201" package="PART" value="0.1uF" x="17.272" y="13.2715" smashed="yes" rot="R180">
-<attribute name="MPN" value="CC0402KRX7R6BB104" x="17.272" y="13.2715" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" display="off"/>
+<attribute name="MPN" value="GRM033C80J104KE84D" x="17.272" y="13.2715" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" display="off"/>
 </element>
 <element name="C20" library="parts_0201" package="PART" value="10nF/6.3V(10%)" x="7.112" y="11.48715" smashed="yes" rot="R270">
 <attribute name="MPN" value="GRM033R70J103KA01D" x="7.112" y="11.48715" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" display="off"/>
@@ -760,7 +760,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="B3U-3000P" x="19.6215" y="14.9055" size="0.6096" layer="27" font="vector" ratio="20" rot="R287.5" display="off"/>
 </element>
 <element name="C22" library="parts_0201" package="PART" value="0.1uF" x="14.0335" y="8.8265" smashed="yes" rot="R90">
-<attribute name="MPN" value="CC0402KRX7R6BB104" x="14.0335" y="8.8265" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" display="off"/>
+<attribute name="MPN" value="GRM033C80J104KE84D" x="14.0335" y="8.8265" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" display="off"/>
 </element>
 <element name="R2" library="parts_0201" package="PART" value="10K" x="15.4305" y="8.8265" smashed="yes" rot="R90">
 <attribute name="MPN" value="RC0201JR-0710KL" x="15.4305" y="8.8265" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" display="off"/>
