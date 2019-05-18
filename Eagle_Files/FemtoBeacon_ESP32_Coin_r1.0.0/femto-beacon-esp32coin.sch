@@ -1570,8 +1570,8 @@ ID: MCP1700T-3302E/TT</description>
 <attribute name="MPN" value="GRM033C80J104KE84D"/>
 </part>
 <part name="U$16" library="microbuilder" deviceset="GND" device=""/>
-<part name="FB1" library="microbuilder" deviceset="FERRITE" device="_0603MP"/>
-<part name="FB2" library="microbuilder" deviceset="FERRITE" device="_0603MP"/>
+<part name="FB1" library="microbuilder" deviceset="FERRITE" device="_0603MP" value="FERRITE"/>
+<part name="FB2" library="microbuilder" deviceset="FERRITE" device="_0603MP" value="FERRITE"/>
 <part name="U$6" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$18" library="microbuilder" deviceset="VIN" device=""/>

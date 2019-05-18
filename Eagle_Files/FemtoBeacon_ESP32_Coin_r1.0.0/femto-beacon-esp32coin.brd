@@ -716,13 +716,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="C13" library="parts_0201" package="PART" value="0.1uF" x="9.017" y="6.2865" smashed="yes" rot="R180">
 <attribute name="MPN" value="GRM033C80J104KE84D" x="9.017" y="6.2865" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="FB1" library="microbuilder" package="_0603MP" value="" x="10.033" y="18.923" smashed="yes" rot="R90">
+<element name="FB1" library="microbuilder" package="_0603MP" value="FERRITE" x="10.033" y="18.923" smashed="yes" rot="R90">
 <attribute name="MPN" value="BLM18RK102SN1D" x="10.033" y="18.923" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" display="off"/>
-<attribute name="VALUE" x="10.9855" y="17.9705" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="FB2" library="microbuilder" package="_0603MP" value="" x="13.843" y="20.574" smashed="yes">
+<element name="FB2" library="microbuilder" package="_0603MP" value="FERRITE" x="13.843" y="20.574" smashed="yes">
 <attribute name="MPN" value="BLM18RK102SN1D" x="13.843" y="20.574" size="0.6096" layer="27" font="vector" ratio="20" display="off"/>
-<attribute name="VALUE" x="12.8905" y="19.6215" size="0.4064" layer="27" ratio="10"/>
 </element>
 <element name="C14" library="microbuilder" package="_0402MP" value="0.47uF" x="14.224" y="19.177" smashed="yes" rot="R90">
 <attribute name="MPN" value="GRM155R60J474KE19D" x="14.224" y="19.177" size="1.778" layer="27" rot="R90" display="off"/>
