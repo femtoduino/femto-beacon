@@ -195,9 +195,7 @@ void setup() {
   // Start advertising
   pServer->getAdvertising()->start();
 
-
-  Serial.begin(9600); // Serial needs to be at 9600, as 115200 triggers brown out reset without extra voltage on the 3.3V pin
-  
+  Serial.begin(115200);
 
   // Setup our RGB LED pins
   setupRGBLED();
