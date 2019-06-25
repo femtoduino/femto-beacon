@@ -163,18 +163,14 @@ class MyCallbacks: public BLECharacteristicCallbacks {
 
 void setup() {
   
-  Serial.begin(115200);
-  Serial.println("STARTING BLE UART");
-
-  delay(5000);
   // Create the BLE Device
   BLEDevice::init("UART Service");
   BLEDevice::setMTU(mtu);
-
+  delay(100);
   // Create the BLE Server
   pServer = BLEDevice::createServer();
   pServer->setCallbacks(new MyServerCallbacks());
-
+  
   // Create the BLE Service
   BLEService *pService = pServer->createService(SERVICE_UUID);
 
@@ -198,10 +194,14 @@ void setup() {
 
   // Start advertising
   pServer->getAdvertising()->start();
-  Serial.println("Waiting a client connection to notify...");
+
+
+  Serial.begin(9600); // Serial needs to be at 9600, as 115200 triggers brown out reset without extra voltage on the 3.3V pin
+  
 
   // Setup our RGB LED pins
   setupRGBLED();
+  Serial.println("BLE UART Ready");
 }
 
 void testRGBLED() {
