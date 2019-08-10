@@ -184,219 +184,6 @@ LETTER landscape</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="esp32-wroom-32">
-<packages>
-<package name="ESP32-WROOM-32-MODULE">
-<smd name="GND" x="0" y="0" dx="5" dy="5" layer="1" cream="no"/>
-<smd name="1" x="-8.5" y="5.26" dx="2" dy="0.9" layer="1"/>
-<rectangle x1="-9" y1="6.45" x2="9" y2="12.75" layer="39"/>
-<smd name="2" x="-8.5" y="3.99" dx="2" dy="0.9" layer="1"/>
-<smd name="3" x="-8.5" y="2.72" dx="2" dy="0.9" layer="1"/>
-<smd name="4" x="-8.5" y="1.45" dx="2" dy="0.9" layer="1"/>
-<smd name="5" x="-8.5" y="0.18" dx="2" dy="0.9" layer="1"/>
-<smd name="6" x="-8.5" y="-1.09" dx="2" dy="0.9" layer="1"/>
-<smd name="7" x="-8.5" y="-2.36" dx="2" dy="0.9" layer="1"/>
-<smd name="8" x="-8.5" y="-3.63" dx="2" dy="0.9" layer="1"/>
-<smd name="9" x="-8.5" y="-4.9" dx="2" dy="0.9" layer="1"/>
-<smd name="10" x="-8.5" y="-6.17" dx="2" dy="0.9" layer="1"/>
-<smd name="11" x="-8.5" y="-7.44" dx="2" dy="0.9" layer="1"/>
-<smd name="12" x="-8.5" y="-8.71" dx="2" dy="0.9" layer="1"/>
-<smd name="13" x="-8.5" y="-9.98" dx="2" dy="0.9" layer="1"/>
-<smd name="14" x="-8.5" y="-11.25" dx="2" dy="0.9" layer="1"/>
-<smd name="15" x="-5.715" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="16" x="-4.445" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="17" x="-3.175" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="18" x="-1.905" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="19" x="-0.635" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="20" x="0.635" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="21" x="1.905" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="22" x="3.175" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="23" x="4.445" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="24" x="5.715" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
-<smd name="25" x="8.5" y="-11.25" dx="2" dy="0.9" layer="1"/>
-<smd name="26" x="8.5" y="-9.98" dx="2" dy="0.9" layer="1"/>
-<smd name="27" x="8.5" y="-8.71" dx="2" dy="0.9" layer="1"/>
-<smd name="28" x="8.5" y="-7.44" dx="2" dy="0.9" layer="1"/>
-<smd name="29" x="8.5" y="-6.17" dx="2" dy="0.9" layer="1"/>
-<smd name="30" x="8.5" y="-4.9" dx="2" dy="0.9" layer="1"/>
-<smd name="31" x="8.5" y="-3.63" dx="2" dy="0.9" layer="1"/>
-<smd name="32" x="8.5" y="-2.36" dx="2" dy="0.9" layer="1"/>
-<smd name="33" x="8.5" y="-1.09" dx="2" dy="0.9" layer="1"/>
-<smd name="34" x="8.5" y="0.18" dx="2" dy="0.9" layer="1"/>
-<smd name="35" x="8.5" y="1.45" dx="2" dy="0.9" layer="1"/>
-<smd name="36" x="8.5" y="2.72" dx="2" dy="0.9" layer="1"/>
-<smd name="37" x="8.5" y="3.99" dx="2" dy="0.9" layer="1"/>
-<smd name="38" x="8.5" y="5.26" dx="2" dy="0.9" layer="1"/>
-<wire x1="-9.1" y1="-12.85" x2="-9.1" y2="-12.3" width="0.2" layer="21"/>
-<wire x1="-9.1" y1="-12.85" x2="-7.6" y2="-12.85" width="0.2" layer="21"/>
-<wire x1="9.1" y1="-12.85" x2="9.1" y2="-12.3" width="0.2" layer="21"/>
-<wire x1="7.6" y1="-12.85" x2="9.1" y2="-12.85" width="0.2" layer="21"/>
-<wire x1="-9.1" y1="12.85" x2="-7.6" y2="12.85" width="0.2" layer="21"/>
-<wire x1="-9.1" y1="12.85" x2="-9.1" y2="11.35" width="0.2" layer="21"/>
-<wire x1="9.1" y1="12.85" x2="7.6" y2="12.85" width="0.2" layer="21"/>
-<wire x1="9.1" y1="12.85" x2="9.1" y2="11.35" width="0.2" layer="21"/>
-<polygon width="0.254" layer="31">
-<vertex x="-2.286" y="2.286"/>
-<vertex x="-2.286" y="1.27"/>
-<vertex x="-1.27" y="1.27"/>
-<vertex x="-1.27" y="2.286"/>
-</polygon>
-<polygon width="0.254" layer="31">
-<vertex x="2.286" y="2.286"/>
-<vertex x="1.27" y="2.286"/>
-<vertex x="1.27" y="1.27"/>
-<vertex x="2.286" y="1.27"/>
-</polygon>
-<polygon width="0.254" layer="31">
-<vertex x="-2.286" y="-2.286"/>
-<vertex x="-2.286" y="-1.27"/>
-<vertex x="-1.27" y="-1.27"/>
-<vertex x="-1.27" y="-2.286"/>
-</polygon>
-<polygon width="0.254" layer="31">
-<vertex x="2.286" y="-2.286"/>
-<vertex x="1.27" y="-2.286"/>
-<vertex x="1.27" y="-1.27"/>
-<vertex x="2.286" y="-1.27"/>
-</polygon>
-<polygon width="0.254" layer="31">
-<vertex x="-0.508" y="0.508"/>
-<vertex x="-0.508" y="-0.508"/>
-<vertex x="0.508" y="-0.508"/>
-<vertex x="0.508" y="0.508"/>
-</polygon>
-<polygon width="0.254" layer="31">
-<vertex x="-2.286" y="0.508"/>
-<vertex x="-2.286" y="-0.508"/>
-<vertex x="-1.27" y="-0.508"/>
-<vertex x="-1.27" y="0.508"/>
-</polygon>
-<polygon width="0.254" layer="31">
-<vertex x="2.286" y="0.508"/>
-<vertex x="1.27" y="0.508"/>
-<vertex x="1.27" y="-0.508"/>
-<vertex x="2.286" y="-0.508"/>
-</polygon>
-<polygon width="0.254" layer="31">
-<vertex x="-0.508" y="2.286"/>
-<vertex x="0.508" y="2.286"/>
-<vertex x="0.508" y="1.27"/>
-<vertex x="-0.508" y="1.27"/>
-</polygon>
-<polygon width="0.254" layer="31">
-<vertex x="-0.508" y="-2.286"/>
-<vertex x="0.508" y="-2.286"/>
-<vertex x="0.508" y="-1.27"/>
-<vertex x="-0.508" y="-1.27"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="ESP32-WROOM-32">
-<pin name="GND@1" x="-25.4" y="17.78" length="middle"/>
-<pin name="3V3" x="-25.4" y="15.24" length="middle"/>
-<pin name="EN" x="-25.4" y="12.7" length="middle"/>
-<pin name="SENSOR_VP" x="-25.4" y="10.16" length="middle"/>
-<pin name="SENSOR_VN" x="-25.4" y="7.62" length="middle"/>
-<pin name="IO34" x="-25.4" y="5.08" length="middle"/>
-<pin name="IO35" x="-25.4" y="2.54" length="middle"/>
-<pin name="IO32" x="-25.4" y="0" length="middle"/>
-<pin name="IO33" x="-25.4" y="-2.54" length="middle"/>
-<pin name="IO25" x="-25.4" y="-5.08" length="middle"/>
-<pin name="IO26" x="-25.4" y="-7.62" length="middle"/>
-<pin name="IO27" x="-25.4" y="-10.16" length="middle"/>
-<pin name="IO14" x="-25.4" y="-12.7" length="middle"/>
-<pin name="IO12" x="-25.4" y="-15.24" length="middle"/>
-<pin name="GND@2" x="-10.16" y="-33.02" length="middle" rot="R90"/>
-<pin name="IO13" x="-7.62" y="-33.02" length="middle" rot="R90"/>
-<pin name="SD2" x="-5.08" y="-33.02" length="middle" rot="R90"/>
-<pin name="SD3" x="-2.54" y="-33.02" length="middle" rot="R90"/>
-<pin name="CMD" x="0" y="-33.02" length="middle" rot="R90"/>
-<pin name="CLK" x="2.54" y="-33.02" length="middle" rot="R90"/>
-<pin name="SD0" x="5.08" y="-33.02" length="middle" rot="R90"/>
-<pin name="SD1" x="7.62" y="-33.02" length="middle" rot="R90"/>
-<pin name="IO15" x="10.16" y="-33.02" length="middle" rot="R90"/>
-<pin name="IO2" x="12.7" y="-33.02" length="middle" rot="R90"/>
-<pin name="IO0" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="IO4" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="IO16" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="IO17" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="IO5" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="IO18" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="IO19" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="NC" x="25.4" y="2.54" length="middle" direction="nc" rot="R180"/>
-<pin name="IO21" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="RXD0" x="25.4" y="7.62" length="middle" rot="R180"/>
-<pin name="TXD0" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="IO22" x="25.4" y="12.7" length="middle" rot="R180"/>
-<pin name="IO23" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="GND@3" x="25.4" y="17.78" length="middle" rot="R180"/>
-<pin name="GND@4" x="0" y="25.4" length="middle" rot="R270"/>
-<wire x1="-20.32" y1="20.32" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-27.94" x2="20.32" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-27.94" x2="20.32" y2="20.32" width="0.254" layer="94"/>
-<wire x1="20.32" y1="20.32" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ESP32-WROOM-32">
-<description>ESP32 WiFi/Bluetooth module</description>
-<gates>
-<gate name="G$1" symbol="ESP32-WROOM-32" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ESP32-WROOM-32-MODULE">
-<connects>
-<connect gate="G$1" pin="3V3" pad="2"/>
-<connect gate="G$1" pin="CLK" pad="20"/>
-<connect gate="G$1" pin="CMD" pad="19"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND@1" pad="1"/>
-<connect gate="G$1" pin="GND@2" pad="15"/>
-<connect gate="G$1" pin="GND@3" pad="38"/>
-<connect gate="G$1" pin="GND@4" pad="GND"/>
-<connect gate="G$1" pin="IO0" pad="25"/>
-<connect gate="G$1" pin="IO12" pad="14"/>
-<connect gate="G$1" pin="IO13" pad="16"/>
-<connect gate="G$1" pin="IO14" pad="13"/>
-<connect gate="G$1" pin="IO15" pad="23"/>
-<connect gate="G$1" pin="IO16" pad="27"/>
-<connect gate="G$1" pin="IO17" pad="28"/>
-<connect gate="G$1" pin="IO18" pad="30"/>
-<connect gate="G$1" pin="IO19" pad="31"/>
-<connect gate="G$1" pin="IO2" pad="24"/>
-<connect gate="G$1" pin="IO21" pad="33"/>
-<connect gate="G$1" pin="IO22" pad="36"/>
-<connect gate="G$1" pin="IO23" pad="37"/>
-<connect gate="G$1" pin="IO25" pad="10"/>
-<connect gate="G$1" pin="IO26" pad="11"/>
-<connect gate="G$1" pin="IO27" pad="12"/>
-<connect gate="G$1" pin="IO32" pad="8"/>
-<connect gate="G$1" pin="IO33" pad="9"/>
-<connect gate="G$1" pin="IO34" pad="6"/>
-<connect gate="G$1" pin="IO35" pad="7"/>
-<connect gate="G$1" pin="IO4" pad="26"/>
-<connect gate="G$1" pin="IO5" pad="29"/>
-<connect gate="G$1" pin="NC" pad="32"/>
-<connect gate="G$1" pin="RXD0" pad="34"/>
-<connect gate="G$1" pin="SD0" pad="21"/>
-<connect gate="G$1" pin="SD1" pad="22"/>
-<connect gate="G$1" pin="SD2" pad="17"/>
-<connect gate="G$1" pin="SD3" pad="18"/>
-<connect gate="G$1" pin="SENSOR_VN" pad="5"/>
-<connect gate="G$1" pin="SENSOR_VP" pad="4"/>
-<connect gate="G$1" pin="TXD0" pad="35"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="ESP32-WROOM-32"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MCP1700T-3302E_TT">
 <packages>
 <package name="MCP1700T-3302E/TT">
@@ -4236,6 +4023,229 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 </deviceset>
 </devicesets>
 </library>
+<library name="esp32-wroom-32-managed" urn="urn:adsk.eagle:library:11837532">
+<packages>
+<package name="ESP32-WROOM-32-MODULE" urn="urn:adsk.eagle:footprint:11837535/1" library_version="1">
+<smd name="GND" x="0" y="0" dx="5" dy="5" layer="1" cream="no"/>
+<smd name="1" x="-8.5" y="5.26" dx="2" dy="0.9" layer="1"/>
+<smd name="2" x="-8.5" y="3.99" dx="2" dy="0.9" layer="1"/>
+<smd name="3" x="-8.5" y="2.72" dx="2" dy="0.9" layer="1"/>
+<smd name="4" x="-8.5" y="1.45" dx="2" dy="0.9" layer="1"/>
+<smd name="5" x="-8.5" y="0.18" dx="2" dy="0.9" layer="1"/>
+<smd name="6" x="-8.5" y="-1.09" dx="2" dy="0.9" layer="1"/>
+<smd name="7" x="-8.5" y="-2.36" dx="2" dy="0.9" layer="1"/>
+<smd name="8" x="-8.5" y="-3.63" dx="2" dy="0.9" layer="1"/>
+<smd name="9" x="-8.5" y="-4.9" dx="2" dy="0.9" layer="1"/>
+<smd name="10" x="-8.5" y="-6.17" dx="2" dy="0.9" layer="1"/>
+<smd name="11" x="-8.5" y="-7.44" dx="2" dy="0.9" layer="1"/>
+<smd name="12" x="-8.5" y="-8.71" dx="2" dy="0.9" layer="1"/>
+<smd name="13" x="-8.5" y="-9.98" dx="2" dy="0.9" layer="1"/>
+<smd name="14" x="-8.5" y="-11.25" dx="2" dy="0.9" layer="1"/>
+<smd name="15" x="-5.715" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="16" x="-4.445" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="17" x="-3.175" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="18" x="-1.905" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="19" x="-0.635" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="20" x="0.635" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="21" x="1.905" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="22" x="3.175" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="23" x="4.445" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="24" x="5.715" y="-12.25" dx="2" dy="0.9" layer="1" rot="R90"/>
+<smd name="25" x="8.5" y="-11.25" dx="2" dy="0.9" layer="1"/>
+<smd name="26" x="8.5" y="-9.98" dx="2" dy="0.9" layer="1"/>
+<smd name="27" x="8.5" y="-8.71" dx="2" dy="0.9" layer="1"/>
+<smd name="28" x="8.5" y="-7.44" dx="2" dy="0.9" layer="1"/>
+<smd name="29" x="8.5" y="-6.17" dx="2" dy="0.9" layer="1"/>
+<smd name="30" x="8.5" y="-4.9" dx="2" dy="0.9" layer="1"/>
+<smd name="31" x="8.5" y="-3.63" dx="2" dy="0.9" layer="1"/>
+<smd name="32" x="8.5" y="-2.36" dx="2" dy="0.9" layer="1"/>
+<smd name="33" x="8.5" y="-1.09" dx="2" dy="0.9" layer="1"/>
+<smd name="34" x="8.5" y="0.18" dx="2" dy="0.9" layer="1"/>
+<smd name="35" x="8.5" y="1.45" dx="2" dy="0.9" layer="1"/>
+<smd name="36" x="8.5" y="2.72" dx="2" dy="0.9" layer="1"/>
+<smd name="37" x="8.5" y="3.99" dx="2" dy="0.9" layer="1"/>
+<smd name="38" x="8.5" y="5.26" dx="2" dy="0.9" layer="1"/>
+<rectangle x1="-9" y1="6.45" x2="9" y2="12.75" layer="39"/>
+<wire x1="-9.1" y1="-12.85" x2="-9.1" y2="-12.3" width="0.2" layer="21"/>
+<wire x1="-9.1" y1="-12.85" x2="-7.6" y2="-12.85" width="0.2" layer="21"/>
+<wire x1="9.1" y1="-12.85" x2="9.1" y2="-12.3" width="0.2" layer="21"/>
+<wire x1="7.6" y1="-12.85" x2="9.1" y2="-12.85" width="0.2" layer="21"/>
+<wire x1="-9.1" y1="12.85" x2="-7.6" y2="12.85" width="0.2" layer="21"/>
+<wire x1="-9.1" y1="12.85" x2="-9.1" y2="11.35" width="0.2" layer="21"/>
+<wire x1="9.1" y1="12.85" x2="7.6" y2="12.85" width="0.2" layer="21"/>
+<wire x1="9.1" y1="12.85" x2="9.1" y2="11.35" width="0.2" layer="21"/>
+<polygon width="0.254" layer="31">
+<vertex x="-2.286" y="2.286"/>
+<vertex x="-2.286" y="1.27"/>
+<vertex x="-1.27" y="1.27"/>
+<vertex x="-1.27" y="2.286"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="2.286" y="2.286"/>
+<vertex x="1.27" y="2.286"/>
+<vertex x="1.27" y="1.27"/>
+<vertex x="2.286" y="1.27"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="-2.286" y="-2.286"/>
+<vertex x="-2.286" y="-1.27"/>
+<vertex x="-1.27" y="-1.27"/>
+<vertex x="-1.27" y="-2.286"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="2.286" y="-2.286"/>
+<vertex x="1.27" y="-2.286"/>
+<vertex x="1.27" y="-1.27"/>
+<vertex x="2.286" y="-1.27"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="-0.508" y="0.508"/>
+<vertex x="-0.508" y="-0.508"/>
+<vertex x="0.508" y="-0.508"/>
+<vertex x="0.508" y="0.508"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="-2.286" y="0.508"/>
+<vertex x="-2.286" y="-0.508"/>
+<vertex x="-1.27" y="-0.508"/>
+<vertex x="-1.27" y="0.508"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="2.286" y="0.508"/>
+<vertex x="1.27" y="0.508"/>
+<vertex x="1.27" y="-0.508"/>
+<vertex x="2.286" y="-0.508"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="-0.508" y="2.286"/>
+<vertex x="0.508" y="2.286"/>
+<vertex x="0.508" y="1.27"/>
+<vertex x="-0.508" y="1.27"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="-0.508" y="-2.286"/>
+<vertex x="0.508" y="-2.286"/>
+<vertex x="0.508" y="-1.27"/>
+<vertex x="-0.508" y="-1.27"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="ESP32-WROOM-32-MODULE" urn="urn:adsk.eagle:package:11837542/1" type="box" library_version="1">
+<packageinstances>
+<packageinstance name="ESP32-WROOM-32-MODULE"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="ESP32-WROOM-32" urn="urn:adsk.eagle:symbol:11837539/1" library_version="1">
+<pin name="GND@1" x="-25.4" y="17.78" length="middle"/>
+<pin name="3V3" x="-25.4" y="15.24" length="middle"/>
+<pin name="EN" x="-25.4" y="12.7" length="middle"/>
+<pin name="SENSOR_VP" x="-25.4" y="10.16" length="middle"/>
+<pin name="SENSOR_VN" x="-25.4" y="7.62" length="middle"/>
+<pin name="IO34" x="-25.4" y="5.08" length="middle"/>
+<pin name="IO35" x="-25.4" y="2.54" length="middle"/>
+<pin name="IO32" x="-25.4" y="0" length="middle"/>
+<pin name="IO33" x="-25.4" y="-2.54" length="middle"/>
+<pin name="IO25" x="-25.4" y="-5.08" length="middle"/>
+<pin name="IO26" x="-25.4" y="-7.62" length="middle"/>
+<pin name="IO27" x="-25.4" y="-10.16" length="middle"/>
+<pin name="IO14" x="-25.4" y="-12.7" length="middle"/>
+<pin name="IO12" x="-25.4" y="-15.24" length="middle"/>
+<pin name="GND@2" x="-10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="IO13" x="-7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="SD2" x="-5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="SD3" x="-2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="CMD" x="0" y="-33.02" length="middle" rot="R90"/>
+<pin name="CLK" x="2.54" y="-33.02" length="middle" rot="R90"/>
+<pin name="SD0" x="5.08" y="-33.02" length="middle" rot="R90"/>
+<pin name="SD1" x="7.62" y="-33.02" length="middle" rot="R90"/>
+<pin name="IO15" x="10.16" y="-33.02" length="middle" rot="R90"/>
+<pin name="IO2" x="12.7" y="-33.02" length="middle" rot="R90"/>
+<pin name="IO0" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="IO4" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="IO16" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="IO17" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="IO5" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="IO18" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="IO19" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="NC" x="25.4" y="2.54" length="middle" direction="nc" rot="R180"/>
+<pin name="IO21" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="RXD0" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="TXD0" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="IO22" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="IO23" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="GND@3" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="GND@4" x="0" y="25.4" length="middle" rot="R270"/>
+<wire x1="-20.32" y1="20.32" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-27.94" x2="20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-27.94" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ESP32-WROOM-32" urn="urn:adsk.eagle:component:11837545/1" locally_modified="yes" library_version="1" library_locally_modified="yes">
+<description>ESP32 WiFi/Bluetooth module</description>
+<gates>
+<gate name="G$1" symbol="ESP32-WROOM-32" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP32-WROOM-32-MODULE">
+<connects>
+<connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="CLK" pad="20"/>
+<connect gate="G$1" pin="CMD" pad="19"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@2" pad="15"/>
+<connect gate="G$1" pin="GND@3" pad="38"/>
+<connect gate="G$1" pin="GND@4" pad="GND"/>
+<connect gate="G$1" pin="IO0" pad="25"/>
+<connect gate="G$1" pin="IO12" pad="14"/>
+<connect gate="G$1" pin="IO13" pad="16"/>
+<connect gate="G$1" pin="IO14" pad="13"/>
+<connect gate="G$1" pin="IO15" pad="23"/>
+<connect gate="G$1" pin="IO16" pad="27"/>
+<connect gate="G$1" pin="IO17" pad="28"/>
+<connect gate="G$1" pin="IO18" pad="30"/>
+<connect gate="G$1" pin="IO19" pad="31"/>
+<connect gate="G$1" pin="IO2" pad="24"/>
+<connect gate="G$1" pin="IO21" pad="33"/>
+<connect gate="G$1" pin="IO22" pad="36"/>
+<connect gate="G$1" pin="IO23" pad="37"/>
+<connect gate="G$1" pin="IO25" pad="10"/>
+<connect gate="G$1" pin="IO26" pad="11"/>
+<connect gate="G$1" pin="IO27" pad="12"/>
+<connect gate="G$1" pin="IO32" pad="8"/>
+<connect gate="G$1" pin="IO33" pad="9"/>
+<connect gate="G$1" pin="IO34" pad="6"/>
+<connect gate="G$1" pin="IO35" pad="7"/>
+<connect gate="G$1" pin="IO4" pad="26"/>
+<connect gate="G$1" pin="IO5" pad="29"/>
+<connect gate="G$1" pin="NC" pad="32"/>
+<connect gate="G$1" pin="RXD0" pad="34"/>
+<connect gate="G$1" pin="SD0" pad="21"/>
+<connect gate="G$1" pin="SD1" pad="22"/>
+<connect gate="G$1" pin="SD2" pad="17"/>
+<connect gate="G$1" pin="SD3" pad="18"/>
+<connect gate="G$1" pin="SENSOR_VN" pad="5"/>
+<connect gate="G$1" pin="SENSOR_VP" pad="4"/>
+<connect gate="G$1" pin="TXD0" pad="35"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11837542/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="ESP32-WROOM-32" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4247,7 +4257,9 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
-<part name="MOD1" library="esp32-wroom-32" deviceset="ESP32-WROOM-32" device=""/>
+<part name="MOD1" library="esp32-wroom-32-managed" library_urn="urn:adsk.eagle:library:11837532" deviceset="ESP32-WROOM-32" device="" package3d_urn="urn:adsk.eagle:package:11837542/1">
+<attribute name="MPN" value="ESP32-WROOM-32D"/>
+</part>
 <part name="LDO1" library="MCP1700T-3302E_TT" deviceset="MCP1700T-3302E/TT" device="" value="3.3V"/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
 <part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="0.47uF">
@@ -4412,6 +4424,25 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <part name="U$44" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$45" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$17" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$4" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="RTS" library="microbuilder" deviceset="SOLDERJUMPER" device="CLOSED" value="DNP"/>
+<part name="DTR" library="microbuilder" deviceset="SOLDERJUMPER" device="CLOSED" value="DNP"/>
+<part name="LDO2" library="MCP1700T-3302E_TT" deviceset="MCP1700T-3302E/TT" device="" value="3.3V"/>
+<part name="U$18" library="microbuilder" deviceset="GND" device=""/>
+<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="0.47uF">
+<attribute name="MPN" value="GRM155R60J474KE19D"/>
+</part>
+<part name="C14" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="2.2uF">
+<attribute name="MPN" value="C1005X5R0J225K050BC"/>
+</part>
+<part name="C15" library="microbuilder" deviceset="CAP_CERAMIC" device="_0402MP" value="2.2uF">
+<attribute name="MPN" value="C1005X5R0J225K050BC"/>
+</part>
+<part name="U$19" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$20" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$27" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$37" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$46" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4441,32 +4472,32 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 </instance>
 <instance part="MOD1" gate="G$1" x="175.26" y="121.92" smashed="yes"/>
 <instance part="LDO1" gate="G$1" x="50.8" y="170.18" smashed="yes" rot="R180"/>
-<instance part="U$3" gate="G$1" x="55.88" y="139.7" smashed="yes">
-<attribute name="VALUE" x="54.356" y="137.16" size="1.27" layer="96"/>
+<instance part="U$3" gate="G$1" x="55.88" y="147.32" smashed="yes">
+<attribute name="VALUE" x="54.356" y="144.78" size="1.27" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="20.32" y="152.4" smashed="yes">
 <attribute name="NAME" x="23.495" y="156.21" size="1.016" layer="95"/>
 <attribute name="VALUE" x="23.495" y="154.305" size="1.016" layer="96"/>
 <attribute name="MPN" x="20.32" y="152.4" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C1" gate="G$1" x="30.48" y="149.86" smashed="yes">
-<attribute name="NAME" x="33.02" y="152.4" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="33.02" y="149.86" size="1.27" layer="96" font="vector"/>
-<attribute name="MPN" x="30.48" y="149.86" size="1.778" layer="96" display="off"/>
+<instance part="C1" gate="G$1" x="30.48" y="152.4" smashed="yes">
+<attribute name="NAME" x="33.02" y="154.94" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="33.02" y="152.4" size="1.27" layer="96" font="vector"/>
+<attribute name="MPN" x="30.48" y="152.4" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C2" gate="G$1" x="73.66" y="157.48" smashed="yes">
 <attribute name="NAME" x="76.2" y="160.02" size="1.27" layer="95" font="vector"/>
 <attribute name="VALUE" x="76.2" y="157.48" size="1.27" layer="96" font="vector"/>
 <attribute name="MPN" x="73.66" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$5" gate="G$1" x="20.32" y="139.7" smashed="yes">
-<attribute name="VALUE" x="18.796" y="137.16" size="1.27" layer="96"/>
+<instance part="U$5" gate="G$1" x="20.32" y="147.32" smashed="yes">
+<attribute name="VALUE" x="18.796" y="144.78" size="1.27" layer="96"/>
 </instance>
-<instance part="U$6" gate="G$1" x="30.48" y="139.7" smashed="yes">
-<attribute name="VALUE" x="28.956" y="137.16" size="1.27" layer="96"/>
+<instance part="U$6" gate="G$1" x="30.48" y="147.32" smashed="yes">
+<attribute name="VALUE" x="28.956" y="144.78" size="1.27" layer="96"/>
 </instance>
-<instance part="U$7" gate="G$1" x="73.66" y="139.7" smashed="yes">
-<attribute name="VALUE" x="72.136" y="137.16" size="1.27" layer="96"/>
+<instance part="U$7" gate="G$1" x="73.66" y="147.32" smashed="yes">
+<attribute name="VALUE" x="72.136" y="144.78" size="1.27" layer="96"/>
 </instance>
 <instance part="U$8" gate="G$1" x="165.1" y="86.36" smashed="yes">
 <attribute name="VALUE" x="163.576" y="83.82" size="1.27" layer="96"/>
@@ -4680,8 +4711,8 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <instance part="U$38" gate="G$1" x="5.08" y="10.16" smashed="yes" rot="R90">
 <attribute name="VALUE" x="4.064" y="8.636" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="U$21" gate="G$1" x="73.66" y="175.26" smashed="yes">
-<attribute name="VALUE" x="72.136" y="176.276" size="1.27" layer="96"/>
+<instance part="U$21" gate="G$1" x="73.66" y="172.72" smashed="yes">
+<attribute name="VALUE" x="72.136" y="173.736" size="1.27" layer="96"/>
 </instance>
 <instance part="U$31" gate="G$1" x="119.38" y="167.64" smashed="yes">
 <attribute name="VALUE" x="117.856" y="168.656" size="1.27" layer="96"/>
@@ -4699,26 +4730,24 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND_UNMASKED" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="P$2"/>
 <pinref part="U$5" gate="G$1" pin="GND"/>
-<wire x1="20.32" y1="142.24" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="P$2"/>
 <pinref part="U$6" gate="G$1" pin="GND"/>
-<wire x1="30.48" y1="142.24" x2="30.48" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LDO1" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="142.24" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="149.86" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="P$2"/>
 <pinref part="U$7" gate="G$1" pin="GND"/>
-<wire x1="73.66" y1="142.24" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="149.86" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MOD1" gate="G$1" pin="GND@2"/>
@@ -4834,20 +4863,6 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 </net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="C7" gate="G$1" pin="P$2"/>
-<wire x1="129.54" y1="160.02" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<pinref part="MOD1" gate="G$1" pin="3V3"/>
-<wire x1="149.86" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="C8" gate="G$1" pin="P$2"/>
-<wire x1="129.54" y1="137.16" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="147.32" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
-<junction x="129.54" y="147.32"/>
-<junction x="129.54" y="160.02"/>
-</segment>
-</net>
 <net name="MTCK/HSPID(MOSI)" class="0">
 <segment>
 <wire x1="167.64" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
@@ -4868,7 +4883,7 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <pinref part="C3" gate="G$1" pin="P$1"/>
 <wire x1="20.32" y1="162.56" x2="20.32" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="P$1"/>
-<wire x1="30.48" y1="162.56" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="162.56" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
 <label x="17.78" y="170.18" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
@@ -5299,7 +5314,7 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 </segment>
 <segment>
 <pinref part="LDO1" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="172.72" x2="73.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="170.18" x2="73.66" y2="167.64" width="0.1524" layer="91"/>
 <junction x="73.66" y="167.64"/>
 <wire x1="73.66" y1="167.64" x2="55.88" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="P$1"/>
@@ -5327,28 +5342,20 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <wire x1="231.14" y1="165.1" x2="231.14" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="P$2"/>
+<wire x1="129.54" y1="160.02" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+<pinref part="MOD1" gate="G$1" pin="3V3"/>
+<wire x1="149.86" y1="137.16" x2="129.54" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="P$2"/>
+<wire x1="129.54" y1="137.16" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="147.32" x2="129.54" y2="160.02" width="0.1524" layer="91"/>
+<junction x="129.54" y="147.32"/>
+<junction x="129.54" y="160.02"/>
+</segment>
 </net>
 <net name="VUSB" class="0">
-<segment>
-<pinref part="LIPO1" gate="G$1" pin="VDD@1"/>
-<wire x1="38.1" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="LIPO1" gate="G$1" pin="VDD@2"/>
-<wire x1="38.1" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="96.52" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
-<junction x="35.56" y="99.06"/>
-<wire x1="35.56" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="P$1"/>
-<wire x1="30.48" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="101.6" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
-<junction x="30.48" y="99.06"/>
-<wire x1="15.24" y1="109.22" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
-<label x="15.24" y="111.76" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="LED_CHG" gate="G$1" pin="A"/>
-<wire x1="88.9" y1="60.96" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
-<label x="88.9" y="53.34" size="1.778" layer="95" rot="R180"/>
-</segment>
 <segment>
 <wire x1="40.64" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="PCHAN1" gate="G$1" pin="S1"/>
@@ -5368,6 +5375,28 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <wire x1="27.94" y1="20.32" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
 <junction x="27.94" y="20.32"/>
 <label x="76.2" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VUSB_CHG_LIPO" class="0">
+<segment>
+<pinref part="LIPO1" gate="G$1" pin="VDD@1"/>
+<wire x1="38.1" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="LIPO1" gate="G$1" pin="VDD@2"/>
+<wire x1="38.1" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="96.52" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
+<junction x="35.56" y="99.06"/>
+<wire x1="35.56" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="P$1"/>
+<wire x1="30.48" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="101.6" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
+<junction x="30.48" y="99.06"/>
+<wire x1="15.24" y1="109.22" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<label x="12.7" y="99.06" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="LED_CHG" gate="G$1" pin="A"/>
+<wire x1="88.9" y1="60.96" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
+<label x="88.9" y="53.34" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
@@ -5437,18 +5466,18 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <instance part="U$35" gate="G$1" x="104.14" y="101.6" smashed="yes">
 <attribute name="VALUE" x="102.616" y="99.06" size="1.27" layer="96"/>
 </instance>
-<instance part="C12" gate="G$1" x="109.22" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="106.045" y="67.31" size="1.016" layer="95" rot="R180"/>
-<attribute name="VALUE" x="106.045" y="69.215" size="1.016" layer="96" rot="R180"/>
-<attribute name="MPN" x="109.22" y="71.12" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="C12" gate="G$1" x="121.92" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="118.745" y="67.31" size="1.016" layer="95" rot="R180"/>
+<attribute name="VALUE" x="118.745" y="69.215" size="1.016" layer="96" rot="R180"/>
+<attribute name="MPN" x="121.92" y="71.12" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="C13" gate="G$1" x="119.38" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="116.84" y="68.58" size="1.27" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="116.84" y="71.12" size="1.27" layer="96" font="vector" rot="R180"/>
-<attribute name="MPN" x="119.38" y="71.12" size="1.778" layer="96" rot="R180" display="off"/>
+<instance part="C13" gate="G$1" x="132.08" y="71.12" smashed="yes" rot="R180">
+<attribute name="NAME" x="129.54" y="68.58" size="1.27" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="129.54" y="71.12" size="1.27" layer="96" font="vector" rot="R180"/>
+<attribute name="MPN" x="132.08" y="71.12" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="U$36" gate="G$1" x="127" y="40.64" smashed="yes">
-<attribute name="VALUE" x="125.476" y="38.1" size="1.27" layer="96"/>
+<instance part="U$36" gate="G$1" x="139.7" y="40.64" smashed="yes">
+<attribute name="VALUE" x="138.176" y="38.1" size="1.27" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="172.72" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="170.688" y="109.22" size="1.27" layer="95" font="vector" rot="R90"/>
@@ -5475,6 +5504,51 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 </instance>
 <instance part="U$14" gate="G$1" x="27.94" y="66.04" smashed="yes">
 <attribute name="MPN" x="27.94" y="66.04" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$4" gate="G$1" x="190.5" y="134.62" smashed="yes" rot="R270">
+<attribute name="VALUE" x="191.516" y="136.144" size="1.27" layer="96" rot="R270"/>
+</instance>
+<instance part="RTS" gate="1" x="139.7" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="137.16" y="152.4" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="143.51" y="152.4" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="DTR" gate="1" x="147.32" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="144.78" y="152.4" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="151.13" y="152.4" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="LDO2" gate="G$1" x="215.9" y="68.58" smashed="yes" rot="R180"/>
+<instance part="U$18" gate="G$1" x="220.98" y="45.72" smashed="yes">
+<attribute name="VALUE" x="219.456" y="43.18" size="1.27" layer="96"/>
+</instance>
+<instance part="C6" gate="G$1" x="185.42" y="50.8" smashed="yes">
+<attribute name="NAME" x="188.595" y="54.61" size="1.016" layer="95"/>
+<attribute name="VALUE" x="188.595" y="52.705" size="1.016" layer="96"/>
+<attribute name="MPN" x="185.42" y="50.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C14" gate="G$1" x="195.58" y="50.8" smashed="yes">
+<attribute name="NAME" x="198.12" y="53.34" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="198.12" y="50.8" size="1.27" layer="96" font="vector"/>
+<attribute name="MPN" x="195.58" y="50.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C15" gate="G$1" x="238.76" y="55.88" smashed="yes">
+<attribute name="NAME" x="241.3" y="58.42" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="241.3" y="55.88" size="1.27" layer="96" font="vector"/>
+<attribute name="MPN" x="238.76" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$19" gate="G$1" x="185.42" y="45.72" smashed="yes">
+<attribute name="VALUE" x="183.896" y="43.18" size="1.27" layer="96"/>
+</instance>
+<instance part="U$20" gate="G$1" x="195.58" y="45.72" smashed="yes">
+<attribute name="VALUE" x="194.056" y="43.18" size="1.27" layer="96"/>
+</instance>
+<instance part="U$27" gate="G$1" x="238.76" y="45.72" smashed="yes">
+<attribute name="VALUE" x="237.236" y="43.18" size="1.27" layer="96"/>
+</instance>
+<instance part="U$37" gate="G$1" x="238.76" y="71.12" smashed="yes">
+<attribute name="VALUE" x="237.236" y="72.136" size="1.27" layer="96"/>
+</instance>
+<instance part="U$46" gate="G$1" x="55.88" y="154.94" smashed="yes" rot="R90">
+<attribute name="VALUE" x="54.864" y="153.416" size="1.27" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -5516,7 +5590,7 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <label x="38.1" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND_UNMASKED" class="0">
 <segment>
 <pinref part="FB2" gate="G$1" pin="P$2"/>
 <wire x1="66.04" y1="60.96" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
@@ -5558,16 +5632,34 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="P$1"/>
-<wire x1="109.22" y1="66.04" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="66.04" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="P$1"/>
-<wire x1="109.22" y1="60.96" x2="119.38" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="60.96" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
-<junction x="109.22" y="60.96"/>
-<wire x1="119.38" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
-<junction x="119.38" y="60.96"/>
+<wire x1="121.92" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="60.96" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
+<junction x="121.92" y="60.96"/>
+<wire x1="132.08" y1="60.96" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
+<junction x="132.08" y="60.96"/>
 <pinref part="U$36" gate="G$1" pin="GND"/>
-<wire x1="127" y1="60.96" x2="127" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="60.96" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="P$2"/>
+<pinref part="U$19" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="P$2"/>
+<pinref part="U$20" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="LDO2" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="48.26" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$18" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="P$2"/>
+<pinref part="U$27" gate="G$1" pin="GND"/>
+<wire x1="238.76" y1="48.26" x2="238.76" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FTDI_RESET" class="0">
@@ -5585,6 +5677,32 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <wire x1="60.96" y1="134.62" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$30" gate="G$1" pin="3.3V"/>
 <junction x="60.96" y="129.54"/>
+</segment>
+<segment>
+<pinref part="LED_TX" gate="G$1" pin="A"/>
+<wire x1="172.72" y1="129.54" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="134.62" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="LED_RX" gate="G$1" pin="A"/>
+<wire x1="182.88" y1="129.54" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="134.62" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
+<junction x="172.72" y="134.62"/>
+<wire x1="182.88" y1="134.62" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
+<junction x="182.88" y="134.62"/>
+<pinref part="U$4" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="LDO2" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="68.58" x2="238.76" y2="66.04" width="0.1524" layer="91"/>
+<junction x="238.76" y="66.04"/>
+<wire x1="238.76" y1="66.04" x2="220.98" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="P$1"/>
+<wire x1="238.76" y1="66.04" x2="238.76" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$37" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="1" pin="VCCIO"/>
+<wire x1="71.12" y1="154.94" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U$46" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="VUSB_FILTERED" class="0">
@@ -5621,8 +5739,19 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <net name="EN/RTS" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="!RTS"/>
-<wire x1="99.06" y1="152.4" x2="114.3" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="152.4" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
 <label x="116.84" y="152.4" size="1.778" layer="95"/>
+<wire x1="109.22" y1="152.4" x2="114.3" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="152.4" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
+<junction x="109.22" y="152.4"/>
+<pinref part="RTS" gate="1" pin="1"/>
+<wire x1="109.22" y1="142.24" x2="139.7" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="142.24" x2="139.7" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="RTS" gate="1" pin="2"/>
+<wire x1="139.7" y1="160.02" x2="139.7" y2="165.1" width="0.1524" layer="91"/>
+<label x="139.7" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="CTS" class="0">
@@ -5727,8 +5856,19 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <net name="BOOT/DTR" class="0">
 <segment>
 <pinref part="IC1" gate="1" pin="!DTR"/>
-<wire x1="99.06" y1="147.32" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="147.32" x2="106.68" y2="147.32" width="0.1524" layer="91"/>
 <label x="116.84" y="147.32" size="1.778" layer="95"/>
+<wire x1="106.68" y1="147.32" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="147.32" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
+<junction x="106.68" y="147.32"/>
+<pinref part="DTR" gate="1" pin="1"/>
+<wire x1="106.68" y1="139.7" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="139.7" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="DTR" gate="1" pin="2"/>
+<wire x1="147.32" y1="160.02" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
+<label x="147.32" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="VPWR" class="0">
@@ -5738,43 +5878,46 @@ https://cdn.sparkfun.com/datasheets/Prototyping/USB_LiPolyCharger_SingleCell21.p
 <pinref part="SWPOWER" gate="G$1" pin="S"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="1" pin="VCCIO"/>
-<wire x1="71.12" y1="154.94" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="1" pin="VCC"/>
-<wire x1="71.12" y1="157.48" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="157.48" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="154.94" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
-<junction x="58.42" y="157.48"/>
-<label x="45.72" y="157.48" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="109.22" x2="121.92" y2="106.68" width="0.1524" layer="91"/>
 <label x="121.92" y="104.14" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="LED_TX" gate="G$1" pin="A"/>
-<wire x1="172.72" y1="129.54" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="134.62" x2="172.72" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="LED_RX" gate="G$1" pin="A"/>
-<wire x1="182.88" y1="129.54" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="134.62" x2="182.88" y2="134.62" width="0.1524" layer="91"/>
-<junction x="172.72" y="134.62"/>
-<wire x1="182.88" y1="134.62" x2="187.96" y2="134.62" width="0.1524" layer="91"/>
-<junction x="182.88" y="134.62"/>
-<label x="193.04" y="134.62" size="1.778" layer="95"/>
+<pinref part="C12" gate="G$1" pin="P$2"/>
+<wire x1="121.92" y1="73.66" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="78.74" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="P$2"/>
+<wire x1="132.08" y1="73.66" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="78.74" x2="132.08" y2="78.74" width="0.1524" layer="91"/>
+<junction x="121.92" y="78.74"/>
+<wire x1="132.08" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
+<junction x="132.08" y="78.74"/>
+<label x="142.24" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C12" gate="G$1" pin="P$2"/>
-<wire x1="109.22" y1="73.66" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="78.74" x2="109.22" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="C13" gate="G$1" pin="P$2"/>
-<wire x1="119.38" y1="73.66" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
-<junction x="109.22" y="78.74"/>
-<wire x1="119.38" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
-<junction x="119.38" y="78.74"/>
-<label x="129.54" y="78.74" size="1.778" layer="95"/>
+<pinref part="LDO2" gate="G$1" pin="3"/>
+<wire x1="185.42" y1="71.12" x2="185.42" y2="60.96" width="0.1524" layer="91"/>
+<junction x="195.58" y="60.96"/>
+<wire x1="185.42" y1="60.96" x2="195.58" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="60.96" x2="198.12" y2="60.96" width="0.1524" layer="91"/>
+<junction x="185.42" y="60.96"/>
+<pinref part="C6" gate="G$1" pin="P$1"/>
+<wire x1="185.42" y1="60.96" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="P$1"/>
+<wire x1="195.58" y1="60.96" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
+<label x="182.88" y="68.58" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="1" pin="VCC"/>
+<wire x1="71.12" y1="157.48" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
+<label x="45.72" y="157.48" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="VUSB_CHG_LIPO" class="0">
+<segment>
+<pinref part="SWPOWER" gate="G$1" pin="O"/>
+<wire x1="66.04" y1="76.2" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
+<label x="86.36" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
