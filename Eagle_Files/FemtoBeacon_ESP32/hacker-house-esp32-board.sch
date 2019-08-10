@@ -4258,7 +4258,7 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="MOD1" library="esp32-wroom-32-managed" library_urn="urn:adsk.eagle:library:11837532" deviceset="ESP32-WROOM-32" device="" package3d_urn="urn:adsk.eagle:package:11837542/1">
-<attribute name="MPN" value="ESP32-WROOM-32D"/>
+<attribute name="MPN" value="ESP32-WROOM-32D (16MB)"/>
 </part>
 <part name="LDO1" library="MCP1700T-3302E_TT" deviceset="MCP1700T-3302E/TT" device="" value="3.3V"/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
