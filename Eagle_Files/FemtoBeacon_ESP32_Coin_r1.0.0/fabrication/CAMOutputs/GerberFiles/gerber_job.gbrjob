@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-04-25T17:37:48Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.3.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.640844,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "femto-beacon-esp32coin"
+        },
+        "Owner": "Alejandro Albino <webmaster@alexventure.com>",
+        "Size": {
+            "X": 25.4,
+            "Y": 29.21
+        }
+    }
+}

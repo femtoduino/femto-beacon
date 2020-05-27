@@ -1,0 +1,85 @@
+ PATH Fill-32 FOUND 
+Scale factor = 1.000000
+ 0) 0.00,0.00
+ PATH Fill-21 FOUND 
+Scale factor = 1.000000
+ 1) 0.00,0.00
+ PATH Fill-18 FOUND 
+Scale factor = 1.000000
+ 2) 0.00,0.00
+ PATH Fill-30 FOUND 
+Scale factor = 1.000000
+ 3) 0.00,0.00
+ PATH Fill-28 FOUND 
+Scale factor = 1.000000
+ 4) 0.00,0.00
+ PATH Fill-26 FOUND 
+Scale factor = 1.000000
+ 5) 0.00,0.00
+ PATH Fill-24 FOUND 
+Scale factor = 1.000000
+ 6) 0.00,52.60
+ PATH Fill-16 FOUND 
+Scale factor = 1.000000
+ 7) 0.00,0.00
+ PATH Fill-14 FOUND 
+Scale factor = 1.000000
+ 8) 0.00,45.00
+ PATH Fill-12 FOUND 
+Scale factor = 1.000000
+ 9) 0.00,0.00
+ PATH Fill-10 FOUND 
+Scale factor = 1.000000
+10) 0.00,0.00
+ PATH Fill-8 FOUND 
+Scale factor = 1.000000
+11) 0.00,0.00
+ PATH Fill-7 FOUND 
+Scale factor = 1.000000
+12) 0.00,45.60
+ PATH Fill-6 FOUND 
+Scale factor = 1.000000
+13) 0.00,0.00
+ PATH Fill-5 FOUND 
+Scale factor = 1.000000
+14) 0.00,0.00
+ PATH Fill-4 FOUND 
+Scale factor = 1.000000
+15) 0.00,0.00
+ PATH Fill-3 FOUND 
+Scale factor = 1.000000
+16) 0.00,0.00
+ PATH Fill-2 FOUND 
+Scale factor = 1.000000
+17) 0.00,0.00
+ PATH Fill-1 FOUND 
+Scale factor = 1.000000
+18) 0.00,0.00
+
+Object origin:
+0.000000 26.300000
+
+Eagle Command:
+set wire_bend 2;
+change layer tNames;
+set width 0.050000;
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 -13.150000) (R 0.000000 -13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 -9.350000) (R 0.000000 -9.350000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 -9.650000) (R 0.000000 -9.650000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+poly (R 0.000000 13.150000) (R 0.000000 13.150000);
+
